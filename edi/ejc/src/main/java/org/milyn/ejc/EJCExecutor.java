@@ -65,11 +65,12 @@ public class EJCExecutor {
 
         if(definitionsModel != null) {
             EJC ejc = new EJC();
-            definitionsClassModel = ejc.compile(definitionsModel.getEdimap(), commonsPackageName, destDir.getAbsolutePath());
 
             // Get rid of the binding and edi mapping model configs for the commons...
-            deleteFile(commonsPackageName, EJC.BINDINGCONFIG_XML);
-            deleteFile(commonsPackageName, EJC.EDIMAPPINGCONFIG_XML);
+            ejc.generateBindingConfig(false);
+            ejc.generateEdimappingConfig(false);
+
+            definitionsClassModel = ejc.compile(definitionsModel.getEdimap(), commonsPackageName, destDir.getAbsolutePath());
         }
 
         List<MessageDefinition> messageSetDefinitions = new ArrayList<MessageDefinition>();
@@ -89,6 +90,11 @@ public class EJCExecutor {
                 ejc.include(commonsPackageName);
                 ejc.addEDIMessageAnnotation(true);
                 if(definitionsClassModel != null) {
+                    if (interchangeProperties != null) {
+                        ejc.generateEdimappingConfig(false);
+                        ejc.generateFactory(false);
+                    }
+
                     String messagePackageName = packageName + "." + description.getName();
                     ClassModel classModel = ejc.compile(model.getValue().getEdimap(), messagePackageName, destDir.getAbsolutePath(), definitionsClassModel.getClassesByNode());
 
@@ -97,9 +103,6 @@ public class EJCExecutor {
                     if(interchangeProperties != null) {
                         MessageDefinition messageDef = new MessageDefinition(description.getName(), "/" + messagePackageName.replace('.', '/') + "/" + EJC.BINDINGCONFIG_XML);
                         messageSetDefinitions.add(messageDef);
-
-                        deleteFile(messagePackageName, EJC.EDIMAPPINGCONFIG_XML);
-                        deleteFile(messagePackageName, EDIUtils.encodeClassName(description.getName()) + "Factory.java");
 
                         JClass beanClass = classModel.getRootBeanConfig().getBeanClass();
                         rootClassesListFileBuilder.append(beanClass.getPackageName()).append(".").append(beanClass.getClassName()).append("\n");
@@ -118,11 +121,6 @@ public class EJCExecutor {
             applyTemplate("interchange-bindingconfig.xml", interchangeBindingTemplate, interchangeProperties, messageSetDefinitions);
             generateFactoryClass(interchangeProperties);
         }
-    }
-
-    private void deleteFile(String packageName, String fileName) {
-        File file = new File(destDir, packageName.replace('.', '/') + "/" + fileName);
-        file.delete();
     }
 
     private void applyTemplate(String outFile, FreeMarkerTemplate template, Properties interchangeProperties, List<MessageDefinition> messageSetDefinitions) throws IOException {

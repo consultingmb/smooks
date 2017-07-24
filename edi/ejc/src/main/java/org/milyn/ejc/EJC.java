@@ -65,6 +65,9 @@ public class EJC {
     private Set<String> includes = new LinkedHashSet<String>();
 
     private boolean addEDIMessageAnnotation = false;
+    private boolean generateBindingConfig = true;
+    private boolean generateEdimappingConfig = true;
+    private boolean generateFactory = true;
 
     public static final String BINDINGCONFIG_XML = "bindingconfig.xml";
     public static final String EDIMAPPINGCONFIG_XML = "edimappingconfig.xml";
@@ -72,6 +75,21 @@ public class EJC {
     public EJC include(String includePackage) {
         AssertArgument.isNotNullAndNotEmpty(includePackage, "includePackage");
         includes.add(includePackage);
+        return this;
+    }
+
+    public EJC generateBindingConfig(boolean generateBindingConfig) {
+        this.generateBindingConfig = generateBindingConfig;
+        return this;
+    }
+
+    public EJC generateEdimappingConfig(boolean generateEdimappingConfig) {
+        this.generateEdimappingConfig = generateEdimappingConfig;
+        return this;
+    }
+
+    public EJC generateFactory(boolean generateFactory) {
+        this.generateFactory = generateFactory;
         return this;
     }
 
@@ -181,16 +199,17 @@ public class EJC {
 
         writeModelToFolder(model, beanFolder, bindingFile);
 
-        String bundleConfigPath = "/" + beanPackage.replace('.', '/') + "/" + EDIMAPPINGCONFIG_XML;
-
         // If we haven't already created the mapping model...
-        File mappingFile = new File(beanFolder + bundleConfigPath);
-        if(!mappingFile.exists()) {
-            FileWriter writer = new FileWriter(mappingFile);
-            try {
-                mappingModel.write(writer);
-            } finally {
-                writer.close();
+        if (generateEdimappingConfig) {
+            String bundleConfigPath = "/" + beanPackage.replace('.', '/') + "/" + EDIMAPPINGCONFIG_XML;
+            File mappingFile = new File(beanFolder + bundleConfigPath);
+            if (!mappingFile.exists()) {
+                FileWriter writer = new FileWriter(mappingFile);
+                try {
+                    mappingModel.write(writer);
+                } finally {
+                    writer.close();
+                }
             }
         }
 
@@ -261,13 +280,15 @@ public class EJC {
 
     private void writeModelToFolder(ClassModel model, String beanFolder, String bindingFile) throws IOException, IllegalNameException, ClassNotFoundException {
         LOG.info("Writing java beans to " + beanFolder + "...");
-        BeanWriter.writeBeansToFolder(model, beanFolder, bindingFile);
+        BeanWriter.writeBeansToFolder(model, beanFolder, bindingFile, generateFactory);
 
-        LOG.info("Creating bindingfile...");
+        if (generateBindingConfig) {
+            LOG.info("Creating bindingfile...");
 
-        BindingWriter bindingWriter = new BindingWriter(model);
-        bindingWriter.generate(bindingFile);
-        model.setBindingFilePath(bindingFile);
+            BindingWriter bindingWriter = new BindingWriter(model);
+            bindingWriter.generate(bindingFile, generateEdimappingConfig);
+            model.setBindingFilePath(bindingFile);
+        }
 
         LOG.info("-----------------------------------------------------------------------");
         LOG.info(" Compilatation complete.");

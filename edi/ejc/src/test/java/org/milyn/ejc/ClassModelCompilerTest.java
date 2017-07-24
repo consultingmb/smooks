@@ -30,9 +30,8 @@ public class ClassModelCompilerTest {
             "    <params>\r\n" +
             "        <param name=\"stream.filter.type\">SAX</param>\r\n" +
             "    </params>\r\n" +
-            "\r\n" +
+            "    \r\n" +
             "    <edi:reader mappingModel=\"/com/example/common/edimappingconfig.xml\" validate=\"false\" />\r\n" +
-            "\r\n" +
             "\r\n" +
             "    <jb:bean beanId=\"root\" class=\"com.example.common.Root\" createOnElement=\"root\">\r\n" +
             "        <jb:wiring property=\"odi\" beanIdRef=\"root.ODI\" />\r\n" +

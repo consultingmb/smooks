@@ -47,20 +47,36 @@ public class BeanWriter {
     /**
      * Iterates through all classes defined in ClassModel. For each class it generates the class
      * implementation and saves the new class to filesystem.
-     * @param model the {@link org.milyn.ejc.ClassModel}.
+     * @param model the {@link ClassModel}.
      * @param folder the output folder for generated classes.
      * @param bindingFile the name of the smooks configuration.
      * @throws IOException when error ocurrs while saving the implemented class to filesystem.
      * @throws IllegalNameException when class is a keyword in java.
      */
     public static void writeBeansToFolder(ClassModel model, String folder, String bindingFile) throws IOException, IllegalNameException {
+        writeBeansToFolder(model, folder, bindingFile, true);
+    }
+
+    /**
+     * Iterates through all classes defined in ClassModel. For each class it generates the class
+     * implementation and saves the new class to filesystem.
+     * @param model the {@link org.milyn.ejc.ClassModel}.
+     * @param folder the output folder for generated classes.
+     * @param bindingFile the name of the smooks configuration.
+     * @param generateFactory if the corresponding factory class should also be generated.
+     * @throws IOException when error ocurrs while saving the implemented class to filesystem.
+     * @throws IllegalNameException when class is a keyword in java.
+     */
+    public static void writeBeansToFolder(ClassModel model, String folder, String bindingFile, boolean generateFactory) throws IOException, IllegalNameException {
         folder = new File(folder).getCanonicalPath();
 
         for ( JClass bean : model.getCreatedClasses()) {
             writeToFile(folder, bean);
         }
 
-        writeFactoryClass(folder, model, bindingFile);
+        if (generateFactory) {
+            writeFactoryClass(folder, model, bindingFile);
+        }
     }
 
     /**

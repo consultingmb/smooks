@@ -41,6 +41,10 @@ public class BindingWriter {
 
 
     public void generate(String bindingfile) throws IOException {
+        generate(bindingfile, true);
+    }
+
+    public void generate(String bindingfile, boolean includeEdireader) throws IOException {
 
         OutputStreamWriter writer = null;
         try {
@@ -57,13 +61,18 @@ public class BindingWriter {
 		(new BindingWriter(classModel)).writeBindingConfig(writer);
         writer.flush();
 	}
-	
-	public void writeBindingConfig(Writer writer) throws IOException {
+
+    public void writeBindingConfig(Writer writer) throws IOException {
+        writeBindingConfig(writer, true);
+    }
+
+    public void writeBindingConfig(Writer writer, boolean includeEdiReader) throws IOException {
 		Map<String, Object> templatingContextObject = new HashMap<String, Object>();
 		List<BindingConfig> beanConfigs = new ArrayList<BindingConfig>();
 
 		flattenBeanConfigGraph(beanConfigs, classModel.getRootBeanConfig());
 
+		templatingContextObject.put("includeEdiReader", includeEdiReader);
 		templatingContextObject.put("beanConfigs", beanConfigs);
 		templatingContextObject.put("classPackage", classModel.getRootBeanConfig().getBeanClass().getPackageName().replace('.', '/'));
 		writer.write(template.apply(templatingContextObject));
@@ -74,17 +83,6 @@ public class BindingWriter {
         for(BindingConfig wiredConfig : beanConfig.getWireBindings()) {
             flattenBeanConfigGraph(beanConfigs, wiredConfig);
         }
-    }
-
-    private List<String> parsePackages(String packagesString) {
-        String[] packages = packagesString.split(";");
-        List<String> packagesSet = new ArrayList<String>();
-
-        for(String aPackage : packages) {
-            packagesSet.add(aPackage.trim());
-        }
-
-        return packagesSet;
     }
 }
 

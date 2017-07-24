@@ -10,9 +10,10 @@
     <params>
         <param name="stream.filter.type">SAX</param>
     </params>
+    <#if includeEdiReader>
 
     <edi:reader mappingModel="/${classPackage}/edimappingconfig.xml" validate="false" />
-
+    </#if>
     <#list beanConfigs as beanConfig>
 
     <jb:bean beanId="${beanConfig.beanId}" class="${beanConfig.runtimeClass.name}" createOnElement="${beanConfig.createOnElement}">
