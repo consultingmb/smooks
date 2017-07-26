@@ -15,11 +15,7 @@
 
 package org.milyn.validation;
 
-import static org.junit.Assert.*;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.List;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import org.milyn.Smooks;
@@ -27,8 +23,11 @@ import org.milyn.container.ExecutionContext;
 import org.milyn.io.StreamUtils;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
-import org.milyn.rules.RuleEvalResult;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
 /**
  * Function test for {@link Validator}

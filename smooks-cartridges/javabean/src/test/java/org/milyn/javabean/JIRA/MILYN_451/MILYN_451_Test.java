@@ -15,18 +15,17 @@
 */
 package org.milyn.javabean.JIRA.MILYN_451;
 
-import java.io.IOException;
+import static org.junit.Assert.assertEquals;
 
-import javax.xml.transform.stream.StreamSource;
-
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.javabean.context.BeanContext;
 import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
 
 /**
  * 

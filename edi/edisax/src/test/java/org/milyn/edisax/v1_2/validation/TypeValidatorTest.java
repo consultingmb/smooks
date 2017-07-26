@@ -16,9 +16,6 @@
 
 package org.milyn.edisax.v1_2.validation;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 /**
  * Tests validation of type in ValueNode.
  * @author bardl 

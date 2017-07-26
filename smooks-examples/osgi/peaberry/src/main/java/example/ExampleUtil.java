@@ -1,18 +1,16 @@
 package example;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-
-import javax.xml.transform.stream.StreamSource;
-
+import example.model.Order;
+import example.model.OrderItem;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.io.StreamUtils;
 import org.milyn.payload.JavaResult;
 
-import example.model.Order;
-import example.model.OrderItem;
+import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class ExampleUtil
 {

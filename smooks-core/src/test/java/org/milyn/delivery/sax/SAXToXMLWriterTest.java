@@ -15,9 +15,9 @@
 */
 package org.milyn.delivery.sax;
 
-import java.io.IOException;
+import static org.junit.Assert.assertEquals;
 
-import org.milyn.FilterSettings;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
@@ -27,8 +27,7 @@ import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
 
 
 /**

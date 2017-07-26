@@ -16,8 +16,9 @@
 
 package org.milyn.edisax.model.internal;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
 
 /**

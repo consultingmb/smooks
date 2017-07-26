@@ -16,10 +16,10 @@
 
 package org.drools.examples.broker.misc;
 
+import org.drools.examples.broker.model.Action;
+
 import java.text.DecimalFormat;
 import java.util.Random;
-
-import org.drools.examples.broker.model.Action;
 
 public class Utils {
     private static final Random rand = new Random(System.currentTimeMillis()); 

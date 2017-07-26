@@ -15,12 +15,12 @@
 
 package org.milyn.rules;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.milyn.SmooksException;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.container.ApplicationContext;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * RuleProviderAccessor provides convenience methods for adding and getting

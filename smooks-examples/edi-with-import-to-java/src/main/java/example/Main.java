@@ -15,15 +15,20 @@
 */
 package example;
 
-import org.milyn.*;
-import org.milyn.container.*;
-import org.milyn.event.report.*;
-import org.milyn.io.*;
-import org.xml.sax.*;
+import org.milyn.Smooks;
+import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
+import org.milyn.event.report.HtmlReportGenerator;
+import org.milyn.io.StreamUtils;
+import org.xml.sax.SAXException;
 
-import javax.xml.transform.stream.*;
-import java.io.*;
-import java.util.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Locale;
 
 /**
  * Simple example main class.

@@ -15,11 +15,6 @@
 */
 package org.milyn.javabean.context;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.milyn.SmooksException;
 import org.milyn.cdr.Parameter;
 import org.milyn.cdr.SmooksConfigurationException;
@@ -34,11 +29,13 @@ import org.milyn.delivery.dom.DOMElementVisitor;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXElementVisitor;
 import org.milyn.delivery.sax.SAXText;
-import org.milyn.delivery.sax.SAXUtil;
 import org.milyn.javabean.repository.BeanId;
 import org.w3c.dom.Element;
 
-import javax.xml.namespace.QName;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Static variable binding visitor.

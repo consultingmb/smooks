@@ -15,16 +15,17 @@
 */
 package org.milyn.scribe.invoker;
 
-import static org.junit.Assert.*;
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Matchers.same;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 import org.milyn.scribe.Dao;
 import org.milyn.scribe.MapObjectStore;
 import org.milyn.scribe.MappingDao;
 import org.milyn.scribe.ObjectStore;
-import org.milyn.scribe.invoker.DaoInvoker;
-import org.milyn.scribe.invoker.DaoInvokerFactory;
 import org.milyn.scribe.test.dao.FullAnnotatedDao;
 import org.milyn.scribe.test.util.BaseTestCase;
 import org.testng.annotations.BeforeMethod;

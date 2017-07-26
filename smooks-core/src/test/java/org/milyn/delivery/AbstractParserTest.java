@@ -15,15 +15,18 @@
 */
 package org.milyn.delivery;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.apache.xerces.parsers.SAXParser;
-import org.milyn.container.ExecutionContext;
-import org.milyn.payload.StringSource;
+import org.junit.Test;
 import org.milyn.FilterSettings;
 import org.milyn.GenericReaderConfigurator;
 import org.milyn.Smooks;
+import org.milyn.container.ExecutionContext;
+import org.milyn.payload.StringSource;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.ext.DefaultHandler2;

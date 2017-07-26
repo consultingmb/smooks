@@ -18,14 +18,13 @@ package org.milyn.delivery.sax;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
-import org.milyn.payload.JavaSource;
-import org.milyn.payload.FilterResult;
-import org.milyn.payload.FilterSource;
 import org.milyn.cdr.ParameterAccessor;
 import org.milyn.container.ExecutionContext;
-import org.milyn.delivery.AbstractParser;
 import org.milyn.delivery.Filter;
 import org.milyn.delivery.sax.terminate.TerminateException;
+import org.milyn.payload.FilterResult;
+import org.milyn.payload.FilterSource;
+import org.milyn.payload.JavaSource;
 import org.milyn.payload.StringSource;
 import org.milyn.xml.XmlUtil;
 

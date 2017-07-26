@@ -16,11 +16,10 @@
 
 package org.smooks.model.javabean;
 
-import org.junit.Before;
-import org.junit.Test;
-
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Before;
+import org.junit.Test;
 import org.milyn.javabean.dynamic.Model;
 import org.milyn.javabean.dynamic.ModelBuilder;
 import org.smooks.model.core.SmooksModel;

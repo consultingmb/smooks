@@ -14,14 +14,13 @@
  */
 package org.milyn.smooks.camel.converters;
 
-import java.util.Map;
-
-import javax.xml.transform.Source;
-
 import org.apache.camel.Converter;
 import org.milyn.payload.JavaResult;
 import org.milyn.payload.JavaSource;
 import org.milyn.smooks.camel.dataformat.Customer;
+
+import javax.xml.transform.Source;
+import java.util.Map;
 
 /**
  * Converts a JavaResult to a Customer object. 

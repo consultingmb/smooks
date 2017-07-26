@@ -18,9 +18,12 @@ package org.milyn.javabean.dynamic.serialize.freemarker;
 
 import freemarker.core.Environment;
 import freemarker.ext.beans.BeanModel;
-import freemarker.template.*;
+import freemarker.template.SimpleScalar;
+import freemarker.template.TemplateDirectiveBody;
+import freemarker.template.TemplateDirectiveModel;
+import freemarker.template.TemplateException;
+import freemarker.template.TemplateModel;
 import org.milyn.javabean.dynamic.Model;
-import org.milyn.javabean.dynamic.serialize.BeanWriter;
 
 import javax.xml.XMLConstants;
 import java.io.IOException;

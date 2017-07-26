@@ -15,7 +15,9 @@
 */
 package org.milyn.edisax;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.milyn.io.StreamUtils;
 import org.milyn.resource.URIResourceLocator;
 import org.xml.sax.InputSource;

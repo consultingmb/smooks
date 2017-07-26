@@ -18,8 +18,8 @@ package org.milyn.javabean.decoders;
 import org.milyn.SmooksException;
 import org.milyn.config.Configurable;
 import org.milyn.expression.MVELExpressionEvaluator;
-import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DataDecodeException;
+import org.milyn.javabean.DataDecoder;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -16,17 +16,18 @@
 
 package org.milyn.edisax.v1_2.imports;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.model.EdifactModel;
 import org.milyn.edisax.model.internal.Segment;
-import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.io.StreamUtils;
 import org.xml.sax.SAXException;
 
-import java.io.InputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 
 /**

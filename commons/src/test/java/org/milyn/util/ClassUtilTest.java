@@ -15,6 +15,8 @@
 */
 package org.milyn.util;
 
+import junit.framework.TestCase;
+
 import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -22,8 +24,6 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.List;
-
-import junit.framework.TestCase;
 /**
  *
  * @author <a href="mailto:daniel.bevenius@gmail.com">Daniel Bevenius</a>

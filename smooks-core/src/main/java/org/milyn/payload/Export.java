@@ -20,11 +20,8 @@ import org.milyn.cdr.annotation.ConfigParam.Use;
 import org.milyn.container.ApplicationContext;
 import org.milyn.delivery.ContentHandler;
 import org.milyn.delivery.annotation.Initialize;
-import org.milyn.payload.JavaResult;
 import org.milyn.util.CollectionsUtil;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 
 

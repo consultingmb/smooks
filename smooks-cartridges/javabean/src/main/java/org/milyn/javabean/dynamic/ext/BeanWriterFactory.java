@@ -28,7 +28,6 @@ import org.milyn.delivery.annotation.Initialize;
 import org.milyn.javabean.dynamic.serialize.BeanWriter;
 import org.milyn.javabean.ext.BeanConfigUtil;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;

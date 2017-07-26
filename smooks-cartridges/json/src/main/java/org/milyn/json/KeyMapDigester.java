@@ -1,12 +1,12 @@
 package org.milyn.json;
 
-import java.util.HashMap;
-
 import org.apache.commons.lang.StringUtils;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+
+import java.util.HashMap;
 
 public class KeyMapDigester {
 

@@ -16,15 +16,6 @@
 
 package org.milyn.dtd;
 
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Vector;
-
-import org.milyn.profile.ProfileSet;
 import com.wutka.dtd.DTD;
 import com.wutka.dtd.DTDAny;
 import com.wutka.dtd.DTDContainer;
@@ -33,6 +24,15 @@ import com.wutka.dtd.DTDEmpty;
 import com.wutka.dtd.DTDMixed;
 import com.wutka.dtd.DTDName;
 import com.wutka.dtd.DTDPCData;
+import org.milyn.profile.ProfileSet;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Vector;
 
 /**
  * DTD Datastore class.

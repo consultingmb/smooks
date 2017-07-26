@@ -15,20 +15,18 @@
 */
 package org.milyn.scribe.invoker;
 
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Matchers.same;
+import static org.mockito.Mockito.verify;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.apache.commons.lang.NotImplementedException;
 import org.milyn.scribe.Dao;
-import org.milyn.scribe.invoker.DaoInvoker;
-import org.milyn.scribe.invoker.InterfaceDaoInvoker;
 import org.milyn.scribe.test.dao.FullInterfaceDao;
 import org.milyn.scribe.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

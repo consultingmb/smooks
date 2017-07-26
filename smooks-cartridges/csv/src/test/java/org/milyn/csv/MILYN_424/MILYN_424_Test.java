@@ -15,16 +15,12 @@
 */
 package org.milyn.csv.MILYN_424;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.sax.SAXElement;
@@ -33,6 +29,11 @@ import org.milyn.javabean.context.BeanContext;
 import org.milyn.payload.StringResult;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * Test for http://jira.codehaus.org/browse/MILYN-424.

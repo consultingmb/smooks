@@ -17,23 +17,27 @@ package org.milyn.delivery;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.milyn.SmooksException;
 import org.milyn.Smooks;
-import org.milyn.payload.FilterSource;
-import org.milyn.payload.FilterResult;
+import org.milyn.SmooksException;
 import org.milyn.cdr.ParameterAccessor;
 import org.milyn.container.ExecutionContext;
 import org.milyn.io.NullReader;
 import org.milyn.io.NullWriter;
+import org.milyn.payload.FilterResult;
+import org.milyn.payload.FilterSource;
 import org.milyn.thread.StackedThreadLocal;
 
 import javax.xml.transform.Result;
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.*;
-import java.util.EmptyStackException;
-import java.util.Stack;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Reader;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 
 /**
  * Content filter.

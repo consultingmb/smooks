@@ -15,10 +15,10 @@
 */
 package org.milyn.javabean.decoders;
 
-import org.milyn.javabean.DataDecoder;
-import org.milyn.javabean.DataDecodeException;
-import org.milyn.javabean.DecodeType;
 import org.milyn.expression.MVELExpressionEvaluator;
+import org.milyn.javabean.DataDecodeException;
+import org.milyn.javabean.DataDecoder;
+import org.milyn.javabean.DecodeType;
 
 /**
  * {@link MVELExpressionEvaluator} data decoder impl.

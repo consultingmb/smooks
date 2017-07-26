@@ -1,10 +1,9 @@
 package org.milyn.edisax;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-
-import java.io.IOException;
-
 import org.milyn.edisax.model.internal.DelimiterType;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
@@ -12,6 +11,8 @@ import org.milyn.edisax.util.EDIUtils;
 import org.milyn.edisax.util.IllegalNameException;
 import org.milyn.util.CollectionsUtil;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * @author bardl

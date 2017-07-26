@@ -15,11 +15,12 @@
 */
 package org.milyn.javabean.JIRA.MILYN_347;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
-import org.milyn.payload.JavaSource;
 import org.milyn.payload.JavaResult;
+import org.milyn.payload.JavaSource;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;

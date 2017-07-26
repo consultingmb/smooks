@@ -16,8 +16,9 @@
 
 package org.milyn.smooks.scripting.groovy;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.delivery.dom.DOMElementVisitor;
 import org.milyn.io.StreamUtils;

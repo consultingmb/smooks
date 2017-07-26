@@ -17,17 +17,21 @@ package example;
 
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.payload.JavaResult;
-import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.container.ExecutionContext;
+import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.io.StreamUtils;
+import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
 import se.sj.ipl.rollingstock.domain.RollingStockList;
 import se.sj.ipl.rollingstock.domain.Rollingstock;
 import se.sj.ipl.rollingstock.domain.Vehicle;
 
 import javax.xml.transform.stream.StreamSource;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 import java.util.Map;
 

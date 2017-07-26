@@ -15,14 +15,13 @@
 */
 package org.milyn.json;
 
-import org.milyn.ReaderConfigurator;
-import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.GenericReaderConfigurator;
-import org.milyn.cdr.Parameter;
+import org.milyn.ReaderConfigurator;
 import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.Parameter;
+import org.milyn.cdr.SmooksResourceConfiguration;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 

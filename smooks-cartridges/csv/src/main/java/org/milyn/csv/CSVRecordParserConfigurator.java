@@ -15,11 +15,11 @@
  */
 package org.milyn.csv;
 
-import java.util.List;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.flatfile.variablefield.VariableFieldRecordParserConfigurator;
+
+import java.util.List;
 
 /**
  * CSV Record Parser configurator.

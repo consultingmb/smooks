@@ -16,26 +16,24 @@
 
 package org.milyn.json;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.Map;
-import java.util.HashMap;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;
-import org.milyn.payload.StringResult;
 import org.milyn.container.ExecutionContext;
 import org.milyn.io.StreamUtils;
+import org.milyn.payload.StringResult;
 import org.xml.sax.SAXException;
-import org.custommonkey.xmlunit.XMLUnit;
-import org.custommonkey.xmlunit.Diff;
 
 import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice@zeijen.net">maurice@zeijen.net</a>

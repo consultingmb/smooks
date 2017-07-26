@@ -14,10 +14,10 @@
  */
 package org.milyn.routing.jms;
 
-import javax.jms.Session;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
+import javax.jms.Session;
 
 /**
  * Enum to type-safe JMS Client Acknowledgement mode string

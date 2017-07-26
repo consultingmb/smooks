@@ -15,12 +15,12 @@
 */
 package org.milyn.edisax.unedifact.handlers;
 
-import java.io.IOException;
-
 import org.milyn.edisax.BufferedSegmentReader;
 import org.milyn.edisax.interchange.ControlBlockHandler;
 import org.milyn.edisax.interchange.InterchangeContext;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * Generic Control Segment Handler.

@@ -15,6 +15,17 @@
 */
 package org.milyn.csv.MILYN_428;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
+import org.milyn.Smooks;
+import org.milyn.SmooksException;
+import org.milyn.csv.CSVHeaderValidationException;
+import org.xml.sax.SAXException;
+
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,17 +33,6 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.Arrays;
-
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-import org.milyn.Smooks;
-import org.milyn.SmooksException;
-import org.milyn.csv.CSVHeaderValidationException;
-import org.xml.sax.SAXException;
 
 /**
  * 

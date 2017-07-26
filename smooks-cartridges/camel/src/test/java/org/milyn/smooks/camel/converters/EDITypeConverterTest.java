@@ -16,10 +16,11 @@
 
 package org.milyn.smooks.camel.converters;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.apache.camel.TypeConverter;
 import org.apache.camel.impl.DefaultCamelContext;
+import org.junit.Test;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.milyn.smooks.edi.EDIWritable;
 import org.milyn.smooks.edi.unedifact.model.r41.UNB41;

@@ -15,6 +15,18 @@
 */
 package org.milyn.delivery;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.jaxen.saxpath.SAXPathException;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.cdr.SmooksResourceConfigurationFactory;
+import org.milyn.cdr.annotation.Configurator;
+import org.milyn.cdr.xpath.SelectorStep;
+import org.milyn.container.ApplicationContext;
+import org.milyn.delivery.annotation.VisitAfterIf;
+import org.milyn.delivery.annotation.VisitBeforeIf;
 import org.milyn.delivery.dom.DOMVisitAfter;
 import org.milyn.delivery.dom.DOMVisitBefore;
 import org.milyn.delivery.dom.Phase;
@@ -22,25 +34,12 @@ import org.milyn.delivery.dom.VisitPhase;
 import org.milyn.delivery.dom.serialize.SerializationUnit;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
-import org.milyn.delivery.annotation.VisitBeforeIf;
-import org.milyn.delivery.annotation.VisitAfterIf;
-import org.milyn.cdr.SmooksResourceConfiguration;
-import org.milyn.cdr.SmooksResourceConfigurationFactory;
-import org.milyn.cdr.SmooksConfigurationException;
-import org.milyn.cdr.xpath.SelectorStep;
-import org.milyn.cdr.annotation.Configurator;
-import org.milyn.expression.MVELExpressionEvaluator;
 import org.milyn.event.types.ConfigBuilderEvent;
-import org.milyn.container.ApplicationContext;
-import org.milyn.container.ExecutionContext;
-import org.milyn.assertion.AssertArgument;
+import org.milyn.expression.MVELExpressionEvaluator;
 import org.milyn.xml.NamespaceMappings;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.jaxen.saxpath.SAXPathException;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Visitor Configuration Map.

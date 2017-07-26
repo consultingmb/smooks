@@ -15,10 +15,10 @@
 */
 package org.milyn.scribe.reflection;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertSame;
 
-import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfo;
-import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfoFactory;
 import org.milyn.scribe.test.dao.FullAnnotatedDao;
 import org.milyn.scribe.test.dao.MinimumAnnotatedDao;
 import org.testng.annotations.Test;

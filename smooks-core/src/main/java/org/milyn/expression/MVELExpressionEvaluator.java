@@ -15,15 +15,15 @@
 */
 package org.milyn.expression;
 
-import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.mvel2.DataConversion;
 import org.mvel2.MVEL;
 import org.mvel2.integration.impl.MapVariableResolverFactory;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <a href="http://mvel.codehaus.org/">MVEL</a> expression evaluator.

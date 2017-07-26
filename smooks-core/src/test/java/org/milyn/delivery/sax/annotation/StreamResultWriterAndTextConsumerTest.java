@@ -15,9 +15,9 @@
 */
 package org.milyn.delivery.sax.annotation;
 
-import java.io.IOException;
-import java.io.Writer;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
@@ -26,8 +26,8 @@ import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.Writer;
 
 /**
  * 

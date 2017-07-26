@@ -15,10 +15,6 @@
 */
 package org.milyn.javabean;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -44,7 +40,9 @@ import org.milyn.util.CollectionsUtil;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
 
-import javax.xml.namespace.QName;
+import java.io.IOException;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Value Binder.

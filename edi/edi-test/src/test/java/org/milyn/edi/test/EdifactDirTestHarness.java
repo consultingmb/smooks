@@ -28,11 +28,11 @@ import org.milyn.ejc.EJCExecutor;
 import org.milyn.io.StreamUtils;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
-import org.milyn.xml.EclipseFragmentXMLValidator;
 import org.milyn.smooks.edi.unedifact.model.UNEdifactInterchange;
 import org.milyn.smooks.edi.unedifact.model.UNEdifactInterchangeFactory;
 import org.milyn.test.ant.AntRunner;
 import org.milyn.util.CollectionsUtil;
+import org.milyn.xml.EclipseFragmentXMLValidator;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 

@@ -15,16 +15,24 @@
 */
 package org.milyn.cdr;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.cdr.annotation.AppContext;
+import org.milyn.cdr.annotation.Config;
+import org.milyn.cdr.annotation.ConfigParam;
+import org.milyn.cdr.annotation.Configurator;
+import org.milyn.container.ApplicationContext;
+import org.milyn.container.MockApplicationContext;
 import org.milyn.delivery.ContentHandler;
 import org.milyn.delivery.annotation.Initialize;
 import org.milyn.delivery.annotation.Uninitialize;
-import org.milyn.cdr.annotation.*;
-import org.milyn.javabean.decoders.StringDecoder;
 import org.milyn.javabean.decoders.IntegerDecoder;
-import org.milyn.container.ApplicationContext;
-import org.milyn.container.MockApplicationContext;
+import org.milyn.javabean.decoders.StringDecoder;
 
 import java.nio.charset.Charset;
 

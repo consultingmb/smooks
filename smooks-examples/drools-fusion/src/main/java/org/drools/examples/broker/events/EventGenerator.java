@@ -16,13 +16,13 @@
 
 package org.drools.examples.broker.events;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Random;
-
 import org.drools.examples.broker.model.Company;
 import org.drools.examples.broker.model.CompanyRegistry;
 import org.drools.examples.broker.model.StockTick;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Random;
 
 
 /**

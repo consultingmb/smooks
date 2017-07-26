@@ -15,31 +15,29 @@
 */
 package org.milyn.cdr.xpath;
 
-import org.milyn.delivery.sax.SAXElement;
+import javassist.CannotCompileException;
+import javassist.NotFoundException;
+import org.jaxen.expr.NameStep;
+import org.jaxen.expr.Step;
+import org.jaxen.saxpath.Axis;
+import org.jaxen.saxpath.SAXPathException;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.xpath.evaluators.PassThruEvaluator;
+import org.milyn.cdr.xpath.evaluators.PredicatesEvaluator;
 import org.milyn.cdr.xpath.evaluators.PredicatesEvaluatorBuilder;
 import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
-import org.milyn.cdr.xpath.evaluators.PredicatesEvaluator;
+import org.milyn.cdr.xpath.evaluators.equality.AbstractEqualityEvaluator;
 import org.milyn.cdr.xpath.evaluators.logical.AbstractLogicalEvaluator;
 import org.milyn.cdr.xpath.evaluators.value.TextValue;
-import org.milyn.cdr.xpath.evaluators.equality.AbstractEqualityEvaluator;
-import org.milyn.cdr.xpath.evaluators.equality.IndexEvaluator;
+import org.milyn.delivery.sax.SAXElement;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
-import org.jaxen.expr.Step;
-import org.jaxen.expr.NameStep;
-import org.jaxen.saxpath.Axis;
-import org.jaxen.saxpath.SAXPathException;
 
-import javax.xml.namespace.QName;
 import javax.xml.XMLConstants;
-import java.util.Properties;
+import javax.xml.namespace.QName;
 import java.util.List;
-
-import javassist.NotFoundException;
-import javassist.CannotCompileException;
+import java.util.Properties;
 
 /**
  * XPath Expression Evaluator.

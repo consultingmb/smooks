@@ -1,19 +1,18 @@
 package org.milyn.util;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.milyn.container.ExecutionContext;
 import org.milyn.container.MockExecutionContext;
 import org.milyn.payload.FilterResult;
 import org.milyn.payload.JavaResult;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 public class MultiLineToStringBuilderTest {
 

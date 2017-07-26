@@ -16,17 +16,17 @@
 package org.milyn.javabean;
 
 import org.milyn.Smooks;
-import org.milyn.util.ClassUtil;
-import org.milyn.delivery.VisitorConfigMap;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.delivery.VisitorConfigMap;
 import org.milyn.javabean.ext.SelectorPropertyResolver;
 import org.milyn.javabean.factory.Factory;
+import org.milyn.util.ClassUtil;
 
 import java.lang.reflect.Method;
-import java.util.UUID;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * Programmatic Bean Configurator.

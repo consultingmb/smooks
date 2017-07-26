@@ -15,12 +15,12 @@
 */
 package org.milyn.delivery.sax;
 
+import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.milyn.SmooksException;
-import org.milyn.container.ExecutionContext;
 
 /**
  * 

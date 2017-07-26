@@ -15,9 +15,14 @@
  */
 package org.milyn.javabean.factory;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.apache.commons.lang.exception.ExceptionUtils;
+import org.junit.Test;
 import org.milyn.container.MockExecutionContext;
 
 import java.util.ArrayList;

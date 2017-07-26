@@ -15,8 +15,9 @@
 */
 package org.milyn.delivery.dom.serialize;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;
 import org.milyn.cdr.ParameterAccessor;

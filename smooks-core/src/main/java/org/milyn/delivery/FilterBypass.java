@@ -15,11 +15,11 @@
 */
 package org.milyn.delivery;
 
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
+
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
 
 /**
  * Filter bypass interface.

@@ -21,8 +21,8 @@ package org.milyn.ejc.ant;
 
 import org.apache.tools.ant.BuildException;
 import org.milyn.edisax.util.IllegalNameException;
-import org.milyn.ejc.EJCExecutor;
 import org.milyn.ejc.EJCException;
+import org.milyn.ejc.EJCExecutor;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;

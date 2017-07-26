@@ -15,15 +15,15 @@
 */
 package org.milyn.delivery.dom;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-import org.milyn.Smooks;
+import org.junit.Test;
 import org.milyn.FilterSettings;
+import org.milyn.Smooks;
 import org.milyn.StreamFilterType;
 import org.milyn.lang.LangUtil;
-import org.milyn.payload.StringSource;
 import org.milyn.payload.StringResult;
+import org.milyn.payload.StringSource;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

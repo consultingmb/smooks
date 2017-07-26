@@ -17,13 +17,13 @@ package org.milyn.smooks.camel.converters;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import java.util.Map;
-
 import org.apache.camel.TypeConverter;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.junit.Before;
 import org.junit.Test;
 import org.milyn.payload.JavaSourceWithoutEventStream;
+
+import java.util.Map;
 
 /**
  * Unit test for {@link SourceConverter}. </p>

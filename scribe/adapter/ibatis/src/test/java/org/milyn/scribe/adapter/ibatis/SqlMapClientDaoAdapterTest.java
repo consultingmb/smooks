@@ -15,17 +15,18 @@
 */
 package org.milyn.scribe.adapter.ibatis;
 
-import com.ibatis.sqlmap.client.SqlMapClient;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
-import org.milyn.scribe.adapter.ibatis.test.util.BaseTestCase;
 import static org.mockito.Matchers.anyObject;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Matchers.same;
-import org.mockito.Mock;
 import static org.mockito.Mockito.stub;
 import static org.mockito.Mockito.verify;
+
+import com.ibatis.sqlmap.client.SqlMapClient;
+import org.milyn.scribe.adapter.ibatis.test.util.BaseTestCase;
+import org.mockito.Mock;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

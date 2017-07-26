@@ -15,23 +15,24 @@
 */
 package org.milyn.delivery.dom;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Test;
 import org.milyn.Smooks;
-import org.milyn.io.StreamUtils;
-import org.milyn.delivery.ContentHandlerConfigMap;
 import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.ContentHandlerConfigMap;
 import org.milyn.event.BasicExecutionEventListener;
+import org.milyn.io.StreamUtils;
 import org.xml.sax.SAXException;
 
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.IOException;
-import java.io.CharArrayWriter;
+import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayInputStream;
+import java.io.CharArrayWriter;
+import java.io.IOException;
 import java.util.List;
 
 /**

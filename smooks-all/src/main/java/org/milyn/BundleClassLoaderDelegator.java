@@ -14,11 +14,11 @@
  */
 package org.milyn;
 
+import org.osgi.framework.Bundle;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.Enumeration;
-
-import org.osgi.framework.Bundle;
 
 /**
  * 

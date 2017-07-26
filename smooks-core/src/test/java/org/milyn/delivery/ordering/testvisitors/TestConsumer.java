@@ -17,8 +17,8 @@ package org.milyn.delivery.ordering.testvisitors;
 
 import org.milyn.delivery.ordering.Consumer;
 
-import java.util.List;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

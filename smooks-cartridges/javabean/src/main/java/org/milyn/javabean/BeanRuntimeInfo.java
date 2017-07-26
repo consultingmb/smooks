@@ -15,12 +15,15 @@
 */
 package org.milyn.javabean;
 
-import org.milyn.cdr.*;
-import org.milyn.container.*;
+import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.container.ApplicationContext;
 import org.milyn.util.ClassUtil;
 
 import java.lang.annotation.Annotation;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Java bean runtime info.

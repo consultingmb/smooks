@@ -15,8 +15,6 @@
 */
 package org.milyn.javabean.ext;
 
-import java.util.List;
-
 import org.milyn.SmooksException;
 import org.milyn.cdr.ConfigSearch;
 import org.milyn.cdr.SmooksResourceConfiguration;
@@ -25,6 +23,8 @@ import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
 import org.milyn.javabean.BeanInstanceCreator;
 import org.w3c.dom.Element;
+
+import java.util.List;
 
 /**
  * Configure the "retain" bean attribute, if not configured by the

@@ -15,13 +15,14 @@
 
 package org.milyn.routing.file;
 
-import static org.testng.AssertJUnit.*;
-
-import java.util.List;
+import static org.testng.AssertJUnit.assertNotNull;
+import static org.testng.AssertJUnit.assertTrue;
 
 import org.milyn.container.MockExecutionContext;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 /**
  * 	Unit test for FileListAccessor

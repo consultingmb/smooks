@@ -15,14 +15,12 @@
 */
 package example.model;
 
-import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DataDecodeException;
-import org.milyn.cdr.SmooksResourceConfiguration;
-import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.javabean.DataDecoder;
 
-import java.util.regex.Pattern;
-import java.util.Vector;
 import java.util.List;
+import java.util.Vector;
+import java.util.regex.Pattern;
 
 /**
  * Decoder for the Tracking numbers.

@@ -16,16 +16,15 @@ package org.milyn.smooks.camel.converters;
 
 import static org.junit.Assert.assertEquals;
 
-import java.io.BufferedReader;
-import java.io.StringWriter;
-
-import javax.xml.transform.stream.StreamSource;
-
 import org.apache.camel.TypeConverter;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.junit.Before;
 import org.junit.Test;
 import org.milyn.payload.StringResult;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.BufferedReader;
+import java.io.StringWriter;
 
 /**
  * Unit test for {@link ResultConverter}.

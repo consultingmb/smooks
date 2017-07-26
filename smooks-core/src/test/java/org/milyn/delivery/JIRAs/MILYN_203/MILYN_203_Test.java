@@ -15,8 +15,9 @@
 */
 package org.milyn.delivery.JIRAs.MILYN_203;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.io.StreamUtils;
 import org.milyn.payload.StringResult;

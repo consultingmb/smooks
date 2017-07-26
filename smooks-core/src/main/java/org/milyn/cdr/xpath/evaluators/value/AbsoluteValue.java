@@ -15,11 +15,10 @@
 */
 package org.milyn.cdr.xpath.evaluators.value;
 
-import org.milyn.delivery.sax.SAXElement;
-import org.milyn.cdr.xpath.evaluators.value.Value;
-import org.w3c.dom.Element;
 import org.jaxen.expr.LiteralExpr;
 import org.jaxen.expr.NumberExpr;
+import org.milyn.delivery.sax.SAXElement;
+import org.w3c.dom.Element;
 
 /**
  * Absolute value getter.

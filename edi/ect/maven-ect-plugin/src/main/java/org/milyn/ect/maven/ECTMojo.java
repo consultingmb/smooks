@@ -15,8 +15,6 @@
 */
 package org.milyn.ect.maven;
 
-import java.io.File;
-
 import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -28,6 +26,8 @@ import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.project.MavenProject;
 import org.milyn.ect.ECTUnEdifactExecutor;
 import org.milyn.ect.EdiParseException;
+
+import java.io.File;
 
 /**
  * ECT Mojo.

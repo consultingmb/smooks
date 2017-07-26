@@ -15,8 +15,8 @@
 */
 package org.milyn.io;
 
-import java.io.Reader;
 import java.io.IOException;
+import java.io.Reader;
 
 /**
  * Null Reader.

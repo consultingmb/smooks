@@ -15,13 +15,6 @@
 */
 package org.milyn.smooks.edi.unedifact.model.r41;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.milyn.edisax.model.internal.DelimiterType;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.milyn.edisax.util.EDIUtils;
@@ -29,6 +22,13 @@ import org.milyn.smooks.edi.EDIWritable;
 import org.milyn.smooks.edi.unedifact.model.r41.types.Application;
 import org.milyn.smooks.edi.unedifact.model.r41.types.DateTime;
 import org.milyn.smooks.edi.unedifact.model.r41.types.MessageVersion;
+
+import java.io.IOException;
+import java.io.Serializable;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Group Header (Version 4, Release 1).

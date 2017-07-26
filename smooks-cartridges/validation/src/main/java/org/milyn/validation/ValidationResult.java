@@ -15,13 +15,15 @@
 
 package org.milyn.validation;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
 import org.milyn.assertion.AssertArgument;
-import org.milyn.container.ExecutionContext;
-import org.milyn.rules.RuleEvalResult;
 import org.milyn.payload.FilterResult;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * ValidationResult object for capturing validation failures

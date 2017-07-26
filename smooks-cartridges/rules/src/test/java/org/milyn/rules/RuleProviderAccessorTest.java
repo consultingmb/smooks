@@ -17,6 +17,7 @@ package org.milyn.rules;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;

@@ -16,12 +16,6 @@
 
 package org.milyn.smooks.edi;
 
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.util.Arrays;
-import java.util.Hashtable;
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.cdr.ProfileTargetingExpression;
@@ -39,6 +33,12 @@ import org.milyn.resource.URIResourceLocator;
 import org.milyn.xml.SmooksXMLReader;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
 
 /**
  * Smooks EDI Reader.

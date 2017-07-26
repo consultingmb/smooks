@@ -18,9 +18,6 @@ package org.milyn.smooks.camel.component;
 
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
 
-import java.io.InputStreamReader;
-import java.io.StringReader;
-
 import org.apache.camel.EndpointInject;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
@@ -33,6 +30,9 @@ import org.junit.Test;
 import org.milyn.delivery.Filter;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+
+import java.io.InputStreamReader;
+import java.io.StringReader;
 
 /**
  * Unit test for {@link SmooksComponent}.

@@ -1,7 +1,7 @@
 package example;
 
-import org.milyn.Smooks;
 import example.model.Order;
+import org.milyn.Smooks;
 
 public class Pojo
 {

@@ -15,19 +15,19 @@
 */
 package org.milyn.ect.configreader;
 
-import org.milyn.edisax.interchange.EdiDirectory;
-import org.milyn.ect.EdiSpecificationReader;
 import org.milyn.ect.EdiParseException;
-import org.milyn.edisax.model.internal.Edimap;
-import org.milyn.edisax.model.internal.Description;
+import org.milyn.ect.EdiSpecificationReader;
+import org.milyn.edisax.interchange.EdiDirectory;
 import org.milyn.edisax.model.internal.Delimiters;
+import org.milyn.edisax.model.internal.Description;
+import org.milyn.edisax.model.internal.Edimap;
 import org.milyn.edisax.model.internal.SegmentGroup;
 
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashSet;
 import java.util.Properties;
 import java.util.Set;
-import java.util.HashSet;
 
 public class CustomEdiSpecificationReader implements EdiSpecificationReader {
     public void initialize(InputStream inputStream, boolean useImport) throws IOException, EdiParseException {

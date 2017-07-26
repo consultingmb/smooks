@@ -15,9 +15,9 @@
 */
 package org.milyn.routing.db;
 
-import org.milyn.container.ExecutionContext;
-import org.milyn.container.ApplicationContext;
 import org.milyn.Smooks;
+import org.milyn.container.ApplicationContext;
+import org.milyn.container.ExecutionContext;
 
 /**
  * Database Resultset lifecycle scope for Resultsets created by the

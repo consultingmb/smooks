@@ -15,20 +15,21 @@
 */
 package org.milyn.javabean.expression;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.transform.stream.StreamSource;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.expression.ExpressionEvaluationException;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

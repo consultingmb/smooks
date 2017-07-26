@@ -15,9 +15,8 @@
 */
 package org.milyn.javabean.jaxb;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.io.StreamUtils;
 import org.milyn.javabean.binding.xml.XMLBinding;
 import org.milyn.javabean.jaxb.model.POType;

@@ -17,15 +17,13 @@ package example.activator;
 
 import static org.ops4j.peaberry.Peaberry.osgiModule;
 
-import org.osgi.framework.BundleActivator;
-import org.osgi.framework.BundleContext;
-
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-
 import example.ExampleUtil;
 import example.Pojo;
 import example.model.Order;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
 
 /**
  * 

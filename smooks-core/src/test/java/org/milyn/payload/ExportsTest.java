@@ -17,15 +17,11 @@ package org.milyn.payload;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
+import org.junit.Test;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
-
-import org.junit.Test;
-import org.milyn.payload.Export;
-import org.milyn.payload.Exports;
-import org.milyn.payload.JavaResult;
-import org.milyn.payload.StringResult;
 
 /**
  * Unit test for {@link Exports}.

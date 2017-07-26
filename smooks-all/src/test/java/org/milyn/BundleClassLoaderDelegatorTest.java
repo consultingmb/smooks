@@ -16,13 +16,13 @@ package org.milyn;
 
 import static org.junit.Assert.assertNotNull;
 
-import java.net.URL;
-
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
+
+import java.net.URL;
 
 /**
  * Unit test for {@link BundleClassLoaderDelegator}.

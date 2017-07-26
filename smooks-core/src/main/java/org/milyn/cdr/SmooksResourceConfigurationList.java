@@ -16,15 +16,15 @@
 
 package org.milyn.cdr;
 
-import java.util.List;
-import java.util.Vector;
-import java.util.ArrayList;
-import java.net.URI;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.milyn.profile.ProfileSet;
 import org.milyn.assertion.AssertArgument;
+import org.milyn.profile.ProfileSet;
+
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
 
 /**
  * {@link org.milyn.cdr.SmooksResourceConfiguration} list.

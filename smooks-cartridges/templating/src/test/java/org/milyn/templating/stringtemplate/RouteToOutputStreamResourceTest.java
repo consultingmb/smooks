@@ -15,12 +15,13 @@
 */
 package org.milyn.templating.stringtemplate;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.StreamFilterType;
-import org.milyn.FilterSettings;
 import org.milyn.payload.StringSource;
 import org.milyn.templating.MockOutStreamResource;
 import org.xml.sax.SAXException;

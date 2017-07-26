@@ -15,12 +15,11 @@
 */
 package org.milyn.templating.bugfixes.MILYN_285;
 
+import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.payload.StringResult;
 import org.xml.sax.SAXException;
-import org.custommonkey.xmlunit.XMLUnit;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.IOException;

@@ -16,12 +16,11 @@
 
 package org.drools.examples.broker.ui;
 
-import java.awt.BorderLayout;
-
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
+import java.awt.BorderLayout;
 
 /**
  * A panel to log information

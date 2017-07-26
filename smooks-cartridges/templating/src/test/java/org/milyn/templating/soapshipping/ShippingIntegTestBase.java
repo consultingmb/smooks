@@ -16,9 +16,7 @@
 
 package org.milyn.templating.soapshipping;
 
-import java.io.IOException;
-import java.io.InputStream;
-
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;
 import org.milyn.container.ExecutionContext;
@@ -26,8 +24,8 @@ import org.milyn.profile.DefaultProfileSet;
 import org.milyn.templating.util.CharUtils;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.InputStream;
 
 public abstract class ShippingIntegTestBase {
 

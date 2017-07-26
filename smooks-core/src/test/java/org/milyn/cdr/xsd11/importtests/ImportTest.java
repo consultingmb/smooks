@@ -15,8 +15,11 @@
 */
 package org.milyn.cdr.xsd11.importtests;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.delivery.dom.serialize.SimpleDOMVisitor;

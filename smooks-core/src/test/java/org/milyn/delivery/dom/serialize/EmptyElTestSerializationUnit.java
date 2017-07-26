@@ -16,9 +16,6 @@
 
 package org.milyn.delivery.dom.serialize;
 
-import java.io.IOException;
-import java.io.Writer;
-
 import org.milyn.cdr.annotation.ConfigParam;
 import org.milyn.container.ExecutionContext;
 import org.w3c.dom.CDATASection;
@@ -27,6 +24,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.EntityReference;
 import org.w3c.dom.Node;
 import org.w3c.dom.Text;
+
+import java.io.IOException;
+import java.io.Writer;
 
 /**
  * 

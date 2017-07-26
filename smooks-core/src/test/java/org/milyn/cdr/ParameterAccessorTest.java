@@ -15,11 +15,10 @@
 */
 package org.milyn.cdr;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.delivery.ContentDeliveryConfig;
 

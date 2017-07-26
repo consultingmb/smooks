@@ -15,10 +15,11 @@
 */
 package org.milyn.cdr.xpath.evaluators.equality;
 
-import org.milyn.delivery.sax.*;
-import org.milyn.container.ExecutionContext;
 import org.milyn.SmooksException;
 import org.milyn.cdr.xpath.SelectorStep;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.sax.SAXElement;
+import org.milyn.delivery.sax.SAXVisitBefore;
 
 import java.io.IOException;
 

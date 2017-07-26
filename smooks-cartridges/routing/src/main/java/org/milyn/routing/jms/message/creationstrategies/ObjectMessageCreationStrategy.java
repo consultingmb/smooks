@@ -1,15 +1,14 @@
 package org.milyn.routing.jms.message.creationstrategies;
 
-import java.io.Serializable;
+import org.milyn.SmooksException;
+import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.container.ExecutionContext;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.ObjectMessage;
 import javax.jms.Session;
-
-import org.milyn.SmooksException;
-import org.milyn.cdr.SmooksConfigurationException;
-import org.milyn.container.ExecutionContext;
+import java.io.Serializable;
 
 public class ObjectMessageCreationStrategy implements MessageCreationStrategy
 {

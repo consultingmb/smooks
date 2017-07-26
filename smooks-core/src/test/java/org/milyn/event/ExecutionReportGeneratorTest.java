@@ -15,15 +15,13 @@
 */
 package org.milyn.event;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Test;
 import org.milyn.Smooks;
+import org.milyn.container.ExecutionContext;
 import org.milyn.event.report.FlatReportGenerator;
 import org.milyn.event.report.ReportConfiguration;
-import org.milyn.container.ExecutionContext;
 import org.milyn.io.StreamUtils;
 import org.xml.sax.SAXException;
 

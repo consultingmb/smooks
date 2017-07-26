@@ -1,16 +1,11 @@
 package org.milyn.javabean.context;
 
+import org.milyn.assertion.AssertArgument;
+import org.milyn.javabean.repository.BeanId;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-
-import org.milyn.assertion.AssertArgument;
-import org.milyn.javabean.repository.BeanId;
 
 /**
  * Bean Id Store

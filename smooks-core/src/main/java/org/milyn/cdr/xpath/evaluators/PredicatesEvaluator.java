@@ -15,14 +15,13 @@
 */
 package org.milyn.cdr.xpath.evaluators;
 
-import org.milyn.delivery.sax.SAXElement;
-import org.milyn.container.ExecutionContext;
 import org.milyn.assertion.AssertArgument;
-import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.sax.SAXElement;
 import org.w3c.dom.Element;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Predicates Evaluator.

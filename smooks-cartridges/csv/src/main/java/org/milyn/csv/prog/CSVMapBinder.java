@@ -15,20 +15,20 @@
 */
 package org.milyn.csv.prog;
 
-import org.milyn.Smooks;
 import org.milyn.FilterSettings;
+import org.milyn.Smooks;
+import org.milyn.assertion.AssertArgument;
 import org.milyn.csv.CSVRecordParserConfigurator;
 import org.milyn.flatfile.Binding;
 import org.milyn.flatfile.BindingType;
 import org.milyn.payload.JavaResult;
-import org.milyn.assertion.AssertArgument;
 
 import javax.xml.transform.stream.StreamSource;
-import java.util.UUID;
-import java.util.Map;
-import java.io.Reader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.Map;
+import java.util.UUID;
 
 /**
  * CSV {@link java.util.Map} Binder class.

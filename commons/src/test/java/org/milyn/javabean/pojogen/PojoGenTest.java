@@ -15,19 +15,20 @@
 */
 package org.milyn.javabean.pojogen;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-
-import java.io.StringWriter;
-import java.io.IOException;
-import java.util.List;
-
 import org.milyn.io.NullWriter;
 import org.milyn.io.StreamUtils;
 import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DecodeType;
 import org.milyn.profile.BasicProfile;
 import org.milyn.profile.Profile;
+
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.List;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

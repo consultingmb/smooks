@@ -15,12 +15,17 @@
 */
 package org.milyn.delivery.ordering;
 
-import org.milyn.delivery.ContentHandlerConfigMap;
-import org.milyn.delivery.ContentHandler;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.delivery.ContentHandler;
+import org.milyn.delivery.ContentHandlerConfigMap;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Set;
+import java.util.Stack;
 
 /**
  *

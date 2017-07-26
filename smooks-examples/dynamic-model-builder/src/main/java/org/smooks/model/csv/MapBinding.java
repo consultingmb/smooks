@@ -16,8 +16,6 @@
 
 package org.smooks.model.csv;
 
-import org.smooks.model.csv.Binding;
-
 /**
  * {@link java.util.Map} binding.
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

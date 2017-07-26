@@ -15,19 +15,16 @@
 */
 package org.milyn.javabean.programatic;
 
-import java.util.Date;
+import static org.junit.Assert.assertEquals;
 
-import javax.xml.transform.stream.StreamSource;
-
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.javabean.Value;
 import org.milyn.javabean.decoders.BooleanDecoder;
-import org.milyn.javabean.decoders.DateDecoder;
 import org.milyn.javabean.decoders.IntegerDecoder;
 import org.milyn.payload.JavaResult;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
 
 /**
  * Programmatic Binding config test for the Value class.

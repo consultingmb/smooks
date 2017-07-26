@@ -17,9 +17,6 @@
 package org.milyn.smooks.camel.dataformat;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.camel.Endpoint;
 import org.apache.camel.EndpointInject;
 import org.apache.camel.Exchange;
@@ -30,6 +27,9 @@ import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.milyn.payload.JavaSourceWithoutEventStream;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Smooks CSV DataFormat unit test.

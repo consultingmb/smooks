@@ -15,8 +15,9 @@
 */
 package org.milyn.javabean.autodecode;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.javabean.OrderItem;
 import org.milyn.payload.JavaResult;

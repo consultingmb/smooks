@@ -16,9 +16,9 @@
 package org.milyn.cdr.extension;
 
 import org.milyn.SmooksException;
-import org.milyn.cdr.annotation.ConfigParam;
-import org.milyn.cdr.annotation.AnnotationConstants;
 import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.cdr.annotation.AnnotationConstants;
+import org.milyn.cdr.annotation.ConfigParam;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMElementVisitor;
 import org.milyn.xml.DomUtils;

@@ -15,20 +15,17 @@
 */
 package org.milyn.smooks.edi.xsd14;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-
-import javax.xml.transform.stream.StreamSource;
-
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.payload.StringResult;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StringReader;
 
 /**
  * 

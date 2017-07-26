@@ -17,9 +17,9 @@ package org.milyn.delivery.ordering.testvisitors;
 
 import org.milyn.delivery.ordering.Producer;
 
-import java.util.Set;
-import java.util.HashSet;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

@@ -16,11 +16,11 @@
 
 package org.milyn.templating.xslt;
 
+import static org.junit.Assert.*;
+
 import junit.framework.ComparisonFailure;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.container.standalone.StandaloneExecutionContext;
@@ -31,12 +31,10 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

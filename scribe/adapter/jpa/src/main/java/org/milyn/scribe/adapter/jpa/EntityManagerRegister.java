@@ -15,11 +15,10 @@
 */
 package org.milyn.scribe.adapter.jpa;
 
-import java.util.Map;
+import org.milyn.scribe.register.AbstractDaoAdapterRegister;
 
 import javax.persistence.EntityManager;
-
-import org.milyn.scribe.register.AbstractDaoAdapterRegister;
+import java.util.Map;
 
 
 /**

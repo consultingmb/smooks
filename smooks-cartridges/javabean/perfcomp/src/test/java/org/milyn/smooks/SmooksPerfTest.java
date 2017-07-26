@@ -15,13 +15,9 @@
 */
 package org.milyn.smooks;
 
-import java.io.IOException;
-
-import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
 import static org.junit.Assert.*;
 
+import org.junit.Test;
 import org.milyn.Order;
 import org.milyn.Smooks;
 import org.milyn.TestConstants;
@@ -34,6 +30,9 @@ import org.milyn.javabean.lifecycle.BeanLifecycle;
 import org.milyn.javabean.repository.BeanId;
 import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

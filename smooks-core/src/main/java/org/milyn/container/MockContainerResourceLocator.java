@@ -16,6 +16,9 @@
 
 package org.milyn.container;
 
+import org.milyn.io.StreamUtils;
+import org.milyn.resource.ContainerResourceLocator;
+
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,9 +26,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.util.Hashtable;
-
-import org.milyn.io.StreamUtils;
-import org.milyn.resource.ContainerResourceLocator;
 
 
 public class MockContainerResourceLocator implements ContainerResourceLocator {

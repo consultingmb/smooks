@@ -16,12 +16,10 @@
 
 package org.milyn.profile;
 
-import org.milyn.profile.DefaultProfileSet;
-import org.milyn.profile.DefaultProfileStore;
-import org.milyn.profile.UnknownProfileMemberException;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * 

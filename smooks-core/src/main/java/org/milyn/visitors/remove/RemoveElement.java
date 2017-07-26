@@ -18,23 +18,16 @@ package org.milyn.visitors.remove;
 import org.milyn.SmooksException;
 import org.milyn.cdr.annotation.ConfigParam;
 import org.milyn.container.ExecutionContext;
-import org.milyn.delivery.Filter;
 import org.milyn.delivery.dom.DOMVisitAfter;
-import org.milyn.delivery.sax.DefaultSAXElementSerializer;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
 import org.milyn.io.NullWriter;
-import org.milyn.util.FreeMarkerTemplate;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
 
-import javax.xml.namespace.QName;
 import java.io.IOException;
 import java.io.Writer;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Remove Element.
@@ -75,4 +68,3 @@ public class RemoveElement implements SAXVisitBefore, SAXVisitAfter, DOMVisitAft
         DomUtils.removeElement(element, keepChildren);
     }
 }
- 

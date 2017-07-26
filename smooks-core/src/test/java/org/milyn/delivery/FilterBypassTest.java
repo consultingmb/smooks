@@ -15,11 +15,11 @@
 */
 package org.milyn.delivery;
 
-import java.io.IOException;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-
+import org.junit.Before;
+import org.junit.Test;
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
@@ -32,10 +32,10 @@ import org.milyn.delivery.sax.SAXVisitBefore;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
 import org.w3c.dom.Element;
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import java.io.IOException;
 
 /**
  * 

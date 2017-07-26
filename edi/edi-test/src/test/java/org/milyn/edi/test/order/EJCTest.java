@@ -16,14 +16,12 @@
 package org.milyn.edi.test.order;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
-import java.io.IOException;
-
-import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edi.test.EJCTestUtil;
+import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.util.IllegalNameException;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * EJCTest tests compiling edi-mapping to classModel.

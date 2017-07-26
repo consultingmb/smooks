@@ -16,11 +16,11 @@
 
 package org.milyn.delivery.dom.serialize;
 
-import java.io.IOException;
-import java.io.Writer;
-
 import org.milyn.container.ExecutionContext;
 import org.w3c.dom.Element;
+
+import java.io.IOException;
+import java.io.Writer;
 
 /**
  * Test Serialization unit which removes an element from the delivered markup

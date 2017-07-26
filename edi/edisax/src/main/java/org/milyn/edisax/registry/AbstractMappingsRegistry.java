@@ -15,15 +15,15 @@
  */
 package org.milyn.edisax.registry;
 
-import java.io.IOException;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.model.EdifactModel;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.milyn.edisax.util.EDIUtils;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 
 /**

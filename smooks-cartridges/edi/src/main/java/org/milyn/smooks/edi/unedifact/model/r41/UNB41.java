@@ -15,13 +15,6 @@
 */
 package org.milyn.smooks.edi.unedifact.model.r41;
 
-import java.io.IOException;
-import java.io.Serializable;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.milyn.edisax.model.internal.DelimiterType;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.milyn.edisax.util.EDIUtils;
@@ -30,6 +23,13 @@ import org.milyn.smooks.edi.unedifact.model.r41.types.DateTime;
 import org.milyn.smooks.edi.unedifact.model.r41.types.Party;
 import org.milyn.smooks.edi.unedifact.model.r41.types.Ref;
 import org.milyn.smooks.edi.unedifact.model.r41.types.SyntaxIdentifier;
+
+import java.io.IOException;
+import java.io.Serializable;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Interchange Header (UNB) Control Segment Data (Version 4, Release 1).

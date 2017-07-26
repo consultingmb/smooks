@@ -14,11 +14,11 @@
  */
 package org.milyn;
 
-import java.io.IOException;
-import java.io.InputStream;
-
 import org.osgi.framework.Bundle;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * A factory class for creating Smooks instances in an OSGi environment.

@@ -15,15 +15,19 @@
 */
 package org.milyn.templating.freemarker;
 
-import freemarker.template.*;
 import freemarker.core.Environment;
 import freemarker.ext.dom.NodeModel;
+import freemarker.template.TemplateBooleanModel;
+import freemarker.template.TemplateDirectiveBody;
+import freemarker.template.TemplateDirectiveModel;
+import freemarker.template.TemplateException;
+import freemarker.template.TemplateModel;
+import freemarker.template.TemplateModelException;
+import org.milyn.xml.XmlUtil;
+import org.w3c.dom.Element;
 
 import java.io.IOException;
 import java.util.Map;
-
-import org.w3c.dom.Element;
-import org.milyn.xml.XmlUtil;
 
 /**
  * Serialize a NodeModel variable to the template stream.

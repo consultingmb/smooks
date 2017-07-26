@@ -15,9 +15,9 @@
 */
 package org.milyn.edisax.interchange;
 
-import java.io.IOException;
-
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * Interchange control block handler.

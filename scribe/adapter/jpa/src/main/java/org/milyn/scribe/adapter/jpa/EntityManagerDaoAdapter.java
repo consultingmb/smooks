@@ -15,17 +15,16 @@
 */
 package org.milyn.scribe.adapter.jpa;
 
-import java.util.Collection;
-import java.util.Map;
-
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.scribe.Dao;
 import org.milyn.scribe.Flushable;
 import org.milyn.scribe.Locator;
 import org.milyn.scribe.Queryable;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import java.util.Collection;
+import java.util.Map;
 
 
 /**

@@ -15,12 +15,12 @@
 */
 package org.milyn.scribe.register;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertSame;
+
+import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import org.testng.annotations.Test;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

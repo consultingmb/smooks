@@ -15,14 +15,20 @@
 */
 package org.milyn.cdr.xpath.evaluators.value;
 
-import org.milyn.delivery.sax.SAXElement;
-import org.milyn.assertion.AssertArgument;
-import org.milyn.javabean.DataDecoder;
-import org.milyn.cdr.xpath.evaluators.PredicatesEvaluatorBuilder;
-import org.w3c.dom.Element;
-import org.jaxen.expr.*;
+import org.jaxen.expr.Expr;
+import org.jaxen.expr.LiteralExpr;
+import org.jaxen.expr.LocationPath;
+import org.jaxen.expr.NameStep;
+import org.jaxen.expr.NumberExpr;
+import org.jaxen.expr.Step;
+import org.jaxen.expr.TextNodeStep;
 import org.jaxen.saxpath.Axis;
 import org.jaxen.saxpath.SAXPathException;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.xpath.evaluators.PredicatesEvaluatorBuilder;
+import org.milyn.delivery.sax.SAXElement;
+import org.milyn.javabean.DataDecoder;
+import org.w3c.dom.Element;
 
 import java.util.List;
 import java.util.Properties;

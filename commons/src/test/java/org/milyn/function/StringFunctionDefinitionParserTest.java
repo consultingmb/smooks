@@ -16,9 +16,28 @@
 
 package org.milyn.function;
 
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.fail;
+import static org.milyn.function.StringFunctionDefinitionParser.CAPITALIZE_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.CAPITALIZE_FIRST_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.CAPITALIZE_FIRST_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.CAPITALIZE_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.LEFT_TRIM_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.LEFT_TRIM_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.LOWER_CASE_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.LOWER_CASE_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.RIGHT_TRIM_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.RIGHT_TRIM_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.SEPARATOR;
+import static org.milyn.function.StringFunctionDefinitionParser.TRIM_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.TRIM_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.UNCAPITALIZE_FIRST_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.UNCAPITALIZE_FIRST_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.UPPER_CASE_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.UPPER_CASE_FUNCTION;
+import static org.milyn.function.StringFunctionDefinitionParser.parse;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-import static org.milyn.function.StringFunctionDefinitionParser.*;
 
 import java.util.List;
 

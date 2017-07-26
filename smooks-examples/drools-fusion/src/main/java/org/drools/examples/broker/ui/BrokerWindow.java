@@ -16,22 +16,20 @@
 
 package org.drools.examples.broker.ui;
 
+import com.jgoodies.forms.builder.PanelBuilder;
+import com.jgoodies.forms.layout.CellConstraints;
+import com.jgoodies.forms.layout.FormLayout;
+import org.drools.examples.broker.model.Company;
+import org.drools.examples.broker.model.StockTick;
+
+import javax.swing.JFrame;
+import javax.swing.WindowConstants;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import javax.swing.JFrame;
-import javax.swing.WindowConstants;
-
-import org.drools.examples.broker.model.Company;
-import org.drools.examples.broker.model.StockTick;
-
-import com.jgoodies.forms.builder.PanelBuilder;
-import com.jgoodies.forms.layout.CellConstraints;
-import com.jgoodies.forms.layout.FormLayout;
 
 /**
  * Main window implementation for the Broker example

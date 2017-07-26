@@ -17,10 +17,10 @@ package org.milyn.javabean.pojogen;
 
 import org.milyn.assertion.AssertArgument;
 
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Method model.

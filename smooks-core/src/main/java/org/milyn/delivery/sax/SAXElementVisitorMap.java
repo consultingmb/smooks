@@ -15,13 +15,13 @@
 */
 package org.milyn.delivery.sax;
 
+import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.cdr.xpath.SelectorStep;
 import org.milyn.delivery.ContentHandlerConfigMap;
 import org.milyn.delivery.VisitLifecycleCleanable;
 import org.milyn.delivery.sax.annotation.StreamResultWriter;
 import org.milyn.delivery.sax.annotation.TextConsumer;
 import org.milyn.util.ClassUtil;
-import org.milyn.cdr.SmooksResourceConfiguration;
-import org.milyn.cdr.xpath.SelectorStep;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;

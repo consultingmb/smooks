@@ -15,17 +15,17 @@
 */
 package org.milyn.javabean.JIRA.MILYN_356;
 
-import java.io.IOException;
-import java.math.BigDecimal;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.javabean.OrderItem;
 import org.milyn.payload.JavaResult;
 import org.milyn.payload.StringSource;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.math.BigDecimal;
 
 /**
  * 

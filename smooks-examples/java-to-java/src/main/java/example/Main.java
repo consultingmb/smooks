@@ -15,15 +15,19 @@
 */
 package example;
 
-import example.srcmodel.*;
-import example.trgmodel.*;
-import org.milyn.*;
-import org.milyn.container.*;
-import org.milyn.event.report.*;
-import org.milyn.payload.*;
-import org.xml.sax.*;
+import example.srcmodel.Order;
+import example.trgmodel.LineOrder;
+import org.milyn.Smooks;
+import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
+import org.milyn.event.report.HtmlReportGenerator;
+import org.milyn.payload.JavaResult;
+import org.milyn.payload.JavaSource;
+import org.xml.sax.SAXException;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * Simple example main class.

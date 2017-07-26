@@ -15,12 +15,10 @@
 */
 package org.milyn.util;
 
+import org.milyn.assertion.AssertArgument;
 import org.mvel2.templates.CompiledTemplate;
 import org.mvel2.templates.TemplateCompiler;
 import org.mvel2.templates.TemplateRuntime;
-import org.milyn.assertion.AssertArgument;
-
-import java.util.Map;
 
 /**
  *  <a href="http://mvel.codehaus.org/">MVEL</a> template.

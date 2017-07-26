@@ -16,15 +16,15 @@
 package org.milyn.db;
 
 import org.milyn.SmooksException;
-import org.milyn.delivery.Fragment;
-import org.milyn.util.CollectionsUtil;
 import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.ExecutionLifecycleCleanable;
+import org.milyn.delivery.Fragment;
+import org.milyn.delivery.VisitLifecycleCleanable;
 import org.milyn.delivery.dom.DOMVisitBefore;
+import org.milyn.delivery.ordering.Producer;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXVisitBefore;
-import org.milyn.delivery.ExecutionLifecycleCleanable;
-import org.milyn.delivery.VisitLifecycleCleanable;
-import org.milyn.delivery.ordering.Producer;
+import org.milyn.util.CollectionsUtil;
 import org.w3c.dom.Element;
 
 import java.io.IOException;

@@ -38,7 +38,11 @@ import org.milyn.smooks.edi.EDIWritable;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
 
 /**
  * EDIWritable bean serialization class.

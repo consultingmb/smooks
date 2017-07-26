@@ -15,13 +15,14 @@
 */
 package org.milyn.delivery.sax.MILYN_271;
 
-import javax.xml.transform.stream.StreamSource;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.delivery.sax.MockVisitBefore;
+
+import javax.xml.transform.stream.StreamSource;
 
 /**
  * http://jira.codehaus.org/browse/MILYN-271

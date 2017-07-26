@@ -15,15 +15,15 @@
 */
 package example;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+
 import example.model.Order;
 import example.model.OrderItem;
-
-import java.io.IOException;
-
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 public class PojoTest {
 

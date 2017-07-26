@@ -15,7 +15,7 @@
 
 package org.milyn.routing.file.naming;
 
-import static org.testng.AssertJUnit.*;
+import static org.testng.AssertJUnit.assertTrue;
 
 import org.testng.annotations.Test;
 

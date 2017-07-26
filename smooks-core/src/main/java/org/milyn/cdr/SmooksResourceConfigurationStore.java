@@ -18,34 +18,38 @@ package org.milyn.cdr;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.jaxen.saxpath.SAXPathException;
+import org.milyn.Smooks;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.annotation.Configurator;
 import org.milyn.cdr.xpath.SelectorStep;
 import org.milyn.classpath.ClasspathUtils;
 import org.milyn.container.ApplicationContext;
 import org.milyn.container.ApplicationContextInitializer;
-import org.milyn.container.standalone.StandaloneApplicationContext;
 import org.milyn.delivery.ContentHandler;
 import org.milyn.delivery.ContentHandlerFactory;
 import org.milyn.delivery.JavaContentHandlerFactory;
 import org.milyn.delivery.UnsupportedContentHandlerTypeException;
 import org.milyn.delivery.annotation.Resource;
+import org.milyn.javabean.DataDecoder;
 import org.milyn.profile.ProfileSet;
 import org.milyn.profile.ProfileStore;
 import org.milyn.resource.ContainerResourceLocator;
 import org.milyn.util.ClassUtil;
-import org.milyn.javabean.DataDecoder;
-import org.milyn.Smooks;
 import org.milyn.xml.NamespaceMappings;
 import org.xml.sax.SAXException;
-import org.jaxen.saxpath.SAXPathException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Constructor;
 import java.net.URISyntaxException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
+import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**

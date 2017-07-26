@@ -15,8 +15,6 @@
 */
 package org.milyn.javabean.gen.model;
 
-import org.milyn.javabean.BeanUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 

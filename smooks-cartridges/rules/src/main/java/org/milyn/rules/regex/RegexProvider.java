@@ -15,23 +15,22 @@
 
 package org.milyn.rules.regex;
 
-import java.util.regex.Pattern;
-import java.util.Properties;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashMap;
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.milyn.SmooksException;
-import org.milyn.resource.URIResourceLocator;
-import org.milyn.assertion.AssertArgument;
-import org.milyn.container.ExecutionContext;
-import org.milyn.rules.RuleEvalResult;
-import org.milyn.rules.regex.RegexRuleEvalResult;
-import org.milyn.rules.RuleProvider;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.milyn.SmooksException;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.container.ExecutionContext;
+import org.milyn.resource.URIResourceLocator;
+import org.milyn.rules.RuleEvalResult;
+import org.milyn.rules.RuleProvider;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+import java.util.regex.Pattern;
 
 /**
  * Regex Rule Provider.

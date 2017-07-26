@@ -4,9 +4,9 @@ import org.milyn.config.Configurable;
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DataDecoder;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import java.util.Date;
 import java.util.Properties;
 
 public enum EDITypeEnum {

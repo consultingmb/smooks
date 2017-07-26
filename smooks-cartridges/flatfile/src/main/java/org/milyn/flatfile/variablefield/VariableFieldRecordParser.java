@@ -16,10 +16,6 @@
 
 package org.milyn.flatfile.variablefield;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.flatfile.Field;
@@ -28,6 +24,10 @@ import org.milyn.flatfile.Record;
 import org.milyn.flatfile.RecordMetaData;
 import org.milyn.flatfile.RecordParser;
 import org.milyn.function.StringFunctionExecutor;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Abstract variable field record parser.

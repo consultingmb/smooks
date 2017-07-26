@@ -15,19 +15,20 @@
  */
 package example;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import example.model.Order;
 import example.model.OrderItem;
-
-import java.io.IOException;
-import java.io.StringWriter;
-
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.javabean.binding.xml.XMLBinding;
 import org.milyn.payload.StringSource;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.StringWriter;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

@@ -1,16 +1,14 @@
-package example;
+package example
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import org.milyn.cdr.SmooksResourceConfiguration
+import org.milyn.container.ExecutionContext
+import org.milyn.delivery.dom.DOMVisitAfter
+import org.milyn.xml.DomUtils
+import org.w3c.dom.Document
+import org.w3c.dom.Element
 
-import org.milyn.delivery.dom.DOMElementVisitor;
-import org.milyn.container.ExecutionContext;
-import org.milyn.cdr.SmooksResourceConfiguration;
-import org.milyn.xml.DomUtils;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node
-import org.milyn.delivery.dom.DOMVisitAfter;
+import java.text.ParseException
+import java.text.SimpleDateFormat
 
 /**
  * Date Formatting class.

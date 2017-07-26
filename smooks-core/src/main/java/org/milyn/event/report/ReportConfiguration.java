@@ -16,10 +16,10 @@
 package org.milyn.event.report;
 
 import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.event.ExecutionEvent;
 import org.milyn.event.types.ConfigBuilderEvent;
 import org.milyn.event.types.ElementVisitEvent;
-import org.milyn.cdr.SmooksConfigurationException;
 
 import java.io.File;
 import java.io.Writer;

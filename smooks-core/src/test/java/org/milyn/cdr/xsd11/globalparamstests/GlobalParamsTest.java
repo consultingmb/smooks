@@ -15,15 +15,15 @@
 */
 package org.milyn.cdr.xsd11.globalparamstests;
 
-import java.io.IOException;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.payload.StringSource;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

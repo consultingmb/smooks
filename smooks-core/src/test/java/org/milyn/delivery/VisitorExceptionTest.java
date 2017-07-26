@@ -15,17 +15,16 @@
 */
 package org.milyn.delivery;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;
-
 import java.io.IOException;
 import java.io.StringReader;
 

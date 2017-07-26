@@ -15,10 +15,9 @@
 */
 package org.milyn.delivery.dom;
 
-import org.w3c.dom.Element;
-import org.milyn.container.ExecutionContext;
 import org.milyn.SmooksException;
-import org.milyn.delivery.ContentHandler;
+import org.milyn.container.ExecutionContext;
+import org.w3c.dom.Element;
 
 /**
  * DOM Visit before events.

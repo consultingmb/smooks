@@ -15,8 +15,6 @@
 */
 package org.milyn.persistence;
 
-import java.io.IOException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -39,6 +37,8 @@ import org.milyn.scribe.invoker.DaoInvoker;
 import org.milyn.scribe.invoker.DaoInvokerFactory;
 import org.milyn.scribe.register.DaoRegister;
 import org.w3c.dom.Element;
+
+import java.io.IOException;
 
 /**
  * DAO Flusher

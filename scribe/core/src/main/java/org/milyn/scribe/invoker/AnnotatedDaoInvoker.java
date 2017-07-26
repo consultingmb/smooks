@@ -15,8 +15,6 @@
 */
 package org.milyn.scribe.invoker;
 
-import java.util.Map;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.scribe.NoMethodWithAnnotationFoundException;
 import org.milyn.scribe.annotation.Delete;
@@ -31,6 +29,8 @@ import org.milyn.scribe.reflection.FlushMethod;
 import org.milyn.scribe.reflection.LookupMethod;
 import org.milyn.scribe.reflection.LookupWithNamedQueryMethod;
 import org.milyn.scribe.reflection.LookupWithPositionalQueryMethod;
+
+import java.util.Map;
 
 
 /**

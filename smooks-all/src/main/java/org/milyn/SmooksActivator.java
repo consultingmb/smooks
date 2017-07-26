@@ -14,12 +14,12 @@
  */
 package org.milyn;
 
-import java.util.Properties;
-
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceFactory;
 import org.osgi.framework.ServiceRegistration;
+
+import java.util.Properties;
 
 /**
  * Will register an OSGi {@link ServiceFactory} for Smooks which can 

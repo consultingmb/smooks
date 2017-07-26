@@ -15,17 +15,17 @@
 */
 package org.milyn.scribe.reflection;
 
+import org.milyn.annotation.AnnotatedMethod;
+import org.milyn.annotation.AnnotationManager;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.scribe.annotation.Param;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import org.milyn.annotation.AnnotatedMethod;
-import org.milyn.annotation.AnnotationManager;
-import org.milyn.assertion.AssertArgument;
-import org.milyn.scribe.annotation.Param;
 
 /**
  * @author maurice

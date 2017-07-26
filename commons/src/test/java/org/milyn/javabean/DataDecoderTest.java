@@ -15,13 +15,14 @@
 */
 package org.milyn.javabean;
 
-import java.math.BigDecimal;
-import java.net.MalformedURLException;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.javabean.decoders.BigDecimalDecoder;
+
+import java.math.BigDecimal;
+import java.net.MalformedURLException;
 
 /**
  * 

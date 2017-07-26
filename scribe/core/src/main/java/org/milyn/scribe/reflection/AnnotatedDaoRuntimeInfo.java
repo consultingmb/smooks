@@ -15,14 +15,8 @@
 */
 package org.milyn.scribe.reflection;
 
-import static org.milyn.util.ClassUtil.*;
-
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import static org.milyn.util.ClassUtil.containsAssignableClass;
+import static org.milyn.util.ClassUtil.indexOffFirstAssignableClass;
 
 import org.milyn.annotation.AnnotatedClass;
 import org.milyn.annotation.AnnotatedMethod;
@@ -38,6 +32,13 @@ import org.milyn.scribe.annotation.Lookup;
 import org.milyn.scribe.annotation.LookupByQuery;
 import org.milyn.scribe.annotation.ReturnsNoEntity;
 import org.milyn.scribe.annotation.Update;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

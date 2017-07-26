@@ -15,12 +15,12 @@
 */
 package org.milyn.scribe.reflection;
 
-import static org.junit.Assert.*;
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.*;
-
-import java.util.HashMap;
-import java.util.Map;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Matchers.same;
+import static org.mockito.Mockito.verify;
 
 import org.milyn.scribe.IllegalAnnotationUsageException;
 import org.milyn.scribe.annotation.Dao;
@@ -28,20 +28,15 @@ import org.milyn.scribe.annotation.Delete;
 import org.milyn.scribe.annotation.Insert;
 import org.milyn.scribe.annotation.Lookup;
 import org.milyn.scribe.annotation.Update;
-import org.milyn.scribe.invoker.AnnotatedDaoInvoker;
-import org.milyn.scribe.invoker.DaoInvoker;
-import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfo;
-import org.milyn.scribe.reflection.EntityMethod;
-import org.milyn.scribe.reflection.FlushMethod;
-import org.milyn.scribe.reflection.LookupMethod;
-import org.milyn.scribe.reflection.LookupWithNamedQueryMethod;
-import org.milyn.scribe.reflection.LookupWithPositionalQueryMethod;
 import org.milyn.scribe.test.dao.FullAnnotatedDao;
 import org.milyn.scribe.test.dao.MinimumAnnotatedDao;
 import org.milyn.scribe.test.dao.OnlyDefaultAnnotatedDao;
 import org.milyn.scribe.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * TODO: Write more extensive tests to verify different method declarations

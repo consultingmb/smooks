@@ -15,8 +15,6 @@
 */
 package org.milyn.cdr.extension;
 
-import java.util.EmptyStackException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -28,6 +26,8 @@ import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
+
+import java.util.EmptyStackException;
 
 /**
  * Map a property value onto the current {@link SmooksResourceConfiguration} based on an

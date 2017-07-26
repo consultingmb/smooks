@@ -15,14 +15,16 @@
 */
 package org.milyn.delivery.JIRAs.MILYN_294;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.milyn.Smooks;
 import org.milyn.FilterSettings;
+import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.payload.StringSource;
 import org.milyn.delivery.dom.ProcessorVisitor1;
 import org.milyn.delivery.sax.SAXVisitor01;
+import org.milyn.payload.StringSource;
 
 /**
  * http://jira.codehaus.org/browse/MILYN-294

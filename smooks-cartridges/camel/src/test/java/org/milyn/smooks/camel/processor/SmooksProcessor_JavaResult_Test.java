@@ -15,8 +15,6 @@
 */
 package org.milyn.smooks.camel.processor;
 
-import java.util.Map;
-
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -29,6 +27,8 @@ import org.milyn.payload.Exports;
 import org.milyn.payload.JavaResult;
 import org.milyn.payload.StringSource;
 import org.milyn.smooks.camel.Coordinate;
+
+import java.util.Map;
 
 /**
  * 

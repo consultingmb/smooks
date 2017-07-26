@@ -16,9 +16,9 @@
 
 package org.milyn.useragent;
 
-import java.io.Serializable;
-
 import org.milyn.profile.ProfileSet;
+
+import java.io.Serializable;
 
 /**
  * Useragnet device context. <p/> Provides access to information such as the

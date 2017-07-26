@@ -16,19 +16,28 @@
 
 package org.milyn.edisax.v1_2.model;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 import static org.milyn.io.StreamUtils.readStream;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.milyn.edisax.model.EDIConfigDigester;
-import org.milyn.edisax.model.internal.*;
-import org.milyn.edisax.EDIConfigurationException;
-import org.milyn.javabean.decoders.DateDecoder;
 import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.edisax.EDIConfigurationException;
+import org.milyn.edisax.model.EDIConfigDigester;
+import org.milyn.edisax.model.internal.Component;
+import org.milyn.edisax.model.internal.Edimap;
+import org.milyn.edisax.model.internal.Field;
+import org.milyn.edisax.model.internal.Segment;
+import org.milyn.edisax.model.internal.SegmentGroup;
+import org.milyn.edisax.model.internal.SubComponent;
+import org.milyn.javabean.decoders.DateDecoder;
 import org.xml.sax.SAXException;
 
-import java.io.InputStream;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 /**

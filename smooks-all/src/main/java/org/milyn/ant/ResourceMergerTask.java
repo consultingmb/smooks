@@ -14,6 +14,15 @@
  */
 package org.milyn.ant;
 
+import org.apache.tools.ant.BuildException;
+import org.apache.tools.ant.Task;
+import org.apache.tools.ant.types.FileSet;
+import org.apache.tools.ant.types.Resource;
+import org.apache.tools.ant.types.resources.FileResource;
+import org.milyn.ResourceMerger;
+import org.milyn.archive.Archive;
+import org.milyn.io.FileUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,15 +31,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.jar.JarFile;
-
-import org.apache.tools.ant.BuildException;
-import org.apache.tools.ant.Task;
-import org.apache.tools.ant.types.FileSet;
-import org.apache.tools.ant.types.resources.FileResource;
-import org.apache.tools.ant.types.Resource;
-import org.milyn.ResourceMerger;
-import org.milyn.archive.Archive;
-import org.milyn.io.FileUtils;
 
 /**
  * ResourceMergerTask is an ANT task that delegate to {@link ResourceMerger}

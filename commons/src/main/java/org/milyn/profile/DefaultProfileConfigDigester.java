@@ -16,13 +16,13 @@
 
 package org.milyn.profile;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.StringTokenizer;
-
 import org.milyn.xml.XmlUtil;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.StringTokenizer;
 
 /**
  * Default device profile XML configuration digester. <p/> The profile

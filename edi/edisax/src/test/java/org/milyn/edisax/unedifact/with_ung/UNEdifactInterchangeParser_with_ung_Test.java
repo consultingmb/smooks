@@ -15,27 +15,28 @@
 */
 package org.milyn.edisax.unedifact.with_ung;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.EDIParseException;
 import org.milyn.edisax.EDIParser;
 import org.milyn.edisax.MockContentHandler;
 import org.milyn.edisax.MockContentHandlerNS;
 import org.milyn.edisax.model.EdifactModel;
-import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
 import org.milyn.edisax.registry.DefaultMappingsRegistry;
+import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
 import org.milyn.namespace.NamespaceAwareHandler;
 import org.milyn.namespace.NamespaceDeclarationStack;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StringReader;
 
 /**
  * 

@@ -15,8 +15,9 @@
 */
 package org.milyn.templating.xslt;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;

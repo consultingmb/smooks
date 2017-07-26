@@ -15,12 +15,12 @@
 */
 package org.milyn.classpath;
 
-import org.milyn.util.ClassUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.milyn.util.ClassUtil;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Abstract classpath filter.

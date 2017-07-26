@@ -15,10 +15,9 @@
 */
 package org.milyn.scribe;
 
+import javax.naming.OperationNotSupportedException;
 import java.util.Collection;
 import java.util.Map;
-
-import javax.naming.OperationNotSupportedException;
 
 /**
  * The queryable interface

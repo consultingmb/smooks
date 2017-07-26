@@ -1,7 +1,7 @@
 package org.milyn.useragent.request;
 
-import java.util.Hashtable;
 import java.util.Enumeration;
+import java.util.Hashtable;
 
 /**
  * Mock object for a Http request.

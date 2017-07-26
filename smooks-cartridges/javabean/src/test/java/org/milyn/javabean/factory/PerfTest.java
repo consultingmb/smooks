@@ -16,8 +16,6 @@
 package org.milyn.javabean.factory;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.container.ExecutionContext;
 import org.milyn.container.MockExecutionContext;
 

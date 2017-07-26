@@ -15,25 +15,28 @@
 */
 package org.milyn.routing.db;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.Map;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
+import org.hsqldb.jdbcDriver;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.db.DirectDataSource;
 import org.milyn.container.ExecutionContext;
+import org.milyn.db.DirectDataSource;
 import org.milyn.javabean.context.BeanContext;
 import org.milyn.javabean.context.BeanIdStore;
 import org.milyn.javabean.repository.BeanId;
 import org.milyn.payload.StringSource;
 import org.milyn.util.HsqlServer;
 import org.xml.sax.SAXException;
-import org.hsqldb.jdbcDriver;
-import org.junit.Before;
-import org.junit.After;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

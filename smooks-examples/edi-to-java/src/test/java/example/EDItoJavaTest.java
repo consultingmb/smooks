@@ -15,11 +15,12 @@
 */
 package example;
 
+import static org.milyn.io.StreamUtils.compareCharStreams;
+import static org.milyn.io.StreamUtils.readStreamAsString;
+
 import com.thoughtworks.xstream.XStream;
 import org.junit.Assert;
 import org.junit.Test;
-import static org.milyn.io.StreamUtils.compareCharStreams;
-import static org.milyn.io.StreamUtils.readStreamAsString;
 import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
 

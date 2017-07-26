@@ -15,23 +15,29 @@
 */
 package org.milyn.templating.freemarker;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
+import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.StreamFilterType;
-import org.milyn.FilterSettings;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.DomModelCreator;
 import org.milyn.javabean.Bean;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
-import org.milyn.templating.*;
+import org.milyn.templating.BindTo;
+import org.milyn.templating.Inline;
+import org.milyn.templating.MockOutStreamResource;
+import org.milyn.templating.MyBean;
+import org.milyn.templating.OutputTo;
+import org.milyn.templating.TemplatingConfiguration;
 import org.xml.sax.SAXException;
 
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.stream.StreamSource;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.StringReader;

@@ -15,15 +15,15 @@
 */
 package org.milyn.javabean.factory;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.container.ExecutionContext;
 import org.milyn.container.MockExecutionContext;
+
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

@@ -1,10 +1,10 @@
 package org.milyn.templating.xslt;
 
-import org.milyn.delivery.dom.DOMElementVisitor;
-import org.milyn.container.ExecutionContext;
-import org.milyn.xml.XmlUtil;
-import org.milyn.xml.DomUtils;
 import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.dom.DOMElementVisitor;
+import org.milyn.xml.DomUtils;
+import org.milyn.xml.XmlUtil;
 import org.w3c.dom.Element;
 
 /**

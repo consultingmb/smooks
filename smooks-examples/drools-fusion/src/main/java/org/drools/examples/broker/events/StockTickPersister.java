@@ -16,6 +16,8 @@
 
 package org.drools.examples.broker.events;
 
+import org.drools.examples.broker.model.StockTick;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -24,8 +26,6 @@ import java.io.Reader;
 import java.io.Writer;
 import java.text.MessageFormat;
 import java.text.ParseException;
-
-import org.drools.examples.broker.model.StockTick;
 
 /**
  * A helper to save and load StockTicks

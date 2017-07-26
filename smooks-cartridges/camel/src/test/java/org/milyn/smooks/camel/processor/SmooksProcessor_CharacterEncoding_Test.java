@@ -15,10 +15,6 @@
 */
 package org.milyn.smooks.camel.processor;
 
-import java.io.InputStream;
-
-import javax.xml.transform.stream.StreamSource;
-
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -28,8 +24,9 @@ import org.milyn.Smooks;
 import org.milyn.javabean.Value;
 import org.milyn.payload.Exports;
 import org.milyn.payload.JavaResult;
-import org.milyn.payload.StringResult;
-import org.milyn.payload.StringSource;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.InputStream;
 
 /**
  * 

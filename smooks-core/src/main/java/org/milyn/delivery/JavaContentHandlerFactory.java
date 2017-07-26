@@ -16,13 +16,13 @@
 
 package org.milyn.delivery;
 
-import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.SmooksConfigurationException;
-import org.milyn.cdr.annotation.Configurator;
+import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.annotation.AppContext;
+import org.milyn.cdr.annotation.Configurator;
 import org.milyn.classpath.ClasspathUtils;
-import org.milyn.util.ClassUtil;
 import org.milyn.container.ApplicationContext;
+import org.milyn.util.ClassUtil;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

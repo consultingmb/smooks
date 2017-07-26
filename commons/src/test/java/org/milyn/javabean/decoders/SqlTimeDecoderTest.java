@@ -15,11 +15,14 @@
 */
 package org.milyn.javabean.decoders;
 
-import java.sql.Time;
-import java.util.Properties;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.sql.Time;
+import java.util.Properties;
 
 /**
  * Tests for the SqlTimeDecoder class

@@ -17,8 +17,6 @@ package org.milyn.smooks.edi.unedifact.model.r41;
 
 import org.milyn.smooks.edi.unedifact.model.UNEdifactMessage;
 
-import java.io.Serializable;
-
 /**
  * UN/EDIFACT message (Version 4, Release 1).
  * 

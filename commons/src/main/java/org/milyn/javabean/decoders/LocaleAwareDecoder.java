@@ -20,7 +20,6 @@ import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.config.Configurable;
 import org.milyn.javabean.DataDecoder;
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Locale;
 import java.util.Properties;

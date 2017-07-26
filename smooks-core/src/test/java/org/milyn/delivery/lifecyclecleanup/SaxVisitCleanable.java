@@ -15,15 +15,15 @@
 */
 package org.milyn.delivery.lifecyclecleanup;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
+
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.Fragment;
 import org.milyn.delivery.VisitLifecycleCleanable;
-import org.milyn.delivery.sax.SAXVisitBefore;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXVisitAfter;
+import org.milyn.delivery.sax.SAXVisitBefore;
 
 import java.io.IOException;
 

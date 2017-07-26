@@ -16,9 +16,8 @@
 package org.milyn.edi.test.test_groups_01;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edi.test.EJCTestUtil;
+import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.util.IllegalNameException;
 import org.xml.sax.SAXException;
 

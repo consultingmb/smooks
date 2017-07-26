@@ -15,22 +15,17 @@
 */
 package org.milyn.visitors.set;
 
-import org.junit.Test;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
-import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
-import org.milyn.visitors.remove.RemoveAttribute;
 import org.xml.sax.SAXException;
 
-import javax.xml.XMLConstants;
-import javax.xml.namespace.QName;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 
 /**

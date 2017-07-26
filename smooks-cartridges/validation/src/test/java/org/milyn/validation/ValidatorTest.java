@@ -15,23 +15,25 @@
 
 package org.milyn.validation;
 
-import static org.junit.Assert.*;
-
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.milyn.FilterSettings;
+import org.milyn.Smooks;
 import org.milyn.container.MockApplicationContext;
 import org.milyn.container.MockExecutionContext;
-import org.milyn.rules.RuleProviderAccessor;
-import org.milyn.rules.regex.RegexProvider;
 import org.milyn.payload.FilterResult;
 import org.milyn.payload.StringSource;
-import org.milyn.Smooks;
-import org.milyn.FilterSettings;
+import org.milyn.rules.RuleProviderAccessor;
+import org.milyn.rules.regex.RegexProvider;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.List;
 
 /**
  * Unit test for {@link Validator}

@@ -16,14 +16,12 @@
 package org.milyn.general;
 
 import org.milyn.container.ExecutionContext;
-import org.milyn.xml.SmooksXMLReader;
 import org.milyn.delivery.sax.SAXContentDeliveryConfig;
 import org.milyn.delivery.sax.SAXElementVisitorMap;
-import org.xml.sax.*;
-import org.xml.sax.helpers.AttributesImpl;
+import org.milyn.xml.SmooksXMLReader;
 import org.xml.sax.ext.LexicalHandler;
+import org.xml.sax.helpers.AttributesImpl;
 
-import javax.xml.stream.*;
 import javax.xml.namespace.QName;
 import java.io.IOException;
 import java.io.InputStream;

@@ -19,15 +19,15 @@ package org.milyn.edisax;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import java.io.IOException;
-import java.util.List;
-
 import org.junit.Test;
 import org.milyn.edisax.model.EDIConfigDigester;
 import org.milyn.edisax.model.EdifactModel;
 import org.milyn.edisax.model.internal.Segment;
 import org.milyn.edisax.model.internal.SegmentGroup;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * @author tfennelly

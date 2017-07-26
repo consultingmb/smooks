@@ -16,18 +16,18 @@
 
 package org.milyn.delivery;
 
-import java.util.List;
-import java.util.Map;
-
-import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.SmooksConfigurationException;
-import org.milyn.dtd.DTDStore;
+import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.container.ExecutionContext;
-import org.milyn.event.types.ConfigBuilderEvent;
-import org.milyn.delivery.ordering.Producer;
 import org.milyn.delivery.ordering.Consumer;
+import org.milyn.delivery.ordering.Producer;
+import org.milyn.dtd.DTDStore;
+import org.milyn.event.types.ConfigBuilderEvent;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Content delivery configuration.

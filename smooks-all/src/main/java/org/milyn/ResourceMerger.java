@@ -14,6 +14,9 @@
  */
 package org.milyn;
 
+import org.milyn.archive.Archive;
+import org.milyn.assertion.AssertArgument;
+
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -30,9 +33,6 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.jar.JarInputStream;
 import java.util.zip.ZipInputStream;
-
-import org.milyn.archive.Archive;
-import org.milyn.assertion.AssertArgument;
 
 /**
  * ResourceMerger is able to merge java archives (jars) and in the process merge

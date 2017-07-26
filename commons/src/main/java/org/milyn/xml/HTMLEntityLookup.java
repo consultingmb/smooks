@@ -16,12 +16,12 @@
 
 package org.milyn.xml;
 
-import java.util.Hashtable;
-import java.io.InputStream;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 import org.milyn.util.ClassUtil;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Hashtable;
 
 /**
  * 

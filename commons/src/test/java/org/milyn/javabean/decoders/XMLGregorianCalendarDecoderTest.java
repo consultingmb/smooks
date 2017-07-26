@@ -1,13 +1,13 @@
 package org.milyn.javabean.decoders;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 import javax.xml.datatype.XMLGregorianCalendar;
-
 import java.util.Date;
 import java.util.Locale;
 import java.util.Properties;

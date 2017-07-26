@@ -15,9 +15,9 @@
 */
 package org.milyn.delivery.dom.serialize;
 
-import org.milyn.delivery.dom.DOMVisitAfter;
-import org.milyn.container.ExecutionContext;
 import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.dom.DOMVisitAfter;
 import org.w3c.dom.Element;
 
 /**

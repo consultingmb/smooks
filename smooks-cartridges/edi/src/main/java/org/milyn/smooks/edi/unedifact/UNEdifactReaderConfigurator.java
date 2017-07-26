@@ -15,13 +15,13 @@
  */
 package org.milyn.smooks.edi.unedifact;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.milyn.GenericReaderConfigurator;
 import org.milyn.ReaderConfigurator;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksResourceConfiguration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * UN/EDIFACT Reader configurator.

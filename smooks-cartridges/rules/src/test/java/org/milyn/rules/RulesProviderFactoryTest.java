@@ -19,18 +19,18 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
-import java.util.Map;
-
 import org.junit.Ignore;
 import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.rules.regex.RegexRuleEvalResult;
 import org.milyn.container.ExecutionContext;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
+import org.milyn.rules.regex.RegexRuleEvalResult;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * Unit test for RuleProviderFactory.
