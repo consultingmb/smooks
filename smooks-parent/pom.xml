@@ -93,6 +93,7 @@
         <org.osgi.core.version>1.4.0</org.osgi.core.version>
         <peaberry.version>1.1.1</peaberry.version>
         <jdom2.version>2.0.5</jdom2.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencyManagement>
@@ -919,7 +920,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.18.1</version>
+                    <version>2.20</version>
                     <configuration>
                        <environmentVariables>
                           <org.milyn.xml.XsdValidator.SchemaFactory>org.apache.xerces.jaxp.validation.XMLSchemaFactory</org.milyn.xml.XsdValidator.SchemaFactory>
@@ -927,11 +928,7 @@
                        <excludes>
                           <exclude>**/Test*.java</exclude>
                        </excludes>
-                       <argLine>-Xms128m -Xmx256m -XX:MaxPermSize=128m</argLine>
-                       <configuration>
-                          <parallel>classes</parallel>
-                          <threadCountClasses>10</threadCountClasses>
-                       </configuration>
+                       <argLine>-Xms128m -Xmx256m</argLine>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -1020,8 +1017,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                     <compilerArgs>
                        <arg>-Xlint:deprecation</arg>
                        <arg>-Xlint:unchecked</arg>
@@ -1072,10 +1069,10 @@
              <artifactId>maven-pmd-plugin</artifactId>
              <version>3.4</version>
              <configuration>
-                <linkXref>true</linkXref>
+                <linkXRef>true</linkXRef>
                 <sourceEncoding>utf-8</sourceEncoding>
                 <format>html</format>
-                <targetJdk>1.6</targetJdk>
+                <targetJdk>${java.version}</targetJdk>
              </configuration>
           </plugin>
        </plugins>
@@ -1118,7 +1115,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
