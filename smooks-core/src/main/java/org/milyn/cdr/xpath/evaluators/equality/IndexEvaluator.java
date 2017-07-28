@@ -15,10 +15,10 @@
 */
 package org.milyn.cdr.xpath.evaluators.equality;
 
-import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
 import org.milyn.cdr.xpath.SelectorStep;
-import org.milyn.delivery.sax.SAXElement;
+import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
 import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.sax.SAXElement;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

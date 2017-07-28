@@ -16,8 +16,6 @@
 
 package org.milyn.templating.stringtemplate;
 
-import java.util.Map;
-
 import org.antlr.stringtemplate.StringTemplate;
 import org.antlr.stringtemplate.StringTemplateGroup;
 import org.milyn.cdr.SmooksConfigurationException;
@@ -28,16 +26,16 @@ import org.milyn.container.ApplicationContext;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.ContentHandler;
 import org.milyn.delivery.ContentHandlerFactory;
-import org.milyn.delivery.ordering.Consumer;
 import org.milyn.delivery.annotation.Resource;
-import org.milyn.delivery.dom.serialize.ContextObjectSerializationUnit;
 import org.milyn.delivery.dom.serialize.TextSerializationUnit;
+import org.milyn.delivery.ordering.Consumer;
 import org.milyn.event.report.annotation.VisitAfterReport;
 import org.milyn.event.report.annotation.VisitBeforeReport;
 import org.milyn.templating.AbstractTemplateProcessor;
-import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+
+import java.util.Map;
 
 /**
  * StringTemplate {@link org.milyn.delivery.dom.DOMElementVisitor} Creator class.

@@ -16,10 +16,15 @@
 
 package org.milyn.function;
 
-import static org.milyn.function.StringFunctionDefinitionParser.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertSame;
+import static org.milyn.function.StringFunctionDefinitionParser.LOWER_CASE_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.SEPARATOR;
+import static org.milyn.function.StringFunctionDefinitionParser.TRIM_DEFINITION;
+import static org.milyn.function.StringFunctionDefinitionParser.UPPER_CASE_DEFINITION;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

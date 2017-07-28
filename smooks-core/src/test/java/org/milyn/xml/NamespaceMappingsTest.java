@@ -15,16 +15,16 @@
 */
 package org.milyn.xml;
 
-import java.io.IOException;
-import java.util.Properties;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.container.ApplicationContext;
 import org.milyn.container.ExecutionContext;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.util.Properties;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

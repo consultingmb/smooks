@@ -16,10 +16,11 @@
 
 package org.milyn.cdr;
 
-import org.milyn.profile.DefaultProfileSet;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.profile.DefaultProfileSet;
 
 public class UseragentExpressionTest {
 

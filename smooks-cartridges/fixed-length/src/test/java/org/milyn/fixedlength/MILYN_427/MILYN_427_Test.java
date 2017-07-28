@@ -15,12 +15,12 @@
 */
 package org.milyn.fixedlength.MILYN_427;
 
-import java.io.IOException;
-
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.sax.SAXElement;
@@ -30,8 +30,9 @@ import org.milyn.payload.StringResult;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
 
 /**
  * Contributed by Clemens Fuchslocher.

@@ -15,8 +15,9 @@
 */
 package org.milyn.delivery.sax;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.xml.sax.helpers.AttributesImpl;
 
 /**

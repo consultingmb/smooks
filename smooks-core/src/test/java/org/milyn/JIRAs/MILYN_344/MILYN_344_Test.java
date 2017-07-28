@@ -16,7 +16,6 @@
 package org.milyn.JIRAs.MILYN_344;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.xml.sax.SAXException;
 

@@ -15,11 +15,10 @@
 */
 package org.milyn.scribe.adapter.hibernate;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
 
 import org.hibernate.Session;
-import org.milyn.scribe.adapter.hibernate.SessionDaoAdapter;
-import org.milyn.scribe.adapter.hibernate.SessionRegister;
 import org.milyn.scribe.adapter.hibernate.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.Test;

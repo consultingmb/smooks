@@ -16,21 +16,14 @@
 package org.milyn.delivery;
 
 
-import static org.junit.Assert.*;
-
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-
-import javax.xml.transform.stream.StreamSource;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.milyn.Smooks;
-import org.milyn.io.StreamUtils;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.container.ExecutionContext;
+import org.milyn.io.StreamUtils;
 import org.milyn.xml.SmooksXMLReader;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.DTDHandler;
@@ -40,6 +33,12 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
 
 /**
  * Test for JIRA: http://jira.codehaus.org/browse/MILYN-291,

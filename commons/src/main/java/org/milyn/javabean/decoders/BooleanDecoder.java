@@ -15,12 +15,12 @@
 */
 package org.milyn.javabean.decoders;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DecodeType;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Boolean decoder.

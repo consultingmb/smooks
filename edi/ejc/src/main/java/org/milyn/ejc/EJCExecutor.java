@@ -16,9 +16,9 @@
 package org.milyn.ejc;
 
 import org.milyn.ect.EdiSpecificationReader;
-import org.milyn.edisax.util.EDIUtils;
 import org.milyn.edisax.model.EdifactModel;
 import org.milyn.edisax.model.internal.Description;
+import org.milyn.edisax.util.EDIUtils;
 import org.milyn.edisax.util.IllegalNameException;
 import org.milyn.io.FileUtils;
 import org.milyn.javabean.pojogen.JClass;
@@ -30,7 +30,13 @@ import org.xml.sax.SAXException;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
 
 /**
  * {@link EJC} Executor.

@@ -16,15 +16,15 @@
 
 package org.milyn.cdr;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import org.milyn.cdr.annotation.Configurator;
+
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
-
-import org.milyn.cdr.SmooksResourceConfiguration;
-import org.milyn.cdr.annotation.Configurator;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class TokenizedStringParameterDecoderTest {
 

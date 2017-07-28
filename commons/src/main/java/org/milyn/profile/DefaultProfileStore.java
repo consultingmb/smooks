@@ -16,12 +16,12 @@
 
 package org.milyn.profile;
 
+import org.milyn.assertion.AssertArgument;
+
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Vector;
-
-import org.milyn.assertion.AssertArgument;
 
 /**
  * Default ProfileStore implementation.

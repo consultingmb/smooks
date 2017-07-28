@@ -16,11 +16,10 @@
 
 package org.milyn.util;
 
+import static org.junit.Assert.fail;
+
 import java.io.File;
 import java.io.IOException;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * File System utility methods.

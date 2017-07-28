@@ -15,13 +15,6 @@
 */
 package org.milyn.delivery.sax;
 
-import java.io.IOException;
-import java.io.Writer;
-import java.nio.charset.Charset;
-
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.AbstractParser;
 import org.milyn.delivery.ContentDeliveryConfig;
@@ -31,6 +24,12 @@ import org.milyn.xml.NamespaceMappings;
 import org.milyn.xml.hierarchy.HierarchyChangeReader;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
+
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
+import java.io.IOException;
+import java.io.Writer;
+import java.nio.charset.Charset;
 
 /**
  * Smooks SAX data stream parser.

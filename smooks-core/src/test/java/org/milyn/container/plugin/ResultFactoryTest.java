@@ -18,11 +18,11 @@ package org.milyn.container.plugin;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
-import javax.xml.transform.Result;
-import javax.xml.transform.stream.StreamResult;
-
 import org.junit.Test;
 import org.milyn.payload.JavaResult;
+
+import javax.xml.transform.Result;
+import javax.xml.transform.stream.StreamResult;
 
 /**
  * 

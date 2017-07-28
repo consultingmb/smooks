@@ -1,7 +1,5 @@
 package org.milyn.javabean.context;
 
-import java.util.Map;
-
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.Fragment;
 import org.milyn.javabean.lifecycle.BeanContextLifecycleEvent;
@@ -9,7 +7,7 @@ import org.milyn.javabean.lifecycle.BeanContextLifecycleObserver;
 import org.milyn.javabean.lifecycle.BeanLifecycle;
 import org.milyn.javabean.repository.BeanId;
 
-import javax.xml.namespace.QName;
+import java.util.Map;
 
 /**
  * Bean Context

@@ -15,10 +15,9 @@
 */
 package org.milyn.javabean.JIRA.MILYN_619;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.io.StreamUtils;
 import org.milyn.payload.JavaSource;

@@ -17,11 +17,11 @@
 package org.milyn.container;
 
 import org.milyn.cdr.SmooksResourceConfigurationStore;
-import org.milyn.javabean.lifecycle.BeanContextLifecycleObserver;
-import org.milyn.resource.ContainerResourceLocator;
 import org.milyn.javabean.context.BeanContext;
 import org.milyn.javabean.context.BeanIdStore;
+import org.milyn.javabean.lifecycle.BeanContextLifecycleObserver;
 import org.milyn.profile.ProfileStore;
+import org.milyn.resource.ContainerResourceLocator;
 
 import java.util.Collection;
 

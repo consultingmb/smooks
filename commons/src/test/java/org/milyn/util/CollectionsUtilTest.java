@@ -15,11 +15,13 @@
 */
 package org.milyn.util;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
-import java.util.Set;
+import org.junit.Test;
+
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

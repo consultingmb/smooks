@@ -15,18 +15,18 @@
 */
 package org.milyn.edisax.unedifact.handlers;
 
+import org.milyn.edisax.BufferedSegmentReader;
+import org.milyn.edisax.EDIParseException;
+import org.milyn.edisax.interchange.ControlBlockHandler;
+import org.milyn.edisax.interchange.InterchangeContext;
+import org.milyn.edisax.model.internal.Segment;
+import org.milyn.edisax.util.EDIUtils;
+import org.xml.sax.SAXException;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.milyn.edisax.BufferedSegmentReader;
-import org.milyn.edisax.EDIParseException;
-import org.milyn.edisax.util.EDIUtils;
-import org.milyn.edisax.interchange.ControlBlockHandler;
-import org.milyn.edisax.interchange.InterchangeContext;
-import org.milyn.edisax.model.internal.Segment;
-import org.xml.sax.SAXException;
 
 /**
  * UNB Segment Handler.

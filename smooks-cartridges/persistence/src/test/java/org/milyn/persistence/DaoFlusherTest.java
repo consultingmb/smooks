@@ -15,6 +15,8 @@
 */
 package org.milyn.persistence;
 
+import static org.mockito.Mockito.verify;
+
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.event.report.HtmlReportGenerator;
@@ -26,7 +28,6 @@ import org.milyn.persistence.util.PersistenceUtil;
 import org.milyn.scribe.register.MapDaoRegister;
 import org.milyn.scribe.register.SingleDaoRegister;
 import org.mockito.Mock;
-import static org.mockito.Mockito.verify;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

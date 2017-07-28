@@ -15,8 +15,9 @@
 */
 package org.milyn.javabean.decoders;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 import java.util.Arrays;
 

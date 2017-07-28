@@ -16,33 +16,48 @@
 
 package org.milyn.cdr;
 
-import org.apache.commons.logging.*;
-import org.milyn.classpath.*;
-import org.milyn.container.*;
+import javassist.CannotCompileException;
+import javassist.NotFoundException;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.jaxen.saxpath.SAXPathException;
+import org.milyn.cdr.xpath.SelectorStep;
+import org.milyn.cdr.xpath.SelectorStepBuilder;
+import org.milyn.cdr.xpath.evaluators.PassThruEvaluator;
+import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
+import org.milyn.classpath.ClasspathUtils;
+import org.milyn.container.ApplicationContext;
+import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.Filter;
 import org.milyn.delivery.Visitor;
-import org.milyn.delivery.sax.*;
-import org.milyn.expression.*;
-import org.milyn.io.*;
-import org.milyn.profile.*;
-import org.milyn.resource.*;
-import org.milyn.util.*;
-import org.milyn.xml.*;
-import org.milyn.cdr.xpath.SelectorStepBuilder;
-import org.milyn.cdr.xpath.SelectorStep;
-import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
-import org.milyn.cdr.xpath.evaluators.PassThruEvaluator;
-import org.w3c.dom.*;
-import org.jaxen.saxpath.SAXPathException;
-
-import java.io.*;
-import java.net.*;
-import java.util.*;
-
-import javassist.NotFoundException;
-import javassist.CannotCompileException;
+import org.milyn.delivery.sax.SAXElement;
+import org.milyn.expression.ExecutionContextExpressionEvaluator;
+import org.milyn.expression.ExpressionEvaluator;
+import org.milyn.io.StreamUtils;
+import org.milyn.profile.Profile;
+import org.milyn.resource.URIResourceLocator;
+import org.milyn.util.ClassUtil;
+import org.milyn.xml.DomUtils;
+import org.milyn.xml.XmlUtil;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
 import javax.xml.namespace.QName;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+import java.util.StringTokenizer;
+import java.util.Vector;
 
 /**
  * Smooks Resource Targeting Configuration.

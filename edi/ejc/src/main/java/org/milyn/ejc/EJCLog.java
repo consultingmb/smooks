@@ -15,11 +15,9 @@
 */
 package org.milyn.ejc;
 
-import org.apache.commons.logging.Log;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.IOException;
 import static org.milyn.ejc.EJCLogFactory.Level;
+
+import org.apache.commons.logging.Log;
 
 public class EJCLog implements Log {
 

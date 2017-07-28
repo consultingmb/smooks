@@ -16,15 +16,16 @@
 
 package org.milyn.resource;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import com.mockobjects.servlet.MockServletConfig;
 import com.mockobjects.servlet.MockServletContext;
-
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Test that the getResource method tries to load based on the rules in the

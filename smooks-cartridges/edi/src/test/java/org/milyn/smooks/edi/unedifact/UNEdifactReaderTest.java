@@ -15,19 +15,10 @@
 */
 package org.milyn.smooks.edi.unedifact;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.util.List;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
-
-import javax.xml.transform.stream.StreamSource;
-
+import com.thoughtworks.xstream.XStream;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
@@ -40,10 +31,15 @@ import org.milyn.smooks.edi.unedifact.model.r41.UNEdifactInterchange41;
 import org.milyn.smooks.edi.unedifact.model.r41.UNEdifactMessage41;
 import org.xml.sax.SAXException;
 
-import com.thoughtworks.xstream.XStream;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StringReader;
+import java.util.List;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 /**
  * 

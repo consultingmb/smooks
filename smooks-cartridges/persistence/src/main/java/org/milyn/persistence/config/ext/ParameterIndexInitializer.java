@@ -18,7 +18,6 @@ package org.milyn.persistence.config.ext;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
-
 import org.w3c.dom.Element;
 
 /**

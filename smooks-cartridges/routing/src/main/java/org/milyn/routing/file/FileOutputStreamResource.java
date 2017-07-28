@@ -15,16 +15,6 @@
 
 package org.milyn.routing.file;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Map;
-import java.util.UUID;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -39,9 +29,19 @@ import org.milyn.expression.MVELExpressionEvaluator;
 import org.milyn.io.AbstractOutputStreamResource;
 import org.milyn.javabean.decoders.MVELExpressionEvaluatorDecoder;
 import org.milyn.routing.SmooksRoutingException;
-import org.milyn.util.FreeMarkerUtils;
 import org.milyn.util.DollarBraceDecoder;
 import org.milyn.util.FreeMarkerTemplate;
+import org.milyn.util.FreeMarkerUtils;
+
+import java.io.File;
+import java.io.FileFilter;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Map;
+import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * FileOutputStreamResouce is a {@link AbstractOutputStreamResource} implementation

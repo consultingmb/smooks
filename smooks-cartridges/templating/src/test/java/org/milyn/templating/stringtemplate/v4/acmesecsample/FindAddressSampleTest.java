@@ -16,19 +16,16 @@
 
 package org.milyn.templating.stringtemplate.v4.acmesecsample;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import javax.xml.transform.stream.StreamSource;
-
 import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;
 import org.milyn.container.ExecutionContext;
-import org.milyn.payload.StringResult;
 import org.milyn.profile.DefaultProfileSet;
 import org.milyn.templating.util.CharUtils;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 public class FindAddressSampleTest {
 

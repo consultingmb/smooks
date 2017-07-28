@@ -15,8 +15,8 @@
 */
 package org.milyn.edisax.model.internal;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 
 /**

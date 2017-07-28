@@ -17,20 +17,19 @@ package org.milyn.delivery.sax;
 
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.io.StreamUtils;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * Unit test for SmooksSAXFilter

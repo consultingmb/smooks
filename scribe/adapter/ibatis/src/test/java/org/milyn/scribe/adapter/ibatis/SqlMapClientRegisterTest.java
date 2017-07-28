@@ -15,9 +15,10 @@
 */
 package org.milyn.scribe.adapter.ibatis;
 
-import com.ibatis.sqlmap.client.SqlMapClient;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertSame;
+
+import com.ibatis.sqlmap.client.SqlMapClient;
 import org.milyn.scribe.adapter.ibatis.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.Test;

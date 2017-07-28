@@ -16,18 +16,14 @@
 
 package org.milyn;
 
-import java.io.ByteArrayInputStream;
-import java.io.CharArrayWriter;
-import java.io.IOException;
-
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Test;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.container.ExecutionContext;
 import org.milyn.container.standalone.PreconfiguredSmooks;
@@ -36,6 +32,12 @@ import org.milyn.util.DomUtil;
 import org.milyn.xml.XmlUtil;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
+import java.io.CharArrayWriter;
+import java.io.IOException;
 
 public class SmooksStandaloneTest {
 	

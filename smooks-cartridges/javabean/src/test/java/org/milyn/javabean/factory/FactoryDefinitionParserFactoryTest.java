@@ -16,8 +16,10 @@
 
 package org.milyn.javabean.factory;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.container.MockApplicationContext;
 
 /**

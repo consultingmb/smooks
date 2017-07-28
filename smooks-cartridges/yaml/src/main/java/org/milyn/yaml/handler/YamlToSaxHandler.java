@@ -15,12 +15,12 @@
 */
 package org.milyn.yaml.handler;
 
-import javax.xml.XMLConstants;
-
 import org.apache.commons.lang.StringUtils;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
+
+import javax.xml.XMLConstants;
 
 /**
  * Converts yaml events into sax events.

@@ -17,14 +17,8 @@ package org.milyn.routing.jms.message.creationstrategies;
 import static org.testng.AssertJUnit.assertSame;
 import static org.testng.AssertJUnit.assertTrue;
 
-import java.io.IOException;
-
-import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.ObjectMessage;
-import javax.jms.Session;
-import javax.xml.parsers.ParserConfigurationException;
-
+import com.mockrunner.mock.jms.JMSMockObjectFactory;
+import com.mockrunner.mock.jms.MockConnectionFactory;
 import org.milyn.container.MockExecutionContext;
 import org.milyn.routing.jms.TestBean;
 import org.milyn.routing.util.RouterTestHelper;
@@ -32,8 +26,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
-import com.mockrunner.mock.jms.JMSMockObjectFactory;
-import com.mockrunner.mock.jms.MockConnectionFactory;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.ObjectMessage;
+import javax.jms.Session;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 /**
  *

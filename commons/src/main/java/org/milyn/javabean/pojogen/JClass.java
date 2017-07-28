@@ -15,18 +15,24 @@
 */
 package org.milyn.javabean.pojogen;
 
-import org.milyn.assertion.AssertArgument;
-import org.milyn.util.FreeMarkerTemplate;
-import org.milyn.io.StreamUtils;
-
-import java.io.Serializable;
-import java.util.*;
-import java.io.Writer;
-import java.io.IOException;
-
+import javassist.CannotCompileException;
 import javassist.ClassPool;
 import javassist.CtClass;
-import javassist.CannotCompileException;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.io.StreamUtils;
+import org.milyn.util.FreeMarkerTemplate;
+
+import java.io.IOException;
+import java.io.Serializable;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 
 /**
  * Java POJO model.

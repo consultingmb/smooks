@@ -16,8 +16,8 @@
 package org.milyn.validation;
 
 import org.milyn.rules.RuleEvalResult;
-import org.milyn.rules.regex.RegexRuleEvalResult;
 import org.milyn.rules.regex.RegexProvider;
+import org.milyn.rules.regex.RegexRuleEvalResult;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

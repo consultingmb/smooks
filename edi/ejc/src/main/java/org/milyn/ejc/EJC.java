@@ -15,20 +15,26 @@
 */
 package org.milyn.ejc;
 
-import org.milyn.assertion.AssertArgument;
-import org.milyn.edisax.model.internal.Edimap;
-import org.milyn.edisax.model.EdifactModel;
-import org.milyn.edisax.EDIConfigurationException;
-import org.milyn.edisax.model.internal.MappingNode;
-import org.milyn.edisax.util.IllegalNameException;
-import org.milyn.io.StreamUtils;
-import org.milyn.io.FileUtils;
-import org.milyn.javabean.pojogen.JClass;
-import org.xml.sax.SAXException;
-import org.apache.commons.logging.Log;
 import static org.milyn.ejc.EJCLogFactory.Level;
 
-import java.io.*;
+import org.apache.commons.logging.Log;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.edisax.EDIConfigurationException;
+import org.milyn.edisax.model.EdifactModel;
+import org.milyn.edisax.model.internal.Edimap;
+import org.milyn.edisax.model.internal.MappingNode;
+import org.milyn.edisax.util.IllegalNameException;
+import org.milyn.io.FileUtils;
+import org.milyn.io.StreamUtils;
+import org.milyn.javabean.pojogen.JClass;
+import org.xml.sax.SAXException;
+
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;

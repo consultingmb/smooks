@@ -15,15 +15,15 @@
 */
 package org.milyn.javabean.decoders;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DataEncoder;
 import org.milyn.javabean.DecodeType;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * {@link java.util.Date} data decoder.

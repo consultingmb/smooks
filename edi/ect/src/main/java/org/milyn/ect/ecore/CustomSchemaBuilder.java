@@ -15,11 +15,11 @@
  */
 package org.milyn.ect.ecore;
 
-import java.util.Map;
-
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.xsd.ecore.EcoreSchemaBuilder;
 import org.w3c.dom.Element;
+
+import java.util.Map;
 
 /**
  * Extension of {@link EcoreSchemaBuilder} to simplify the namespace prefix

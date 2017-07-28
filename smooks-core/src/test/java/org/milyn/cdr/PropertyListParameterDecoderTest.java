@@ -1,10 +1,11 @@
 package org.milyn.cdr;
 
-import java.util.Properties;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.cdr.annotation.Configurator;
+
+import java.util.Properties;
 
 public class PropertyListParameterDecoderTest {
 

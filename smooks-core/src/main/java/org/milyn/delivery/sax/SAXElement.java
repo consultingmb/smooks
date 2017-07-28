@@ -15,10 +15,10 @@
 */
 package org.milyn.delivery.sax;
 
+import org.milyn.SmooksException;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.delivery.sax.annotation.StreamResultWriter;
 import org.milyn.delivery.sax.annotation.TextConsumer;
-import org.milyn.SmooksException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.Attributes;
@@ -26,10 +26,13 @@ import org.xml.sax.helpers.AttributesImpl;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
-import java.io.Writer;
-import java.io.StringWriter;
 import java.io.IOException;
-import java.util.*;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Element details as described by the SAX even model API.

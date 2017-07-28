@@ -15,10 +15,12 @@
 */
 package org.milyn.javabean.lifecycle;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.milyn.Smooks;
 import org.milyn.FilterSettings;
+import org.milyn.Smooks;
 import org.milyn.StreamFilterType;
 import org.milyn.payload.JavaResult;
 import org.milyn.payload.StringSource;

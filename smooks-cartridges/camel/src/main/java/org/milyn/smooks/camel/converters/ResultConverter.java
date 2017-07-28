@@ -14,16 +14,6 @@
  */
 package org.milyn.smooks.camel.converters;
 
-import java.io.StringReader;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Set;
-
-import javax.xml.transform.Result;
-import javax.xml.transform.dom.DOMResult;
-import javax.xml.transform.stream.StreamSource;
-
 import org.apache.camel.Converter;
 import org.apache.camel.Exchange;
 import org.apache.camel.FallbackConverter;
@@ -32,6 +22,15 @@ import org.apache.camel.spi.TypeConverterRegistry;
 import org.milyn.payload.JavaResult;
 import org.milyn.payload.StringResult;
 import org.w3c.dom.Node;
+
+import javax.xml.transform.Result;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.stream.StreamSource;
+import java.io.StringReader;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * ResultConverter converts from different {@link Result} types.

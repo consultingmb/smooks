@@ -17,7 +17,6 @@ package org.milyn.cdr.xpath.evaluators.value;
 
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.javabean.DataDecoder;
-import org.milyn.cdr.xpath.evaluators.value.Value;
 import org.w3c.dom.Element;
 
 /**

@@ -15,14 +15,14 @@
 */
 package org.milyn.delivery.sax;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
 import org.w3c.dom.Element;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 

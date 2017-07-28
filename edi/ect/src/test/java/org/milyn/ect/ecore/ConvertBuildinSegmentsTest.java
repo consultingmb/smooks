@@ -15,18 +15,9 @@
  */
 package org.milyn.ect.ecore;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.milyn.ect.ecore.SmooksMetadata.INSTANCE;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
@@ -39,8 +30,17 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
+import org.junit.Test;
 import org.milyn.edisax.model.EDIConfigDigester;
 import org.milyn.edisax.model.internal.Edimap;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Test case for conversion of build-in segment definitions

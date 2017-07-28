@@ -15,12 +15,12 @@
 */
 package org.milyn.delivery.sax;
 
-import java.io.IOException;
-
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.sax.annotation.StreamResultWriter;
 import org.milyn.delivery.sax.annotation.TextConsumer;
+
+import java.io.IOException;
 
 @TextConsumer
 public class VisitAfterWrittingVisitor implements SAXVisitAfter {

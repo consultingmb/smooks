@@ -15,18 +15,11 @@
 */
 package org.milyn.persistence;
 
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.*;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-
-import javax.xml.transform.Source;
-import javax.xml.transform.stream.StreamSource;
+import static org.mockito.Matchers.anyMap;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.milyn.Smooks;
@@ -41,6 +34,15 @@ import org.milyn.scribe.register.SingleDaoRegister;
 import org.mockito.Mock;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
 
 
 /**

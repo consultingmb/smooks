@@ -14,6 +14,15 @@
  */
 package org.milyn.payload;
 
+import org.milyn.SmooksException;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.annotation.AppContext;
+import org.milyn.container.ApplicationContext;
+import org.milyn.delivery.ContentHandler;
+import org.milyn.delivery.annotation.Initialize;
+import org.milyn.util.ClassUtil;
+
+import javax.xml.transform.Result;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -22,17 +31,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
-import javax.xml.transform.Result;
-
-import org.milyn.SmooksException;
-import org.milyn.assertion.AssertArgument;
-import org.milyn.cdr.annotation.AppContext;
-import org.milyn.container.ApplicationContext;
-import org.milyn.delivery.ContentHandler;
-import org.milyn.delivery.annotation.Initialize;
-import org.milyn.payload.ResultExtractor;
-import org.milyn.util.ClassUtil;
 
 /**
  * An Exports instance holds a Map of {@link Export}s that Smooks

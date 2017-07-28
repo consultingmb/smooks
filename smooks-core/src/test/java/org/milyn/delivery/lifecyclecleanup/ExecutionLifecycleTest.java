@@ -15,11 +15,10 @@
 */
 package org.milyn.delivery.lifecyclecleanup;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.payload.StringSource;
 import org.xml.sax.SAXException;

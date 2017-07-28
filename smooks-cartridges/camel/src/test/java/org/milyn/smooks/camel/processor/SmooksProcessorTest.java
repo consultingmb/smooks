@@ -22,20 +22,6 @@ import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.util.Set;
-
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.management.MBeanServer;
-import javax.management.ObjectInstance;
-import javax.management.ObjectName;
-
 import org.apache.camel.CamelExecutionException;
 import org.apache.camel.EndpointInject;
 import org.apache.camel.Exchange;
@@ -54,6 +40,19 @@ import org.milyn.delivery.Filter;
 import org.milyn.io.StreamUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.management.MBeanServer;
+import javax.management.ObjectInstance;
+import javax.management.ObjectName;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.util.Set;
 
 /**
  * Unit test for {@link SmooksProcessor}.

@@ -16,12 +16,12 @@
 
 package org.milyn.delivery.dom.serialize;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.OutputStreamWriter;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Test;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.annotation.Configurator;
 import org.milyn.container.MockExecutionContext;
@@ -30,8 +30,9 @@ import org.milyn.util.CharUtils;
 import org.milyn.xml.XmlUtil;
 import org.w3c.dom.Document;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStreamWriter;
 
 /**
  * 

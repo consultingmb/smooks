@@ -16,13 +16,12 @@
 
 package org.milyn.resource;
 
+import org.milyn.servlet.ServletParamUtils;
+
+import javax.servlet.ServletConfig;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
-
-import javax.servlet.ServletConfig;
-
-import org.milyn.servlet.ServletParamUtils;
 
 /**
  * Servlet resource locator.

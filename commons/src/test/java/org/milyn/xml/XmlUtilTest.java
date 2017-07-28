@@ -2,8 +2,13 @@
 
 package org.milyn.xml;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.io.StreamUtils;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -11,12 +16,6 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 import java.io.StringWriter;
-
-import org.milyn.io.StreamUtils;
-import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
-
-import javax.xml.transform.dom.DOMResult;
 
 /**
  * XmlUtilTest

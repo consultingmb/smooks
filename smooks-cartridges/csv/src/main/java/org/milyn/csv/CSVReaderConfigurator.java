@@ -15,15 +15,15 @@
  */
 package org.milyn.csv;
 
-import java.nio.charset.Charset;
-import java.util.List;
-
 import org.milyn.GenericReaderConfigurator;
 import org.milyn.ReaderConfigurator;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.flatfile.FlatFileReader;
+
+import java.nio.charset.Charset;
+import java.util.List;
 
 /**
  * CSV Reader configurator.

@@ -15,14 +15,12 @@
 */
 package example.dao;
 
-import javax.persistence.EntityManager;
-
-import org.hibernate.annotations.NamedQuery;
+import example.jpa.entity.Product;
 import org.milyn.scribe.annotation.Dao;
 import org.milyn.scribe.annotation.Lookup;
 import org.milyn.scribe.annotation.Param;
 
-import example.jpa.entity.Product;
+import javax.persistence.EntityManager;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

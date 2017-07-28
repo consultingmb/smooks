@@ -1,11 +1,11 @@
 package org.milyn.delivery.nested;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.Smooks;
-import org.milyn.container.ExecutionContext;
 import org.milyn.javabean.lifecycle.BeanContextLifecycleEvent;
 import org.milyn.javabean.lifecycle.BeanContextLifecycleObserver;
 import org.milyn.javabean.lifecycle.BeanLifecycle;

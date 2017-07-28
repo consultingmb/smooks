@@ -15,15 +15,19 @@
 */
 package org.milyn.xml;
 
+import org.milyn.io.StreamUtils;
+import org.milyn.util.ClassUtil;
 import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.milyn.util.ClassUtil;
-import org.milyn.io.StreamUtils;
 
-import java.io.*;
-import java.util.Hashtable;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
+import java.util.Hashtable;
 
 /**
  * XSD resolver for local XSD's.

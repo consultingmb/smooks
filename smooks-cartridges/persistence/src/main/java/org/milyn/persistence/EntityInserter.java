@@ -15,10 +15,6 @@
 */
 package org.milyn.persistence;
 
-import java.io.IOException;
-import java.util.Collections;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -36,7 +32,6 @@ import org.milyn.delivery.dom.DOMElementVisitor;
 import org.milyn.delivery.ordering.Consumer;
 import org.milyn.delivery.ordering.Producer;
 import org.milyn.delivery.sax.SAXElement;
-import org.milyn.delivery.sax.SAXUtil;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
 import org.milyn.event.report.annotation.VisitAfterReport;
@@ -52,7 +47,9 @@ import org.milyn.scribe.register.DaoRegister;
 import org.milyn.util.CollectionsUtil;
 import org.w3c.dom.Element;
 
-import javax.xml.namespace.QName;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.Set;
 
 /**
  * DAO Inserter

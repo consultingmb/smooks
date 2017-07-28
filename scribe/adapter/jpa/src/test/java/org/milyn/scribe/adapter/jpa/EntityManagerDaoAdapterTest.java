@@ -15,23 +15,25 @@
 */
 package org.milyn.scribe.adapter.jpa;
 
-import static org.junit.Assert.*;
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.*;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
+import static org.junit.Assert.assertSame;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Matchers.same;
+import static org.mockito.Mockito.stub;
+import static org.mockito.Mockito.verify;
 
 import org.milyn.scribe.adapter.jpa.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>
  *

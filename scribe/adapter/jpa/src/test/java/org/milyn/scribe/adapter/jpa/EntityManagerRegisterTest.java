@@ -17,6 +17,7 @@ package org.milyn.scribe.adapter.jpa;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertSame;
+
 import org.milyn.scribe.adapter.jpa.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.Test;

@@ -15,8 +15,9 @@
 */
 package org.milyn.javabean.JIRA.MILYN_238;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.delivery.sax.TrackedStringWriter;
 
 import java.io.IOException;

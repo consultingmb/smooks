@@ -15,11 +15,11 @@
 */
 package org.milyn.scribe.register;
 
+import org.milyn.assertion.AssertArgument;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
-
-import org.milyn.assertion.AssertArgument;
 
 /**
  * An abstract implementation of a DAO adapter

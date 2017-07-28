@@ -16,16 +16,15 @@
 
 package org.milyn.profile;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.milyn.profile.DefaultProfileConfigDigester;
-import org.milyn.profile.ProfileSet;
-import org.milyn.profile.UnknownProfileMemberException;
-import org.xml.sax.SAXException;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * 

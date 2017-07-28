@@ -15,16 +15,17 @@
 */
 package org.milyn.csv.MILYN_642;
 
-import java.io.IOException;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.SmooksUtil;
 import org.milyn.container.ExecutionContext;
 import org.milyn.csv.CSVRecordParserConfigurator;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * @author Ken Hill

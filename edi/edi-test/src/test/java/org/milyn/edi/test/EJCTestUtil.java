@@ -15,10 +15,6 @@
 */
 package org.milyn.edi.test;
 
-import java.io.*;
-import java.lang.reflect.Method;
-import java.util.zip.ZipInputStream;
-
 import org.milyn.archive.Archive;
 import org.milyn.archive.ArchiveClassLoader;
 import org.milyn.edisax.EDIConfigurationException;
@@ -30,6 +26,17 @@ import org.milyn.ejc.EJC;
 import org.milyn.io.StreamUtils;
 import org.milyn.test.ant.AntRunner;
 import org.xml.sax.SAXException;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.Reader;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.lang.reflect.Method;
+import java.util.zip.ZipInputStream;
 
 /**
  * 

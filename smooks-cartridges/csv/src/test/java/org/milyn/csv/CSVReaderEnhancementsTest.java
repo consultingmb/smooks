@@ -19,8 +19,9 @@
  */
 package org.milyn.csv;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.payload.StringResult;
 import org.xml.sax.SAXException;

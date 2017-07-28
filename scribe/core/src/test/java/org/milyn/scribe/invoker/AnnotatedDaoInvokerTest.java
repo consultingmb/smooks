@@ -15,21 +15,14 @@
 */
 package org.milyn.scribe.invoker;
 
-import static org.junit.Assert.*;
-import static org.mockito.Matchers.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertSame;
+import static org.mockito.Matchers.eq;
+import static org.mockito.Matchers.same;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.milyn.scribe.IllegalAnnotationUsageException;
 import org.milyn.scribe.NoMethodWithAnnotationFoundException;
-import org.milyn.scribe.annotation.Dao;
-import org.milyn.scribe.annotation.Insert;
-import org.milyn.scribe.invoker.AnnotatedDaoInvoker;
-import org.milyn.scribe.invoker.DaoInvoker;
 import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfo;
 import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfoFactory;
 import org.milyn.scribe.test.dao.AnnotatedDaoNoEntityReturned;
@@ -39,6 +32,10 @@ import org.milyn.scribe.test.dao.OnlyDefaultAnnotatedDao;
 import org.milyn.scribe.test.util.BaseTestCase;
 import org.mockito.Mock;
 import org.testng.annotations.Test;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

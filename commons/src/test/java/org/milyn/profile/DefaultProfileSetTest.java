@@ -16,11 +16,10 @@
 
 package org.milyn.profile;
 
-import org.milyn.profile.DefaultProfileSet;
-import org.milyn.profile.Profile;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * 

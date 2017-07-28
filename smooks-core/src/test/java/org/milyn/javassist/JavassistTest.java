@@ -15,20 +15,20 @@
 */
 package org.milyn.javassist;
 
+import static org.junit.Assert.assertEquals;
+
+import javassist.CannotCompileException;
+import javassist.ClassPool;
+import javassist.CtClass;
+import javassist.CtNewMethod;
+import javassist.NotFoundException;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.mvel2.MVEL;
 
 import java.io.Serializable;
-import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
-import java.util.Set;
-
-import org.mvel2.MVEL;
-import org.mvel2.integration.VariableResolver;
-import org.mvel2.integration.VariableResolverFactory;
-
-import javassist.*;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

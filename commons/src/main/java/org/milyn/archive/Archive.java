@@ -15,23 +15,34 @@
 */
 package org.milyn.archive;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.*;
-import java.util.Map.Entry;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.jar.JarFile;
-import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
-import java.util.zip.ZipEntry;
-import java.io.*;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.io.FileUtils;
 import org.milyn.io.StreamUtils;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.jar.JarFile;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+import java.util.zip.ZipOutputStream;
 
 /**
  * Java Archive.

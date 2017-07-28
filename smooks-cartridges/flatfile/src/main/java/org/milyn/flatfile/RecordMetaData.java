@@ -16,11 +16,11 @@
 
 package org.milyn.flatfile;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksConfigurationException;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Record metadata.

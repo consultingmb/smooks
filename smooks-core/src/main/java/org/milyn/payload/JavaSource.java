@@ -18,9 +18,9 @@ package org.milyn.payload;
 import org.milyn.assertion.AssertArgument;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
 
 /**
  * Java Filtration/Transformation {@link javax.xml.transform.Source}.

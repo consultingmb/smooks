@@ -15,8 +15,6 @@
 */
 package org.milyn.edisax.unedifact.handlers;
 
-import java.io.IOException;
-
 import org.milyn.edisax.BufferedSegmentListener;
 import org.milyn.edisax.BufferedSegmentReader;
 import org.milyn.edisax.EDIParser;
@@ -32,6 +30,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
 
 import javax.xml.XMLConstants;
+import java.io.IOException;
 
 /**
  * UNH Segment Handler.

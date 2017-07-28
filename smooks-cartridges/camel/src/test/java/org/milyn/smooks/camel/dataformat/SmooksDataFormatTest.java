@@ -16,10 +16,6 @@ package org.milyn.smooks.camel.dataformat;
 
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -34,6 +30,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.milyn.io.StreamUtils;
 import org.milyn.payload.JavaSource;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Unit test for {@link SmooksDataFormat}

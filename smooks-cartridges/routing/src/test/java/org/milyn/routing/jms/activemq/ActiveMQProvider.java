@@ -21,14 +21,25 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.util.JNDIUtil;
 
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.MessageConsumer;
+import javax.jms.MessageListener;
+import javax.jms.QueueConnection;
+import javax.jms.QueueConnectionFactory;
+import javax.jms.QueueSession;
+import javax.jms.Session;
+import javax.jms.TopicConnection;
+import javax.jms.TopicConnectionFactory;
+import javax.jms.TopicSession;
 import javax.naming.Context;
 import javax.naming.NamingException;
-import javax.jms.*;
-import java.util.Properties;
-import java.util.List;
-import java.util.ArrayList;
 import java.io.File;
-import java.lang.IllegalStateException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * @author <a href="mailto:dbevenius@jboss.com">Daniel Bevenius</a>

@@ -15,14 +15,14 @@
 */
 package example;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.io.StreamUtils;
 import org.xml.sax.SAXException;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 
 /**
  * @author <a href="daniel.bevenius@redpill.se">Daniel Bevenius</a>

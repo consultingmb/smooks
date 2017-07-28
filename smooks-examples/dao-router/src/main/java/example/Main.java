@@ -15,24 +15,12 @@
 */
 package example;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-import javax.xml.transform.stream.StreamSource;
-
+import com.ibatis.common.resources.Resources;
+import com.ibatis.sqlmap.client.SqlMapClient;
+import com.ibatis.sqlmap.client.SqlMapClientBuilder;
+import example.dao.CustomerDao;
+import example.dao.OrderDao;
+import example.dao.ProductDao;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
@@ -47,13 +35,22 @@ import org.milyn.scribe.register.MapDaoRegister;
 import org.milyn.util.HsqlServer;
 import org.xml.sax.SAXException;
 
-import com.ibatis.common.resources.Resources;
-import com.ibatis.sqlmap.client.SqlMapClient;
-import com.ibatis.sqlmap.client.SqlMapClientBuilder;
-
-import example.dao.CustomerDao;
-import example.dao.OrderDao;
-import example.dao.ProductDao;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+import javax.xml.transform.stream.StreamSource;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Simple example main class.

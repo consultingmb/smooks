@@ -15,16 +15,22 @@
 */
 package org.milyn.javabean.dynamic;
 
-import java.io.IOException;
-import java.io.Writer;
-import java.util.*;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.javabean.dynamic.serialize.BeanWriter;
 import org.milyn.javabean.dynamic.serialize.DefaultNamespace;
 import org.milyn.payload.JavaResult;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Model container.

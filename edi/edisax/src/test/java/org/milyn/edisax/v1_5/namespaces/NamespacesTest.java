@@ -15,11 +15,10 @@
  */
 package org.milyn.edisax.v1_5.namespaces;
 
-import java.io.IOException;
-import java.util.List;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.EDIParser;
 import org.milyn.edisax.model.EdifactModel;
@@ -29,6 +28,9 @@ import org.milyn.edisax.model.internal.Field;
 import org.milyn.edisax.model.internal.Segment;
 import org.milyn.edisax.model.internal.SegmentGroup;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.util.List;
 
 /**
  * 

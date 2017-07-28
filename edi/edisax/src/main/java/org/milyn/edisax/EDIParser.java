@@ -16,20 +16,6 @@
 
 package org.milyn.edisax;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringReader;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.edisax.model.EdifactModel;
 import org.milyn.edisax.model.internal.Component;
@@ -59,6 +45,19 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.AttributesImpl;
 
 import javax.xml.XMLConstants;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.io.StringReader;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * EDI Parser.

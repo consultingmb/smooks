@@ -15,18 +15,18 @@
 */
 package org.milyn.ejc.maven;
 
+import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
-import org.apache.maven.project.MavenProject;
-import org.apache.maven.model.Resource;
 import org.apache.maven.plugins.annotations.Execute;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
-import org.milyn.ejc.EJCExecutor;
-import org.milyn.ejc.EJCException;
+import org.apache.maven.project.MavenProject;
 import org.milyn.edisax.util.IllegalNameException;
+import org.milyn.ejc.EJCException;
+import org.milyn.ejc.EJCExecutor;
 import org.xml.sax.SAXException;
 
 import java.io.File;

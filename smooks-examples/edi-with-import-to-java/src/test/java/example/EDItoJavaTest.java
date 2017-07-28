@@ -15,11 +15,12 @@
 */
 package example;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-import org.xml.sax.*;
+import static org.junit.Assert.assertEquals;
 
-import java.io.*;
+import org.junit.Test;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

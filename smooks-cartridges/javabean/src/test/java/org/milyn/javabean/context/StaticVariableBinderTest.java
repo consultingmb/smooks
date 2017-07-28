@@ -15,19 +15,18 @@
 */
 package org.milyn.javabean.context;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.Map;
-
-import javax.xml.transform.stream.StreamSource;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.javabean.expression.BeanMapExpressionEvaluator;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

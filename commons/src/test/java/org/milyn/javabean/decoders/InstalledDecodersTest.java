@@ -15,8 +15,11 @@
 */
 package org.milyn.javabean.decoders;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DataDecoder;
 

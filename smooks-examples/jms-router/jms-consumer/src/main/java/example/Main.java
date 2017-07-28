@@ -15,9 +15,16 @@
 */
 package example;
 
-import org.apache.activemq.broker.BrokerService;
-
-import javax.jms.*;
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.MessageConsumer;
+import javax.jms.MessageListener;
+import javax.jms.ObjectMessage;
+import javax.jms.Session;
+import javax.jms.TextMessage;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 

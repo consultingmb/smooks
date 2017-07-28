@@ -15,15 +15,17 @@
 */
 package example;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-import java.io.*;
-import java.util.List;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import com.acme.order.model.*;
 import com.acme.order.model.field.Name;
+import org.junit.Test;
 import org.xml.sax.SAXException;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.List;
 
 /**
  * Test that example produces expected result.

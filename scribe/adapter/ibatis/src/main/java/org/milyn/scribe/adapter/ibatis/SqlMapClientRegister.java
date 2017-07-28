@@ -15,13 +15,10 @@
 */
 package org.milyn.scribe.adapter.ibatis;
 
-import java.util.Map;
-
-import org.milyn.assertion.AssertArgument;
-import org.milyn.scribe.register.AbstractDaoAdapterRegister;
-import org.milyn.scribe.register.AbstractDaoRegister;
-
 import com.ibatis.sqlmap.client.SqlMapClient;
+import org.milyn.scribe.register.AbstractDaoAdapterRegister;
+
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

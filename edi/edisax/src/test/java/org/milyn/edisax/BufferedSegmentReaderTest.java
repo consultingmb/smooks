@@ -19,14 +19,14 @@ package org.milyn.edisax;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.Arrays;
-
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 import org.milyn.edisax.model.internal.Delimiters;
 import org.xml.sax.InputSource;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.Arrays;
 
 /**
  * @author tfennelly

@@ -15,15 +15,15 @@
 */
 package org.milyn.javabean.dynamic.resolvers;
 
-import java.io.InputStream;
-import java.util.List;
-import java.util.Properties;
-
 import org.milyn.javabean.dynamic.Descriptor;
 import org.milyn.util.ClassUtil;
 import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+
+import java.io.InputStream;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * Abstract descriptor resource resolver. 

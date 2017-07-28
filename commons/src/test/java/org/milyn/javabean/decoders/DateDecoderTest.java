@@ -15,15 +15,16 @@
 */
 package org.milyn.javabean.decoders;
 
-import java.util.Date;
-import java.util.Locale;
-import java.util.Properties;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotSame;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Properties;
 
 /**
  * Tests for the Calendar and Date decoders.

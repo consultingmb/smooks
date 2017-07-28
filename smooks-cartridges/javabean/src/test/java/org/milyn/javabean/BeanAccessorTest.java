@@ -16,16 +16,15 @@
 
 package org.milyn.javabean;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.container.ExecutionContext;
 import org.milyn.container.MockExecutionContext;
-import org.milyn.javabean.context.BeanContext;
 import org.milyn.javabean.context.BeanIdStore;
-import org.milyn.javabean.lifecycle.BeanLifecycle;
-import org.milyn.javabean.repository.BeanId;
 
 /**
  *

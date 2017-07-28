@@ -16,11 +16,11 @@
 
 package org.milyn.javabean.decoders;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 import java.math.BigInteger;
 import java.util.Locale;

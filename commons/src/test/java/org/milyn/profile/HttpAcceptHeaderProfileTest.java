@@ -16,10 +16,10 @@
 
 package org.milyn.profile;
 
-import org.milyn.profile.HttpAcceptHeaderProfile;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class HttpAcceptHeaderProfileTest {
 

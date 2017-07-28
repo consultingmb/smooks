@@ -14,7 +14,7 @@
  */
 package org.milyn.routing.jms.message.creationstrategies;
 
-import static org.testng.AssertJUnit.*;
+import static org.testng.AssertJUnit.assertTrue;
 
 import org.testng.annotations.Test;
 

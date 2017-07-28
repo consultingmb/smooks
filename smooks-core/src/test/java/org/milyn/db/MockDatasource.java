@@ -17,9 +17,9 @@ package org.milyn.db;
 
 import org.milyn.container.ExecutionContext;
 
-import java.lang.reflect.Proxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 import java.sql.Connection;
 import java.sql.SQLException;
 

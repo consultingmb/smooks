@@ -15,12 +15,12 @@
 */
 package org.milyn.scribe.reflection;
 
+import org.milyn.assertion.AssertArgument;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Collection;
 import java.util.Map;
-
-import org.milyn.assertion.AssertArgument;
 
 /**
  * @author maurice

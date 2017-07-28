@@ -15,8 +15,9 @@
 */
 package org.milyn.fixedlength;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;

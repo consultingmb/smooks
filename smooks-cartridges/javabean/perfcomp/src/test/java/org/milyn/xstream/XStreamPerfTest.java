@@ -15,15 +15,14 @@
 */
 package org.milyn.xstream;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
-
-import org.milyn.Order;
-import org.milyn.OrderItem;
-import org.milyn.TestConstants;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.StaxDriver;
+import org.junit.Test;
+import org.milyn.Order;
+import org.milyn.OrderItem;
+import org.milyn.TestConstants;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

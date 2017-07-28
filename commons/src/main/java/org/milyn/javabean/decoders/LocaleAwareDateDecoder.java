@@ -1,10 +1,10 @@
 package org.milyn.javabean.decoders;
 
-import org.milyn.config.Configurable;
 import org.milyn.cdr.SmooksConfigurationException;
 
-import java.text.*;
-import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.Properties;
 
 /**
  * LocaleAwareDateDecoder is a decoder 'helper' that can be subclassed by Date decoders to enable

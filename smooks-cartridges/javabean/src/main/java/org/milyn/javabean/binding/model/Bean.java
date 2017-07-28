@@ -16,7 +16,8 @@
 
 package org.milyn.javabean.binding.model;
 
-import org.milyn.cdr.SmooksConfigurationException;
+import static org.milyn.javabean.BeanRuntimeInfo.Classification;
+
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.javabean.BeanInstanceCreator;
 import org.milyn.javabean.BeanRuntimeInfo;
@@ -24,8 +25,6 @@ import org.milyn.javabean.BeanRuntimeInfo;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import static org.milyn.javabean.BeanRuntimeInfo.Classification;
 
 /**
  * Bean.

@@ -15,11 +15,13 @@
 */
 package org.milyn.cdr;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.milyn.delivery.java.JavaXMLReader;
-import org.milyn.delivery.AbstractParser;
 import org.milyn.GenericReaderConfigurator;
+import org.milyn.delivery.AbstractParser;
+import org.milyn.delivery.java.JavaXMLReader;
 import org.xml.sax.SAXException;
 
 /**

@@ -14,11 +14,9 @@
  */
 package example;
 
-import org.milyn.Smooks;
-
 import com.google.inject.Inject;
-
 import example.model.Order;
+import org.milyn.Smooks;
 
 /**
  * Simple example of using Google-Guice injection

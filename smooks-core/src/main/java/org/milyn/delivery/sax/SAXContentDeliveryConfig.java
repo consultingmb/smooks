@@ -15,19 +15,31 @@
 */
 package org.milyn.delivery.sax;
 
-import org.milyn.container.ExecutionContext;
-import org.milyn.delivery.*;
-import org.milyn.delivery.ordering.Sorter;
 import org.milyn.cdr.ParameterAccessor;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.xpath.SelectorStep;
-import org.milyn.cdr.xpath.evaluators.equality.IndexEvaluator;
 import org.milyn.cdr.xpath.evaluators.equality.ElementIndexCounter;
+import org.milyn.cdr.xpath.evaluators.equality.IndexEvaluator;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.AbstractContentDeliveryConfig;
+import org.milyn.delivery.ContentHandlerConfigMap;
+import org.milyn.delivery.ContentHandlerConfigMapTable;
+import org.milyn.delivery.Filter;
+import org.milyn.delivery.FilterBypass;
+import org.milyn.delivery.VisitLifecycleCleanable;
+import org.milyn.delivery.ordering.Sorter;
 
-import javax.xml.namespace.QName;
 import javax.xml.XMLConstants;
-import java.util.*;
+import javax.xml.namespace.QName;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * SAX specific {@link org.milyn.delivery.ContentDeliveryConfig} implementation.

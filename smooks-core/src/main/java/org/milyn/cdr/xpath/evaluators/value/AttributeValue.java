@@ -17,13 +17,9 @@ package org.milyn.cdr.xpath.evaluators.value;
 
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.javabean.DataDecoder;
-import org.milyn.cdr.xpath.evaluators.value.Value;
-import org.milyn.xml.DomUtils;
+import org.w3c.dom.Attr;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Attr;
-
-import javax.xml.namespace.QName;
 
 /**
  * Element text value getter.

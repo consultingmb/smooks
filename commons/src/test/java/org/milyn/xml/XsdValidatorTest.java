@@ -16,9 +16,8 @@
 
 package org.milyn.xml;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.apache.xerces.jaxp.validation.XMLSchemaFactory;
+import org.junit.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.ls.LSInput;
 import org.w3c.dom.ls.LSResourceResolver;

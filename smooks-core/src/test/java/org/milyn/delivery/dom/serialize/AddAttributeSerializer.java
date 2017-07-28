@@ -17,8 +17,8 @@ package org.milyn.delivery.dom.serialize;
 
 import org.w3c.dom.NamedNodeMap;
 
-import java.io.Writer;
 import java.io.IOException;
+import java.io.Writer;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

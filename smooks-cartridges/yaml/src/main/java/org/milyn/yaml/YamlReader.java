@@ -16,14 +16,6 @@
 
 package org.milyn.yaml;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.nio.charset.Charset;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -51,6 +43,12 @@ import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.events.Event;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * YAML to SAX event reader.

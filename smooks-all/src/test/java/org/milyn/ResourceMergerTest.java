@@ -19,6 +19,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;

@@ -15,21 +15,23 @@
 */
 package org.milyn.smooks.scripting.groovy;
 
-import org.junit.Before;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.FilterSettings;
 import org.milyn.StreamFilterType;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.Filter;
-import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.io.StreamUtils;
+import org.milyn.payload.JavaResult;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
-import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;

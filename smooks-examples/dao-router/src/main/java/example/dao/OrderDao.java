@@ -15,12 +15,11 @@
 */
 package example.dao;
 
-import javax.persistence.EntityManager;
-
+import example.jpa.entity.Order;
 import org.milyn.scribe.annotation.Dao;
 import org.milyn.scribe.annotation.Insert;
 
-import example.jpa.entity.Order;
+import javax.persistence.EntityManager;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

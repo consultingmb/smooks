@@ -15,16 +15,16 @@
 
 package org.milyn.validation;
 
-import static org.junit.Assert.*;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Locale;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.milyn.container.MockExecutionContext;
 import org.milyn.rules.RuleEvalResult;
+
+import java.util.List;
+import java.util.Locale;
 
 /**
  * Test for {@link ValidationResult}.

@@ -15,14 +15,17 @@
 */
 package org.milyn.javabean.extendedconfig11;
 
-import org.junit.Ignore;
-import org.junit.Test;
-
 import static org.hamcrest.collection.IsMapContaining.hasEntry;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.expression.MVELExpressionEvaluator;
 import org.milyn.container.ExecutionContext;
 import org.milyn.javabean.B;
 import org.milyn.javabean.Header;
@@ -38,7 +41,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

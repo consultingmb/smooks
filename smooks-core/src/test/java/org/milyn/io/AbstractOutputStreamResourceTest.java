@@ -15,7 +15,12 @@
 
 package org.milyn.io;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
@@ -23,7 +28,11 @@ import org.milyn.container.MockExecutionContext;
 import org.milyn.delivery.Fragment;
 import org.w3c.dom.Element;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.nio.charset.Charset;
 
 /**

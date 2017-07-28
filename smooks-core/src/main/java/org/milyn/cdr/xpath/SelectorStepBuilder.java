@@ -15,18 +15,21 @@
 */
 package org.milyn.cdr.xpath;
 
-import org.jaxen.expr.*;
+import org.jaxen.JaxenHandler;
+import org.jaxen.expr.Expr;
+import org.jaxen.expr.LocationPath;
+import org.jaxen.expr.Step;
+import org.jaxen.expr.XPathExpr;
+import org.jaxen.saxpath.Axis;
 import org.jaxen.saxpath.SAXPathException;
 import org.jaxen.saxpath.XPathReader;
-import org.jaxen.saxpath.Axis;
 import org.jaxen.saxpath.helpers.XPathReaderFactory;
-import org.jaxen.JaxenHandler;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksResourceConfiguration;
 
 import javax.xml.namespace.QName;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 /**

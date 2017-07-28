@@ -1,4 +1,4 @@
-<Order xmlns="http://milyn.codehaus.org/Smooks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Order xmlns="http://milyn.codehaus.org/Smooks">
     <header>
         <order-id>1</order-id>
         <status-code>0</status-code>

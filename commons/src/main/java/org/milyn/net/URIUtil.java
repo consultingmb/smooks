@@ -17,9 +17,9 @@ package org.milyn.net;
 
 import org.milyn.assertion.AssertArgument;
 
+import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.io.File;
 
 /**
  * {@link java.net.URI} utility methods.

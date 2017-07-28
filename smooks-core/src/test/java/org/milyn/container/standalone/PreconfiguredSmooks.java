@@ -17,12 +17,12 @@
 package org.milyn.container.standalone;
 
 
-import java.io.IOException;
-
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;
 import org.milyn.profile.DefaultProfileSet;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 public class PreconfiguredSmooks extends Smooks {
 

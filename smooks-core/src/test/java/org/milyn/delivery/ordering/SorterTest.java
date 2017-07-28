@@ -15,22 +15,22 @@
 */
 package org.milyn.delivery.ordering;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import org.milyn.delivery.Visitor;
-import org.milyn.delivery.ContentHandlerConfigMap;
-import org.milyn.delivery.ordering.testvisitors.TestProducer;
-import org.milyn.delivery.ordering.testvisitors.TestVisitor;
-import org.milyn.delivery.ordering.testvisitors.TestConsumer;
-import org.milyn.delivery.ordering.testvisitors.TestProducerConsumer;
-import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.delivery.ContentHandlerConfigMap;
+import org.milyn.delivery.Visitor;
+import org.milyn.delivery.ordering.testvisitors.TestConsumer;
+import org.milyn.delivery.ordering.testvisitors.TestProducer;
+import org.milyn.delivery.ordering.testvisitors.TestProducerConsumer;
+import org.milyn.delivery.ordering.testvisitors.TestVisitor;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

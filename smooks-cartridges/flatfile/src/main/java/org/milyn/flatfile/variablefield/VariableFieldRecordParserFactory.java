@@ -16,15 +16,6 @@
 
 package org.milyn.flatfile.variablefield;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.milyn.SmooksException;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.SmooksResourceConfiguration;
@@ -47,6 +38,15 @@ import org.milyn.javabean.Bean;
 import org.milyn.javabean.context.BeanContext;
 import org.milyn.xml.XmlUtil;
 import org.w3c.dom.Element;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Abstract VariableFieldRecordParserFactory.

@@ -16,18 +16,20 @@
 
 package org.milyn.cdr;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.cdr.xpath.SelectorStepBuilder;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.util.DomUtil;
 import org.milyn.xml.XmlUtil;
-import org.milyn.cdr.xpath.SelectorStep;
-import org.milyn.cdr.xpath.SelectorStepBuilder;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.helpers.AttributesImpl;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class SmooksResourceConfigurationTest {

@@ -16,13 +16,13 @@
 
 package org.milyn.csv;
 
+import org.milyn.flatfile.variablefield.VariableFieldRecordParser;
+import org.xml.sax.InputSource;
+
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
 import java.util.List;
-
-import org.milyn.flatfile.variablefield.VariableFieldRecordParser;
-import org.xml.sax.InputSource;
 
 /**
  * CSV record parser.

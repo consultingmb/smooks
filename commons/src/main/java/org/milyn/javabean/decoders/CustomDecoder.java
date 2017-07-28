@@ -15,10 +15,10 @@
 */
 package org.milyn.javabean.decoders;
 
-import org.milyn.javabean.DataDecoder;
-import org.milyn.javabean.DataDecodeException;
-import org.milyn.config.Configurable;
 import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.config.Configurable;
+import org.milyn.javabean.DataDecodeException;
+import org.milyn.javabean.DataDecoder;
 
 import java.util.Properties;
 

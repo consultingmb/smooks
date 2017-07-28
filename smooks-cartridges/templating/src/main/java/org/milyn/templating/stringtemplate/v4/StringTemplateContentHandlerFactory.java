@@ -16,10 +16,6 @@
 
 package org.milyn.templating.stringtemplate.v4;
 
-import java.io.IOException;
-import java.util.Map;
-
-import org.hsqldb.lib.Iterator;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.annotation.AppContext;
@@ -39,6 +35,9 @@ import org.stringtemplate.v4.ST;
 import org.stringtemplate.v4.STRawGroupDir;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+
+import java.io.IOException;
+import java.util.Map;
 
 /**
  * StringTemplate {@link org.milyn.delivery.dom.DOMElementVisitor} Creator class.

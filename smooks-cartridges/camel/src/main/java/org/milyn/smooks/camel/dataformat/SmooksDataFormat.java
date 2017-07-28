@@ -25,8 +25,8 @@ import org.milyn.Smooks;
 import org.milyn.SmooksFactory;
 import org.milyn.container.ExecutionContext;
 import org.milyn.payload.Exports;
-import org.milyn.payload.StringResult;
 import org.milyn.payload.JavaSource;
+import org.milyn.payload.StringResult;
 import org.milyn.smooks.camel.component.SmooksComponent;
 import org.milyn.smooks.camel.processor.SmooksProcessor;
 

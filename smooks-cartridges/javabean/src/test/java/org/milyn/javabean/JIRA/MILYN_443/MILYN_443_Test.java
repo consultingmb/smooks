@@ -15,21 +15,20 @@
 */
 package org.milyn.javabean.JIRA.MILYN_443;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
+import static org.junit.Assert.assertEquals;
 
-import javax.xml.transform.stream.StreamSource;
-
+import org.junit.Test;
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.javabean.Bean;
 import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * http://jira.codehaus.org/browse/MILYN-443

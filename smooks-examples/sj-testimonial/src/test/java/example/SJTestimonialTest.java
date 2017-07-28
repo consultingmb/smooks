@@ -15,8 +15,9 @@
 */
 package example;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.xml.sax.SAXException;
 import se.sj.ipl.rollingstock.domain.RollingStockList;
 

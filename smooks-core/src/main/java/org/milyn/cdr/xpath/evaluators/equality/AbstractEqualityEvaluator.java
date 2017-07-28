@@ -15,16 +15,16 @@
 */
 package org.milyn.cdr.xpath.evaluators.equality;
 
+import org.jaxen.expr.BinaryExpr;
+import org.jaxen.expr.Expr;
+import org.jaxen.expr.NumberExpr;
+import org.jaxen.saxpath.SAXPathException;
 import org.milyn.cdr.xpath.evaluators.XPathExpressionEvaluator;
 import org.milyn.cdr.xpath.evaluators.value.Value;
-import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DataDecodeException;
-import org.milyn.javabean.decoders.StringDecoder;
+import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.decoders.DoubleDecoder;
-import org.jaxen.expr.NumberExpr;
-import org.jaxen.expr.Expr;
-import org.jaxen.expr.BinaryExpr;
-import org.jaxen.saxpath.SAXPathException;
+import org.milyn.javabean.decoders.StringDecoder;
 
 import java.util.Properties;
 

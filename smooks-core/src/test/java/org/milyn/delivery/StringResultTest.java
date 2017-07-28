@@ -15,12 +15,12 @@
 
 package org.milyn.delivery;
 
-import static org.junit.Assert.*;
-
-import java.io.StringWriter;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import org.milyn.payload.StringResult;
+
+import java.io.StringWriter;
 
 /**
  * Unit test for StringResult

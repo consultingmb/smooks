@@ -16,18 +16,16 @@
 
 package org.drools.examples.broker.ui;
 
-import java.awt.Color;
-import java.text.NumberFormat;
+import com.jgoodies.forms.builder.PanelBuilder;
+import com.jgoodies.forms.layout.CellConstraints;
+import com.jgoodies.forms.layout.FormLayout;
+import org.drools.examples.broker.model.Company;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-
-import org.drools.examples.broker.model.Company;
-
-import com.jgoodies.forms.builder.PanelBuilder;
-import com.jgoodies.forms.layout.CellConstraints;
-import com.jgoodies.forms.layout.FormLayout;
+import java.awt.Color;
+import java.text.NumberFormat;
 
 /**
  * A class that manages a company UI panel

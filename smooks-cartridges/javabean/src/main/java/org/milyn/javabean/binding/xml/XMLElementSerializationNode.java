@@ -20,7 +20,6 @@ import org.milyn.cdr.xpath.SelectorStep;
 import org.milyn.javabean.binding.SerializationContext;
 import org.milyn.javabean.binding.model.get.Getter;
 import org.milyn.javabean.binding.model.get.GetterGraph;
-import org.milyn.javabean.gen.model.ClassConfig;
 import org.milyn.xml.XmlUtil;
 
 import javax.xml.namespace.QName;

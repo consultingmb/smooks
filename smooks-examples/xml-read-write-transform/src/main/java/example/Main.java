@@ -16,14 +16,13 @@
 
 package example;
 
-import org.milyn.SmooksException;
-import org.milyn.javabean.binding.xml.XMLBinding;
-import org.milyn.io.StreamUtils;
-import org.milyn.payload.StringSource;
-import org.xml.sax.SAXException;
-
 import example.model.Order;
 import example.model.OrderItem;
+import org.milyn.SmooksException;
+import org.milyn.io.StreamUtils;
+import org.milyn.javabean.binding.xml.XMLBinding;
+import org.milyn.payload.StringSource;
+import org.xml.sax.SAXException;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

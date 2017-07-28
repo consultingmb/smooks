@@ -15,6 +15,16 @@
 */
 package example;
 
+import org.milyn.Smooks;
+import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
+import org.milyn.event.report.HtmlReportGenerator;
+import org.milyn.io.StreamUtils;
+import org.milyn.routing.db.StatementExec;
+import org.milyn.util.HsqlServer;
+import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamSource;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
@@ -26,18 +36,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import java.util.TimeZone;
-
-import javax.xml.transform.stream.StreamSource;
-
-import org.milyn.Smooks;
-import org.milyn.SmooksException;
-import org.milyn.container.ExecutionContext;
-import org.milyn.event.report.HtmlReportGenerator;
-import org.milyn.routing.db.StatementExec;
-import org.milyn.io.StreamUtils;
-import org.milyn.util.HsqlServer;
-import org.xml.sax.SAXException;
 
 /**
  * Simple example main class.

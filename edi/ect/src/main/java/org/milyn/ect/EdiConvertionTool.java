@@ -16,19 +16,6 @@
 
 package org.milyn.ect;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.StringWriter;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Properties;
-import java.util.Set;
-import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.eclipse.emf.ecore.EPackage;
@@ -46,6 +33,19 @@ import org.milyn.edisax.model.internal.MappingNode;
 import org.milyn.edisax.model.internal.Segment;
 import org.milyn.edisax.model.internal.SegmentGroup;
 import org.milyn.edisax.util.EDIUtils;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Properties;
+import java.util.Set;
+import java.util.zip.ZipInputStream;
+import java.util.zip.ZipOutputStream;
 
 /**
  * EDI Convertion Tool.

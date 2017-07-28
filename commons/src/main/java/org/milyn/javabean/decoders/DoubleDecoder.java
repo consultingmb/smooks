@@ -1,11 +1,8 @@
 package org.milyn.javabean.decoders;
 
-import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DecodeType;
 
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.text.NumberFormat;
 import java.text.ParseException;
 

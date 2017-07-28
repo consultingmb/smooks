@@ -17,8 +17,9 @@ package org.milyn;
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-import org.junit.Test;
 import static org.mockito.Mockito.mock;
+
+import org.junit.Test;
 import org.osgi.framework.Bundle;
 import org.xml.sax.SAXException;
 

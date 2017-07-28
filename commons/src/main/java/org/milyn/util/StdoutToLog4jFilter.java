@@ -14,11 +14,11 @@
  */
 package org.milyn.util;
 
+import org.apache.commons.logging.Log;
+
 import java.io.FilterWriter;
 import java.io.IOException;
 import java.io.Writer;
-
-import org.apache.commons.logging.Log;
 
 /**
  * StoutToLog4jFilter is just a simple FileWriter implementation that 

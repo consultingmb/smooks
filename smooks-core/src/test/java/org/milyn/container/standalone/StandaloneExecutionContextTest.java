@@ -14,15 +14,15 @@
  */
 package org.milyn.container.standalone;
 
-import static org.junit.Assert.*;
-
-import java.util.Hashtable;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.SmooksUtil;
 import org.milyn.profile.DefaultProfileSet;
+
+import java.util.Hashtable;
 
 /**
  * Unit test for {@link StandaloneExecutionContext}

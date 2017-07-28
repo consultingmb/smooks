@@ -15,15 +15,16 @@
 */
 package org.milyn.delivery.dom.serialize;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-
-import java.io.IOException;
-
-import org.xml.sax.SAXException;
 import org.milyn.Smooks;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
+import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

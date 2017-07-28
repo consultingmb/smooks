@@ -17,9 +17,7 @@ package org.milyn.xml;
 
 import org.milyn.assertion.AssertArgument;
 
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.transform.Source;
-import java.io.File;
 
 /**
  * XSD resolver for local XSD's.

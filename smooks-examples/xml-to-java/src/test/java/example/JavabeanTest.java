@@ -15,14 +15,15 @@
 */
 package example;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import example.model.Order;
 import example.model.OrderItem;
+import org.junit.Test;
+import org.xml.sax.SAXException;
 
 import java.io.IOException;
-
-import org.xml.sax.SAXException;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

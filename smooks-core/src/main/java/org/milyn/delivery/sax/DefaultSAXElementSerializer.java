@@ -15,10 +15,10 @@
 */
 package org.milyn.delivery.sax;
 
-import org.milyn.container.ExecutionContext;
 import org.milyn.SmooksException;
-import org.milyn.delivery.Filter;
 import org.milyn.cdr.annotation.ConfigParam;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.Filter;
 
 import java.io.IOException;
 

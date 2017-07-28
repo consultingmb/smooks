@@ -14,10 +14,30 @@
  */
 package org.milyn.routing.jms;
 
-import java.io.IOException;
-import java.util.Enumeration;
-import java.util.Map;
-import java.util.Properties;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.milyn.SmooksException;
+import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.cdr.annotation.ConfigParam;
+import org.milyn.cdr.annotation.ConfigParam.Use;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.annotation.Initialize;
+import org.milyn.delivery.annotation.Uninitialize;
+import org.milyn.delivery.annotation.VisitAfterIf;
+import org.milyn.delivery.annotation.VisitBeforeIf;
+import org.milyn.delivery.dom.DOMElementVisitor;
+import org.milyn.delivery.ordering.Consumer;
+import org.milyn.delivery.sax.SAXElement;
+import org.milyn.delivery.sax.SAXVisitAfter;
+import org.milyn.delivery.sax.SAXVisitBefore;
+import org.milyn.routing.SmooksRoutingException;
+import org.milyn.routing.jms.message.creationstrategies.MessageCreationStrategy;
+import org.milyn.routing.jms.message.creationstrategies.StrategyFactory;
+import org.milyn.routing.jms.message.creationstrategies.TextMessageCreationStrategy;
+import org.milyn.util.FreeMarkerTemplate;
+import org.milyn.util.FreeMarkerUtils;
+import org.w3c.dom.Element;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -33,29 +53,10 @@ import javax.jms.Session;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.milyn.SmooksException;
-import org.milyn.assertion.AssertArgument;
-import org.milyn.cdr.SmooksConfigurationException;
-import org.milyn.cdr.annotation.ConfigParam;
-import org.milyn.cdr.annotation.ConfigParam.Use;
-import org.milyn.container.ExecutionContext;
-import org.milyn.delivery.annotation.Initialize;
-import org.milyn.delivery.annotation.Uninitialize;
-import org.milyn.delivery.annotation.VisitAfterIf;
-import org.milyn.delivery.annotation.VisitBeforeIf;
-import org.milyn.delivery.dom.DOMElementVisitor;
-import org.milyn.delivery.sax.*;
-import org.milyn.delivery.ordering.Consumer;
-import org.milyn.routing.SmooksRoutingException;
-import org.milyn.routing.jms.message.creationstrategies.MessageCreationStrategy;
-import org.milyn.routing.jms.message.creationstrategies.StrategyFactory;
-import org.milyn.routing.jms.message.creationstrategies.TextMessageCreationStrategy;
-import org.milyn.util.FreeMarkerUtils;
-import org.milyn.util.FreeMarkerTemplate;
-import org.w3c.dom.Element;
+import java.io.IOException;
+import java.util.Enumeration;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * <p/>

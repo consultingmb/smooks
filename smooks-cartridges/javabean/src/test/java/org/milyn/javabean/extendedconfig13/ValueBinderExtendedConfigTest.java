@@ -15,22 +15,20 @@
 */
 package org.milyn.javabean.extendedconfig13;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Date;
-import java.util.Map;
-
-import javax.xml.transform.stream.StreamSource;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
-import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.payload.JavaResult;
 import org.milyn.util.ClassUtil;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Date;
 
 public class ValueBinderExtendedConfigTest {
 

@@ -16,10 +16,10 @@
 
 package org.milyn.profile;
 
+import org.xml.sax.SAXException;
+
 import java.io.IOException;
 import java.io.InputStream;
-
-import org.xml.sax.SAXException;
 
 /**
  * Stream based profile configuration digester interface. <p/> Construct a

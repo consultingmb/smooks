@@ -15,13 +15,13 @@
  */
 package org.milyn.edi.utils;
 
-import java.io.IOException;
-
 import org.apache.xerces.parsers.SAXParser;
 import org.apache.xerces.parsers.XML11Configuration;
 import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
+
+import java.io.IOException;
 
 /**
  * Utility class with helpers to construct validating parser of the EDIFACT

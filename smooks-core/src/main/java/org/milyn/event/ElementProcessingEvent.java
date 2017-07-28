@@ -15,10 +15,10 @@
 */
 package org.milyn.event;
 
-import org.w3c.dom.Element;
-import org.milyn.xml.DomUtils;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXUtil;
+import org.milyn.xml.DomUtils;
+import org.w3c.dom.Element;
 
 /**
  * An element processing related event.

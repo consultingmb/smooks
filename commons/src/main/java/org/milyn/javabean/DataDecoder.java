@@ -15,17 +15,17 @@
 */
 package org.milyn.javabean;
 
-import org.milyn.javabean.decoders.StringDecoder;
-import org.milyn.javabean.decoders.EnumDecoder;
-import org.milyn.util.ClassUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.milyn.javabean.decoders.EnumDecoder;
+import org.milyn.javabean.decoders.StringDecoder;
+import org.milyn.util.ClassUtil;
 
 import java.io.Serializable;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
-import java.util.Collections;
 
 /**
  * Data decoder.

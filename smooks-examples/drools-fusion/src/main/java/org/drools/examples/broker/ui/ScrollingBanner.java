@@ -16,18 +16,16 @@
 
 package org.drools.examples.broker.ui;
 
+import com.jgoodies.looks.FontSets;
+import org.drools.examples.broker.model.StockTick;
+
+import javax.swing.JComponent;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import javax.swing.JComponent;
-
-import org.drools.examples.broker.model.StockTick;
-
-import com.jgoodies.looks.FontSets;
 
 /**
  * A simple component to show the incoming stock ticks

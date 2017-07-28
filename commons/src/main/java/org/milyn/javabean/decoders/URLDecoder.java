@@ -15,12 +15,12 @@
 */
 package org.milyn.javabean.decoders;
 
-import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DataDecodeException;
+import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DecodeType;
 
-import java.net.URL;
 import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * {@link java.net.URL} Decoder.

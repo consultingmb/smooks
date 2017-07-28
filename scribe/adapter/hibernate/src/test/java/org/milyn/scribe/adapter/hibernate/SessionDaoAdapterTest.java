@@ -16,15 +16,16 @@
 package org.milyn.scribe.adapter.hibernate;
 
 import static org.junit.Assert.assertSame;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.milyn.scribe.adapter.hibernate.test.util.BaseTestCase;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Matchers.same;
-import org.mockito.Mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.milyn.scribe.adapter.hibernate.test.util.BaseTestCase;
+import org.mockito.Mock;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

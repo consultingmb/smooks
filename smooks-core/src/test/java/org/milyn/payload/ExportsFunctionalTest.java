@@ -17,13 +17,12 @@ package org.milyn.payload;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.util.Collection;
-import java.util.Set;
-
-import javax.xml.transform.Result;
-
 import org.junit.Test;
 import org.milyn.Smooks;
+
+import javax.xml.transform.Result;
+import java.util.Collection;
+import java.util.Set;
 
 /**
  * Functional test for {@link Exports}.

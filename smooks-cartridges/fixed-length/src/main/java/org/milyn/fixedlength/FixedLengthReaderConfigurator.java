@@ -22,7 +22,6 @@ import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.SmooksResourceConfiguration;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

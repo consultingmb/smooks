@@ -17,8 +17,6 @@ package org.milyn.smooks.camel.routing;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-import java.io.IOException;
-
 import org.apache.camel.CamelContext;
 import org.apache.camel.Exchange;
 import org.apache.camel.component.mock.MockEndpoint;
@@ -35,6 +33,8 @@ import org.milyn.container.standalone.StandaloneExecutionContext;
 import org.milyn.javabean.context.BeanContext;
 import org.milyn.javabean.lifecycle.BeanContextLifecycleEvent;
 import org.milyn.javabean.lifecycle.BeanLifecycle;
+
+import java.io.IOException;
 
 /**
  * Unit test for {@link BeanRouter}.

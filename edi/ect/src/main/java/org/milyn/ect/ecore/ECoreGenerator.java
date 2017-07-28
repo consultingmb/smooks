@@ -1,13 +1,5 @@
 package org.milyn.ect.ecore;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.eclipse.emf.ecore.EAttribute;
@@ -22,6 +14,14 @@ import org.milyn.edisax.model.internal.Edimap;
 import org.milyn.edisax.model.internal.Field;
 import org.milyn.edisax.model.internal.Segment;
 import org.milyn.edisax.model.internal.SegmentGroup;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * This class is responsible for generating ECore model based on the UN EDI

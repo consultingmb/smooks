@@ -15,7 +15,6 @@
 */
 package org.milyn.javabean.binding;
 
-import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksResourceConfigurationList;

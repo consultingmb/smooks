@@ -15,8 +15,8 @@
 */
 package org.milyn.javabean.pojogen;
 
-import org.milyn.assertion.AssertArgument;
 import org.apache.commons.lang.ArrayUtils;
+import org.milyn.assertion.AssertArgument;
 
 import java.util.Set;
 

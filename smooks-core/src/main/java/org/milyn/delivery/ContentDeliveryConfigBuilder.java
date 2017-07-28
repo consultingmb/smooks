@@ -18,7 +18,6 @@ package org.milyn.delivery;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.milyn.FilterSettings;
 import org.milyn.SmooksException;
 import org.milyn.StreamFilterType;
 import org.milyn.cdr.Parameter;

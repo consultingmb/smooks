@@ -15,8 +15,10 @@
 */
 package org.milyn.xml;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;

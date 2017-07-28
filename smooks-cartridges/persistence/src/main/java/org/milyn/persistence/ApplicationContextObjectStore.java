@@ -15,10 +15,10 @@
 */
 package org.milyn.persistence;
 
-import java.util.Map;
-
 import org.milyn.container.ApplicationContext;
 import org.milyn.scribe.ObjectStore;
+
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

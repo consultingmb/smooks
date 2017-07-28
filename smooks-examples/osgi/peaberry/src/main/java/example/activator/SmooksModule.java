@@ -16,10 +16,8 @@ package example.activator;
 
 import static org.ops4j.peaberry.Peaberry.service;
 
-
-import org.milyn.Smooks;
-
 import com.google.inject.AbstractModule;
+import org.milyn.Smooks;
 
 /**
  * 

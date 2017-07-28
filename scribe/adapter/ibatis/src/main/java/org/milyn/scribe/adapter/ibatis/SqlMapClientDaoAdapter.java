@@ -15,15 +15,14 @@
 */
 package org.milyn.scribe.adapter.ibatis;
 
-import java.sql.SQLException;
-import java.util.Collection;
-import java.util.Map;
-
+import com.ibatis.sqlmap.client.SqlMapClient;
 import org.milyn.scribe.DaoException;
 import org.milyn.scribe.Locator;
 import org.milyn.scribe.MappingDao;
 
-import com.ibatis.sqlmap.client.SqlMapClient;
+import java.sql.SQLException;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

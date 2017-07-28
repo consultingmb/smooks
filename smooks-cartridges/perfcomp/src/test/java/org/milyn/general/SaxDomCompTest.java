@@ -15,20 +15,18 @@
 */
 package org.milyn.general;
 
-import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.milyn.Smooks;
+import org.milyn.io.NullWriter;
+import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-import org.milyn.Smooks;
-import org.milyn.container.ExecutionContext;
-import org.milyn.io.NullWriter;
-import org.xml.sax.SAXException;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

@@ -1,4 +1,11 @@
 package org.milyn.javabean.performance.generator;
+
+import freemarker.template.Configuration;
+import freemarker.template.DefaultObjectWrapperBuilder;
+import freemarker.template.Template;
+import freemarker.template.TemplateException;
+import freemarker.template.TemplateSequenceModel;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,13 +13,6 @@ import java.io.Writer;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
-import freemarker.template.Configuration;
-import freemarker.template.DefaultObjectWrapperBuilder;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
-import freemarker.template.TemplateSequenceModel;
 
 /**
  *

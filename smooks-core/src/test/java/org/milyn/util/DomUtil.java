@@ -16,14 +16,13 @@
 
 package org.milyn.util;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
 import org.milyn.xml.XmlUtil;
 import org.w3c.dom.Document;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 
 public abstract class DomUtil {
 

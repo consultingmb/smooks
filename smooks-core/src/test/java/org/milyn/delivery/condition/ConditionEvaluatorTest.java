@@ -15,13 +15,18 @@
 */
 package org.milyn.delivery.condition;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
-import org.milyn.expression.ExpressionEvaluator;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.SAXAndDOMVisitor;
+import org.milyn.expression.ExpressionEvaluator;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;

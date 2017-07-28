@@ -15,17 +15,14 @@
  */
 package org.milyn.edit.utils.test;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.StringReader;
-import java.io.StringWriter;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
 import org.jdom2.Document;
 import org.jdom2.input.sax.SAXHandler;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
+import org.junit.Test;
 import org.milyn.edi.utils.EDIParsingUtils;
 import org.milyn.edisax.EDIParser;
 import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
@@ -34,6 +31,11 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringReader;
+import java.io.StringWriter;
 
 /**
  * Test for parsing D99A file

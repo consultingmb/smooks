@@ -16,10 +16,13 @@
 
 package org.milyn.resource;
 
-import java.io.InputStream;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.io.InputStream;
 
 public class ClasspathResourceLocatorTest {
 

@@ -15,8 +15,6 @@
 */
 package org.milyn.javabean.observers;
 
-import java.lang.annotation.Annotation;
-
 import org.milyn.container.ExecutionContext;
 import org.milyn.javabean.BeanInstancePopulator;
 import org.milyn.javabean.context.BeanContext;
@@ -24,6 +22,8 @@ import org.milyn.javabean.lifecycle.BeanContextLifecycleEvent;
 import org.milyn.javabean.lifecycle.BeanContextLifecycleObserver;
 import org.milyn.javabean.lifecycle.BeanLifecycle;
 import org.milyn.javabean.repository.BeanId;
+
+import java.lang.annotation.Annotation;
 
 /**
  * {@link BeanContext} Observer performing bean wiring.

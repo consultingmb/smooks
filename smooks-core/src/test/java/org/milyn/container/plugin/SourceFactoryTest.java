@@ -18,13 +18,12 @@ package org.milyn.container.plugin;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.io.ByteArrayInputStream;
-import java.io.StringReader;
+import org.junit.Test;
 
 import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
+import java.io.ByteArrayInputStream;
+import java.io.StringReader;
 
 /**
  * 

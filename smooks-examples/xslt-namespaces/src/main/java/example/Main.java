@@ -17,14 +17,17 @@ package example;
 
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
+import org.milyn.container.ExecutionContext;
 import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.io.StreamUtils;
-import org.milyn.container.ExecutionContext;
 import org.xml.sax.SAXException;
 
-import javax.xml.transform.stream.StreamSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.ByteArrayInputStream;
+import java.io.CharArrayWriter;
+import java.io.FileInputStream;
+import java.io.IOException;
 
 /**
  * Simple example main class.

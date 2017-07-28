@@ -15,13 +15,17 @@
 */
 package org.milyn.cdr.xsd11.extensiontests;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
-import org.milyn.delivery.ContentDeliveryConfig;
-import org.milyn.container.ExecutionContext;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.ContentDeliveryConfig;
 import org.milyn.payload.StringResult;
 import org.milyn.payload.StringSource;
 import org.milyn.xml.XmlUtil;

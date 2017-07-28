@@ -15,8 +15,6 @@
 */
 package org.milyn.yaml.handler;
 
-import java.util.Stack;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.yaml.ElementNameFormatter;
@@ -24,8 +22,10 @@ import org.xml.sax.SAXException;
 import org.yaml.snakeyaml.events.AliasEvent;
 import org.yaml.snakeyaml.events.CollectionStartEvent;
 import org.yaml.snakeyaml.events.Event;
-import org.yaml.snakeyaml.events.ScalarEvent;
 import org.yaml.snakeyaml.events.Event.ID;
+import org.yaml.snakeyaml.events.ScalarEvent;
+
+import java.util.Stack;
 
 /**
  * Takes a iterable yaml event stream and handles the events of the stream.

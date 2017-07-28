@@ -15,7 +15,6 @@
 */
 package example;
 
-import org.junit.Test;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Test;

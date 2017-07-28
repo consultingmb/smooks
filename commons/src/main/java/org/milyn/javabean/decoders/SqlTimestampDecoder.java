@@ -1,9 +1,9 @@
 package org.milyn.javabean.decoders;
 
-import java.util.Date;
-
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DecodeType;
+
+import java.util.Date;
 
 /**
 * {@link java.sql.Timestamp} data decoder.

@@ -16,8 +16,6 @@
 
 package org.milyn.smooks.edi.unedifact.model;
 
-import org.milyn.smooks.edi.EDIWritable;
-
 import java.io.Serializable;
 
 /**

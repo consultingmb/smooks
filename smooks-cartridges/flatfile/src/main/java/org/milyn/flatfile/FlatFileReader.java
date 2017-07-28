@@ -43,7 +43,6 @@ import org.xml.sax.helpers.AttributesImpl;
 
 import javax.xml.XMLConstants;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.List;
 

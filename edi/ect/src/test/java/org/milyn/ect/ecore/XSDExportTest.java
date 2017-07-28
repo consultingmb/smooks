@@ -15,6 +15,11 @@
  */
 package org.milyn.ect.ecore;
 
+import org.eclipse.emf.ecore.EPackage;
+import org.junit.Test;
+import org.milyn.archive.Archive;
+import org.milyn.ect.formats.unedifact.UnEdifactSpecificationReader;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -22,13 +27,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-import org.eclipse.emf.ecore.EPackage;
-import org.milyn.archive.Archive;
-import org.milyn.ect.formats.unedifact.UnEdifactSpecificationReader;
 
 public class XSDExportTest {
 

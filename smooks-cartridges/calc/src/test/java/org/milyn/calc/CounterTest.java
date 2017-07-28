@@ -15,11 +15,9 @@
 */
 package org.milyn.calc;
 
-import static org.testng.AssertJUnit.*;
-
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertNotNull;
+import static org.testng.AssertJUnit.assertTrue;
 
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.annotation.Configurator;
@@ -29,6 +27,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
 
 /**
  * Unit test for the Counter class

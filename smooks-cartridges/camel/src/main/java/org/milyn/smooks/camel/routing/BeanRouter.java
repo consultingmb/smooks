@@ -15,9 +15,11 @@
  */
 package org.milyn.smooks.camel.routing;
 
-import java.io.IOException;
-
-import org.apache.camel.*;
+import org.apache.camel.CamelContext;
+import org.apache.camel.Exchange;
+import org.apache.camel.Message;
+import org.apache.camel.Processor;
+import org.apache.camel.ProducerTemplate;
 import org.milyn.SmooksException;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksConfigurationException;
@@ -37,6 +39,8 @@ import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.expression.ExecutionContextExpressionEvaluator;
 import org.milyn.util.FreeMarkerTemplate;
 import org.milyn.util.FreeMarkerUtils;
+
+import java.io.IOException;
 
 /**
  * Camel bean routing visitor.

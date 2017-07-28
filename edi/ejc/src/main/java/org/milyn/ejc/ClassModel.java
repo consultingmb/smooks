@@ -20,7 +20,10 @@ import org.milyn.edisax.model.internal.Edimap;
 import org.milyn.edisax.model.internal.MappingNode;
 import org.milyn.javabean.pojogen.JClass;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 /**
  * ClassModel contains a Map of {@link org.milyn.javabean.pojogen.JClass} for easy lookup when

@@ -15,13 +15,13 @@
 */
 package org.milyn.jibx;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
 
 import org.jibx.runtime.BindingDirectory;
 import org.jibx.runtime.IBindingFactory;
 import org.jibx.runtime.IUnmarshallingContext;
 import org.jibx.runtime.JiBXException;
+import org.junit.Test;
 import org.milyn.Order;
 import org.milyn.TestConstants;
 

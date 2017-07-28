@@ -15,15 +15,11 @@
 */
 package org.milyn.general;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
-
-import javax.xml.transform.stream.StreamSource;
-
-import org.junit.Test;
 import static org.junit.Assert.*;
 
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.payload.JavaResult;
 import org.xml.sax.InputSource;
@@ -32,10 +28,10 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.ext.DefaultHandler2;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.StaxDriver;
-import com.thoughtworks.xstream.io.xml.XppDriver;
-import com.thoughtworks.xstream.io.xml.StaxDriver;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

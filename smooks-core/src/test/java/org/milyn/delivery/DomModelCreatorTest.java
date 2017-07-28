@@ -15,20 +15,19 @@
 */
 package org.milyn.delivery;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import org.milyn.Smooks;
 import org.milyn.FilterSettings;
+import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.io.StreamUtils;
 import org.milyn.xml.XmlUtil;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;
-
 import java.io.IOException;
 
 /**

@@ -16,17 +16,6 @@
 
 package org.milyn.edisax.model;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.io.StringReader;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.EDIParseException;
@@ -41,6 +30,17 @@ import org.milyn.edisax.model.internal.SegmentGroup;
 import org.milyn.io.StreamUtils;
 import org.milyn.resource.URIResourceLocator;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Reader;
+import java.io.StringReader;
+import java.net.URI;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**                                          
  * EdifactModel contains all logic for handling imports for the

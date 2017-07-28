@@ -1,17 +1,17 @@
 package org.milyn.general;
 
-import org.junit.Test;
 import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.milyn.Smooks;
+import org.milyn.container.ExecutionContext;
+import org.xml.sax.ContentHandler;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.ContentHandler;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
-
-import org.milyn.Smooks;
-import org.milyn.container.ExecutionContext;
 
 /**
  * @author

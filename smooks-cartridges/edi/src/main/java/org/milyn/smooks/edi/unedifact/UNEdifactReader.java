@@ -15,8 +15,6 @@
  */
 package org.milyn.smooks.edi.unedifact;
 
-import java.io.IOException;
-
 import org.apache.commons.lang.StringUtils;
 import org.milyn.cdr.annotation.AppContext;
 import org.milyn.cdr.annotation.ConfigParam;
@@ -26,12 +24,14 @@ import org.milyn.edisax.BufferedSegmentReader;
 import org.milyn.edisax.interchange.ControlBlockHandlerFactory;
 import org.milyn.edisax.interchange.InterchangeContext;
 import org.milyn.edisax.model.internal.Delimiters;
-import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
 import org.milyn.edisax.registry.DefaultMappingsRegistry;
+import org.milyn.edisax.unedifact.UNEdifactInterchangeParser;
 import org.milyn.namespace.NamespaceDeclarationStack;
 import org.milyn.xml.SmooksXMLReader;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
+
+import java.io.IOException;
 
 /**
  * UN/EDIFACT Smooks reader.

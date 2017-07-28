@@ -16,8 +16,6 @@
 
 package org.milyn.edisax.model.internal;
 
-import org.milyn.edisax.util.IllegalNameException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;

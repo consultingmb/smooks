@@ -15,20 +15,20 @@
 */
 package example;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Locale;
-
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
-import org.milyn.payload.StringSource;
-import org.milyn.rules.RuleEvalResult;
 import org.milyn.container.ExecutionContext;
 import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.io.StreamUtils;
-import org.milyn.validation.ValidationResult;
+import org.milyn.payload.StringSource;
+import org.milyn.rules.RuleEvalResult;
 import org.milyn.validation.OnFailResult;
+import org.milyn.validation.ValidationResult;
 import org.xml.sax.SAXException;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Locale;
 
 /**
  * Simple example main class.

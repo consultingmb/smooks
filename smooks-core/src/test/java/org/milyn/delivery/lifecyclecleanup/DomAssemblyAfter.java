@@ -15,6 +15,8 @@
 */
 package org.milyn.delivery.lifecyclecleanup;
 
+import static org.junit.Assert.fail;
+
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.ExecutionLifecycleCleanable;
@@ -22,7 +24,6 @@ import org.milyn.delivery.dom.DOMVisitAfter;
 import org.milyn.delivery.dom.Phase;
 import org.milyn.delivery.dom.VisitPhase;
 import org.w3c.dom.Element;
-import static org.junit.Assert.*;
 
 /**
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>

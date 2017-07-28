@@ -1,13 +1,12 @@
 package org.milyn.javabean.performance.generator;
 
-import org.milyn.javabean.performance.model.Customer;
-import org.milyn.javabean.performance.model.Person;
-
 import freemarker.ext.beans.BeansWrapperBuilder;
 import freemarker.template.Configuration;
 import freemarker.template.TemplateModel;
 import freemarker.template.TemplateModelException;
 import freemarker.template.TemplateSequenceModel;
+import org.milyn.javabean.performance.model.Customer;
+import org.milyn.javabean.performance.model.Person;
 
 public class SimpleGenerator implements TemplateSequenceModel {
 

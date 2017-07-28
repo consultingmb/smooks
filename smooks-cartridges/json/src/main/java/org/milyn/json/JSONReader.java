@@ -47,8 +47,8 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
 import java.util.HashMap;
-import java.util.Stack;
 import java.util.Map;
+import java.util.Stack;
 
 /**
  * JSON to SAX event reader.

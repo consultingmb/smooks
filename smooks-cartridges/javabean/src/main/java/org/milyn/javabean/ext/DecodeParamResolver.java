@@ -20,7 +20,6 @@ import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.extension.ExtensionContext;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
-import org.milyn.javabean.BeanUtils;
 import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.decoders.PreprocessDecoder;
 import org.milyn.xml.DomUtils;

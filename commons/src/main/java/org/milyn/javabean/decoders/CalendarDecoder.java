@@ -1,12 +1,12 @@
 package org.milyn.javabean.decoders;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-
 import org.milyn.javabean.DataDecodeException;
 import org.milyn.javabean.DataDecoder;
 import org.milyn.javabean.DecodeType;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * {@link java.util.Calendar} data decoder.

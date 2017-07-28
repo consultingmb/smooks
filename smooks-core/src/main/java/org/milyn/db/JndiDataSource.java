@@ -15,30 +15,22 @@
 */
 package org.milyn.db;
 
-import org.apache.commons.lang.NotImplementedException;
 import org.milyn.SmooksException;
+import org.milyn.assertion.AssertArgument;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.annotation.ConfigParam;
 import org.milyn.cdr.annotation.ConfigParam.Use;
-import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.annotation.Initialize;
 import org.milyn.event.report.annotation.VisitAfterReport;
 import org.milyn.event.report.annotation.VisitBeforeReport;
-import org.milyn.assertion.AssertArgument;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
-import javax.transaction.HeuristicMixedException;
-import javax.transaction.HeuristicRollbackException;
-import javax.transaction.RollbackException;
-import javax.transaction.SystemException;
 import javax.transaction.UserTransaction;
-
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.sql.Savepoint;
 
 /**
  * Jndi based DataSource.

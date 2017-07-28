@@ -15,13 +15,9 @@
  */
 package org.milyn.namespace;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import static org.junit.Assert.assertEquals;
 
-import javax.xml.XMLConstants;
-
-import org.xml.sax.Attributes;
+import org.junit.Test;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.DTDHandler;
 import org.xml.sax.EntityResolver;
@@ -34,8 +30,10 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.AttributesImpl;
 import org.xml.sax.helpers.DefaultHandler;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.XMLConstants;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class NamespaceDeclarationStackTest {

@@ -15,17 +15,17 @@
 */
 package org.milyn.delivery.sax.terminate;
 
-import java.io.IOException;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-import javax.xml.transform.stream.StreamSource;
-
+import org.junit.Before;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.delivery.sax.SAXVisitBeforeVisitor;
 import org.xml.sax.SAXException;
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
 
 /**
  * 

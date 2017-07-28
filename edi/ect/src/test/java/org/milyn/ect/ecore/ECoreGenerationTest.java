@@ -1,21 +1,23 @@
 package org.milyn.ect.ecore;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 import static org.milyn.ect.ecore.ECoreConversionUtils.toJavaName;
-
-import java.io.InputStream;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.zip.ZipInputStream;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
+import org.junit.Test;
 import org.milyn.ect.formats.unedifact.UnEdifactSpecificationReader;
+
+import java.io.InputStream;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.zip.ZipInputStream;
 
 public class ECoreGenerationTest {
 

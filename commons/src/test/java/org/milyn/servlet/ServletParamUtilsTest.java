@@ -16,11 +16,12 @@
 
 package org.milyn.servlet;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+
 import com.mockobjects.servlet.MockServletConfig;
 import com.mockobjects.servlet.MockServletContext;
-
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * 

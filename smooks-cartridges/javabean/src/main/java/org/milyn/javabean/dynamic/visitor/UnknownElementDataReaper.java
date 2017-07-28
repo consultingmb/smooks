@@ -19,12 +19,19 @@ package org.milyn.javabean.dynamic.visitor;
 import org.milyn.SmooksException;
 import org.milyn.delivery.Fragment;
 import org.milyn.delivery.dom.serialize.DefaultSerializationUnit;
-import org.milyn.io.StreamUtils;
 import org.milyn.javabean.dynamic.BeanMetadata;
 import org.milyn.javabean.lifecycle.BeanContextLifecycleEvent;
-import org.w3c.dom.*;
+import org.w3c.dom.CDATASection;
+import org.w3c.dom.Comment;
+import org.w3c.dom.Element;
+import org.w3c.dom.EntityReference;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Text;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 

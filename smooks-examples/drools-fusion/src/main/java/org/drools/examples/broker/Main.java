@@ -16,21 +16,17 @@
 
 package org.drools.examples.broker;
 
-import java.io.InputStreamReader;
-import java.util.Locale;
-
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
+import com.jgoodies.looks.plastic.Plastic3DLookAndFeel;
 import org.drools.examples.broker.events.EventFeeder;
 import org.drools.examples.broker.events.SmooksEventSource;
-import org.drools.examples.broker.events.StockTickPersister;
 import org.drools.examples.broker.model.CompanyRegistry;
 import org.drools.examples.broker.ui.BrokerWindow;
 import org.drools.time.TimerService;
 import org.drools.time.impl.JDKTimerService;
 
-import com.jgoodies.looks.plastic.Plastic3DLookAndFeel;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+import java.util.Locale;
 
 /**
  * This is the main class for the broker example.

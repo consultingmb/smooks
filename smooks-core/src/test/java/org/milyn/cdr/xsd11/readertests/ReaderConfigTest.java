@@ -15,8 +15,9 @@
 */
 package org.milyn.cdr.xsd11.readertests;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.delivery.AbstractParser;

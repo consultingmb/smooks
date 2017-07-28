@@ -15,12 +15,12 @@
 */
 package org.milyn.javabean.dynamic.resolvers;
 
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
-
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
 /**
  * Default Namespace XML Schema resolver.

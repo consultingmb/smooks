@@ -19,17 +19,13 @@ package org.milyn.javabean.dynamic.visitor;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
-import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXUtil;
-import org.milyn.delivery.sax.SAXVisitBefore;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
-import org.xml.sax.Attributes;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
-import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 

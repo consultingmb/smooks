@@ -15,14 +15,13 @@
 */
 package org.milyn.routing.jms;
 
-import org.milyn.util.JNDIUtil;
-import org.milyn.resource.URIResourceLocator;
 import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.resource.URIResourceLocator;
+import org.milyn.util.JNDIUtil;
 
 import javax.naming.Context;
-import java.util.Properties;
 import java.io.IOException;
-import java.io.InputStream;
+import java.util.Properties;
 
 
 public class JNDIProperties

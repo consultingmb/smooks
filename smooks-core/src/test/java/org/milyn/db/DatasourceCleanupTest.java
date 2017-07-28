@@ -15,11 +15,12 @@
 */
 package org.milyn.db;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.payload.StringSource;

@@ -15,15 +15,13 @@
 */
 package org.milyn.routing.basic;
 
+import org.custommonkey.xmlunit.XMLAssert;
+import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.payload.JavaResult;
 import org.xml.sax.SAXException;
-import org.custommonkey.xmlunit.XMLUnit;
-import org.custommonkey.xmlunit.XMLAssert;
 
 import javax.xml.transform.stream.StreamSource;
 import java.io.IOException;

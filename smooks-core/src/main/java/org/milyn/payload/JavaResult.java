@@ -16,14 +16,16 @@
 package org.milyn.payload;
 
 import com.thoughtworks.xstream.XStream;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.javabean.context.StandaloneBeanContext;
-import org.milyn.payload.FilterResult;
 
 import javax.xml.transform.Result;
 import java.io.StringWriter;
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Java filtration/transformation result.

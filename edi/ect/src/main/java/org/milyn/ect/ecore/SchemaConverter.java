@@ -15,14 +15,6 @@
  */
 package org.milyn.ect.ecore;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.eclipse.emf.common.util.URI;
@@ -36,6 +28,14 @@ import org.eclipse.xsd.XSDSchema;
 import org.eclipse.xsd.util.XSDResourceFactoryImpl;
 import org.milyn.archive.Archive;
 import org.milyn.edisax.model.internal.Edimap;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Set;
 
 public class SchemaConverter {
 

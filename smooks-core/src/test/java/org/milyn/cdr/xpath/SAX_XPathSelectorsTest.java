@@ -15,18 +15,18 @@
 */
 package org.milyn.cdr.xpath;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import org.milyn.Smooks;
 import org.milyn.FilterSettings;
+import org.milyn.Smooks;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamSource;
-
 import java.io.IOException;
 import java.util.Properties;
 

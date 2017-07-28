@@ -18,8 +18,10 @@ package org.milyn.javabean.dynamic.serialize.freemarker;
 
 import freemarker.core.Environment;
 import freemarker.ext.beans.BeanModel;
-import freemarker.ext.beans.StringModel;
-import freemarker.template.*;
+import freemarker.template.SimpleScalar;
+import freemarker.template.TemplateDirectiveBody;
+import freemarker.template.TemplateException;
+import freemarker.template.TemplateModel;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.javabean.dynamic.BeanMetadata;
@@ -30,7 +32,6 @@ import org.milyn.xml.XmlUtil;
 
 import java.io.IOException;
 import java.io.StringWriter;
-import java.util.Arrays;
 import java.util.Map;
 
 /**

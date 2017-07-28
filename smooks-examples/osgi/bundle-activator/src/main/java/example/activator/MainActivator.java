@@ -15,13 +15,12 @@
 
 package example.activator;
 
+import example.ExampleUtil;
 import org.milyn.Smooks;
 import org.milyn.SmooksFactory;
 import org.milyn.SmooksOSGIFactory;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
-
-import example.ExampleUtil;
 
 /**
  * 

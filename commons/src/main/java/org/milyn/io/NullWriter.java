@@ -15,8 +15,8 @@
 */
 package org.milyn.io;
 
-import java.io.Writer;
 import java.io.IOException;
+import java.io.Writer;
 
 /**
  * Null writer implementation.

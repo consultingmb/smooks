@@ -16,10 +16,10 @@
 
 package org.milyn.resource;
 
+import org.milyn.util.ClassUtil;
+
 import java.io.InputStream;
 import java.net.URI;
-
-import org.milyn.util.ClassUtil;
 
 /**
  * Classpath Resource Locator. <p/> Loads resources from the classpath. The URI

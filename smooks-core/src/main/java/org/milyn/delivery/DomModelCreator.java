@@ -16,18 +16,18 @@
 package org.milyn.delivery;
 
 import org.milyn.SmooksException;
-import org.milyn.util.CollectionsUtil;
-import org.milyn.cdr.annotation.Config;
 import org.milyn.cdr.SmooksResourceConfiguration;
+import org.milyn.cdr.annotation.Config;
 import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.dom.DOMVisitBefore;
+import org.milyn.delivery.ordering.Producer;
 import org.milyn.delivery.sax.DynamicSAXElementVisitorList;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXElementVisitor;
 import org.milyn.delivery.sax.SAXText;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
-import org.milyn.delivery.ordering.Producer;
+import org.milyn.util.CollectionsUtil;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -37,8 +37,8 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.util.Stack;
 import java.util.Set;
+import java.util.Stack;
 
 /**
  * DOM Node Model creator.

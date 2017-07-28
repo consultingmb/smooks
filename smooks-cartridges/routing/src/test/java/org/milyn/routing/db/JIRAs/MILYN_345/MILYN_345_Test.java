@@ -15,8 +15,10 @@
 */
 package org.milyn.routing.db.JIRAs.MILYN_345;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.routing.db.ResultsetRowSelector;
 
 /**

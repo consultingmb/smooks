@@ -15,12 +15,9 @@
 */
 package org.milyn.edisax.v1_4.ignore_unmapped_fields;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.edisax.EDIConfigurationException;
 import org.milyn.edisax.EDIParser;
 import org.milyn.edisax.MockContentHandler;
@@ -28,8 +25,9 @@ import org.milyn.edisax.model.EdifactModel;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.StringReader;
 
 /**
  * 

@@ -26,13 +26,14 @@ import org.milyn.delivery.XMLReaderHierarchyChangeListener;
 import org.milyn.namespace.NamespaceDeclarationStack;
 import org.milyn.xml.NamespaceMappings;
 import org.milyn.xml.hierarchy.HierarchyChangeReader;
-import org.w3c.dom.*;
-import org.xml.sax.*;
-
-import java.io.IOException;
-import java.nio.charset.Charset;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
 
 import javax.xml.transform.Source;
+import java.io.IOException;
+import java.nio.charset.Charset;
 
 /**
  * Smooks DOM data stream parser.

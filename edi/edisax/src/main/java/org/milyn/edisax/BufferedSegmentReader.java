@@ -16,18 +16,18 @@
 
 package org.milyn.edisax;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.milyn.edisax.model.internal.Delimiters;
+import org.milyn.edisax.util.EDIUtils;
+import org.xml.sax.InputSource;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
 import java.util.Stack;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.milyn.edisax.model.internal.Delimiters;
-import org.milyn.edisax.util.EDIUtils;
-import org.xml.sax.InputSource;
 
 /**
  * Buffered EDI Stream Segment reader.

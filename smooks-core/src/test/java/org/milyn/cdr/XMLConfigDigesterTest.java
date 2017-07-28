@@ -16,8 +16,10 @@
 
 package org.milyn.cdr;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.profile.ProfileSet;

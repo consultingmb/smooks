@@ -15,18 +15,18 @@
 */
 package org.milyn.calc;
 
-import static org.testng.AssertJUnit.*;
-
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.stream.StreamSource;
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertNotNull;
 
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.payload.JavaResult;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
 
 /**
  * Unit test for the extended configuration of the Counter class

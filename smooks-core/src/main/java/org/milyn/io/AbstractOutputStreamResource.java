@@ -24,13 +24,18 @@ import org.milyn.container.ExecutionContext;
 import org.milyn.delivery.ExecutionLifecycleCleanable;
 import org.milyn.delivery.Fragment;
 import org.milyn.delivery.VisitLifecycleCleanable;
-import org.milyn.delivery.ordering.Consumer;
 import org.milyn.delivery.dom.DOMVisitBefore;
+import org.milyn.delivery.ordering.Consumer;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXVisitBefore;
 import org.w3c.dom.Element;
 
-import java.io.*;
+import java.io.Closeable;
+import java.io.Flushable;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.nio.charset.Charset;
 
 /**

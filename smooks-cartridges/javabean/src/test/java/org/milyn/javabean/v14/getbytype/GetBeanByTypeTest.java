@@ -15,11 +15,9 @@
 */
 package org.milyn.javabean.v14.getbytype;
 
-import java.io.IOException;
-import java.io.InputStream;
+import static org.junit.Assert.assertNotNull;
 
-import javax.xml.transform.stream.StreamSource;
-
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.javabean.extendedconfig.ExtendedOrder;
@@ -29,8 +27,9 @@ import org.milyn.payload.JavaResult;
 import org.milyn.util.ClassUtil;
 import org.xml.sax.SAXException;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import javax.xml.transform.stream.StreamSource;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * 

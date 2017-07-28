@@ -15,17 +15,18 @@
 */
 package org.milyn.routing.file;
 
+import static org.junit.Assert.assertTrue;
+
+import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
 import org.xml.sax.SAXException;
-import org.custommonkey.xmlunit.XMLUnit;
 
 import javax.xml.transform.stream.StreamSource;
-import java.io.IOException;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**

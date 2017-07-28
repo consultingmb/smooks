@@ -15,26 +15,22 @@
 */
 package example;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Locale;
-
-import javax.xml.transform.dom.DOMResult;
-import javax.xml.transform.stream.StreamSource;
-
+import example.model.Order;
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.io.FileUtils;
 import org.milyn.payload.StringResult;
-import org.milyn.xml.XmlUtil;
 import org.xml.sax.SAXException;
 
-import example.model.Order;
+import javax.xml.transform.stream.StreamSource;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Locale;
 
 /**
  * Simple example main class.

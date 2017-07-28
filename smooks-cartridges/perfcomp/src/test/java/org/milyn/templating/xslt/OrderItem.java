@@ -1,7 +1,7 @@
 package org.milyn.templating.xslt;
 
-import org.w3c.dom.Element;
 import org.milyn.xml.DomUtils;
+import org.w3c.dom.Element;
 
 /**
  * order-item bean.

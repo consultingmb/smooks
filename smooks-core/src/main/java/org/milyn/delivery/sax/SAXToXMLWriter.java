@@ -15,15 +15,14 @@
 */
 package org.milyn.delivery.sax;
 
-import java.io.IOException;
-import java.io.Writer;
-import java.util.List;
-
-import javax.xml.transform.stream.StreamResult;
-
 import org.milyn.Smooks;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.delivery.sax.annotation.TextConsumer;
+
+import javax.xml.transform.stream.StreamResult;
+import java.io.IOException;
+import java.io.Writer;
+import java.util.List;
 
 /**
  * {@link SAXElement} to XML writer class.

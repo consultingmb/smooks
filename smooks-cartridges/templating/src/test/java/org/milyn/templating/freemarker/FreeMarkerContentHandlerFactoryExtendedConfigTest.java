@@ -15,13 +15,15 @@
 */
 package org.milyn.templating.freemarker;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
+import org.milyn.FilterSettings;
 import org.milyn.Smooks;
 import org.milyn.StreamFilterType;
-import org.milyn.FilterSettings;
 import org.milyn.container.ExecutionContext;
 import org.milyn.payload.JavaSource;
 import org.milyn.payload.StringResult;
@@ -38,7 +40,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  *

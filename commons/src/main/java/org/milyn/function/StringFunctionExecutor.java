@@ -16,8 +16,8 @@
 
 package org.milyn.function;
 
-import org.milyn.assertion.AssertArgument;
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.milyn.assertion.AssertArgument;
 
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;

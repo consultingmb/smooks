@@ -15,25 +15,23 @@
 
 package org.milyn.db;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import org.apache.commons.lang.exception.ExceptionUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
-
-import org.apache.commons.lang.exception.ExceptionUtils;
 import org.milyn.Smooks;
 import org.milyn.container.ExecutionContext;
 import org.milyn.event.report.HtmlReportGenerator;
 import org.milyn.payload.StringSource;
 import org.mockejb.jndi.MockContextFactory;
 import org.mockito.Mock;
-
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 import org.mockito.MockitoAnnotations;
 
 import javax.naming.InitialContext;
@@ -41,7 +39,6 @@ import javax.sql.DataSource;
 import javax.transaction.Status;
 import javax.transaction.UserTransaction;
 import javax.xml.transform.Source;
-
 import java.sql.Connection;
 
 /**

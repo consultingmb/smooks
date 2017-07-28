@@ -15,15 +15,15 @@
 */
 package example;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.milyn.validation.OnFailResult;
+import org.milyn.validation.ValidationResult;
+import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.util.List;
-
-import org.xml.sax.SAXException;
-import org.milyn.validation.ValidationResult;
-import org.milyn.validation.OnFailResult;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

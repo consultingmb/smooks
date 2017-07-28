@@ -23,7 +23,6 @@ import org.milyn.cdr.SmooksResourceConfigurationList;
 import org.milyn.cdr.xpath.SelectorStep;
 import org.milyn.cdr.xpath.SelectorStepBuilder;
 import org.milyn.container.ApplicationContext;
-import org.milyn.db.TransactionManagerType;
 import org.milyn.javabean.BeanInstanceCreator;
 import org.milyn.javabean.BeanInstancePopulator;
 import org.milyn.javabean.DataDecoder;
@@ -34,7 +33,6 @@ import javax.xml.namespace.QName;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Bean binding model set.

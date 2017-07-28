@@ -15,6 +15,11 @@
 
 package org.milyn.container.plugin;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.collection.IsMapContaining.hasEntry;
+import static org.hamcrest.collection.IsMapContaining.hasKey;
+
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,15 +35,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Map;
-
-import static org.hamcrest.CoreMatchers.any;
-import static org.hamcrest.CoreMatchers.anyOf;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.instanceOf;
-import static org.hamcrest.collection.IsMapContaining.hasEntry;
-import static org.hamcrest.collection.IsMapContaining.hasKey;
 
 /**
  * Unit test for PayloadProcessor.

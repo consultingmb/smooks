@@ -1,21 +1,19 @@
 package org.milyn.javabean.repository;
 
+import org.milyn.assertion.AssertArgument;
+import org.milyn.container.ExecutionContext;
+import org.milyn.payload.FilterResult;
+import org.milyn.payload.FilterSource;
+import org.milyn.payload.JavaResult;
+import org.milyn.payload.JavaSource;
+
+import javax.xml.transform.Result;
+import javax.xml.transform.Source;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.xml.transform.Result;
-import javax.xml.transform.Source;
-
-import org.milyn.assertion.AssertArgument;
-import org.milyn.container.ExecutionContext;
-import org.milyn.javabean.lifecycle.BeanLifecycle;
-import org.milyn.payload.FilterResult;
-import org.milyn.payload.FilterSource;
-import org.milyn.payload.JavaResult;
-import org.milyn.payload.JavaSource;
 
 @SuppressWarnings("deprecation")
 public class OldBeanAccessor {

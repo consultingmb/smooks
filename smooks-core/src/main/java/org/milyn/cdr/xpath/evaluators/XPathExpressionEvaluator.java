@@ -15,16 +15,24 @@
 */
 package org.milyn.cdr.xpath.evaluators;
 
-import org.milyn.delivery.sax.SAXElement;
-import org.milyn.container.ExecutionContext;
+import org.jaxen.expr.EqualityExpr;
+import org.jaxen.expr.Expr;
+import org.jaxen.expr.LogicalExpr;
+import org.jaxen.expr.NumberExpr;
+import org.jaxen.expr.RelationalExpr;
+import org.jaxen.saxpath.SAXPathException;
 import org.milyn.assertion.AssertArgument;
+import org.milyn.cdr.xpath.SelectorStep;
+import org.milyn.cdr.xpath.evaluators.equality.EqualsEvaluator;
+import org.milyn.cdr.xpath.evaluators.equality.GreaterThanEvaluator;
+import org.milyn.cdr.xpath.evaluators.equality.IndexEvaluator;
+import org.milyn.cdr.xpath.evaluators.equality.LessThanEvaluator;
+import org.milyn.cdr.xpath.evaluators.equality.NotEqualsEvaluator;
 import org.milyn.cdr.xpath.evaluators.logical.AndEvaluator;
 import org.milyn.cdr.xpath.evaluators.logical.OrEvaluator;
-import org.milyn.cdr.xpath.evaluators.equality.*;
-import org.milyn.cdr.xpath.SelectorStep;
+import org.milyn.container.ExecutionContext;
+import org.milyn.delivery.sax.SAXElement;
 import org.w3c.dom.Element;
-import org.jaxen.expr.*;
-import org.jaxen.saxpath.SAXPathException;
 
 import java.util.Properties;
 

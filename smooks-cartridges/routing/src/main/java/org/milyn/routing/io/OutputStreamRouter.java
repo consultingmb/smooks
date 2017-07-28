@@ -14,10 +14,6 @@
  */
 package org.milyn.routing.io;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
-
 import org.milyn.SmooksException;
 import org.milyn.cdr.SmooksConfigurationException;
 import org.milyn.cdr.annotation.AppContext;
@@ -28,14 +24,18 @@ import org.milyn.delivery.annotation.Initialize;
 import org.milyn.delivery.annotation.VisitAfterIf;
 import org.milyn.delivery.annotation.VisitBeforeIf;
 import org.milyn.delivery.dom.DOMElementVisitor;
+import org.milyn.delivery.ordering.Consumer;
 import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
-import org.milyn.delivery.ordering.Consumer;
 import org.milyn.io.AbstractOutputStreamResource;
 import org.milyn.javabean.context.BeanContext;
 import org.milyn.javabean.repository.BeanId;
 import org.w3c.dom.Element;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 
 /**
  * OutputStreamRouter is a fragment Visitor (DOM/SAX) that can be used to route

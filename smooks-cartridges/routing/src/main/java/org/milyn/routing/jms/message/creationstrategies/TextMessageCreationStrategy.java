@@ -14,14 +14,14 @@
  */
 package org.milyn.routing.jms.message.creationstrategies;
 
+import org.milyn.SmooksException;
+import org.milyn.cdr.SmooksConfigurationException;
+import org.milyn.container.ExecutionContext;
+
 import javax.jms.JMSException;
 import javax.jms.Message;
 import javax.jms.Session;
 import javax.jms.TextMessage;
-
-import org.milyn.SmooksException;
-import org.milyn.cdr.SmooksConfigurationException;
-import org.milyn.container.ExecutionContext;
 
 /**
  *

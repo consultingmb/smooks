@@ -15,9 +15,9 @@
 */
 package org.milyn.delivery.sax;
 
+import org.milyn.SmooksException;
 import org.milyn.xml.HTMLEntityLookup;
 import org.milyn.xml.XmlUtil;
-import org.milyn.SmooksException;
 
 import java.io.IOException;
 import java.io.StringWriter;

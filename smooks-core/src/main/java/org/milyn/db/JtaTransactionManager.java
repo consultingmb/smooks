@@ -1,17 +1,11 @@
 package org.milyn.db;
 
+import org.milyn.assertion.AssertArgument;
+
+import javax.transaction.Status;
+import javax.transaction.UserTransaction;
 import java.sql.Connection;
 import java.sql.SQLException;
-
-import javax.transaction.HeuristicMixedException;
-import javax.transaction.HeuristicRollbackException;
-import javax.transaction.RollbackException;
-import javax.transaction.Status;
-import javax.transaction.SystemException;
-import javax.transaction.Transaction;
-import javax.transaction.UserTransaction;
-
-import org.milyn.assertion.AssertArgument;
 
 class JtaTransactionManager implements TransactionManager {
 

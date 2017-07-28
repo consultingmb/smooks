@@ -15,9 +15,6 @@
 */
 package org.milyn.delivery.sax.terminate;
 
-import java.io.IOException;
-import java.util.Set;
-
 import org.milyn.SmooksException;
 import org.milyn.cdr.annotation.ConfigParam;
 import org.milyn.cdr.annotation.ConfigParam.Use;
@@ -27,6 +24,9 @@ import org.milyn.delivery.sax.SAXElement;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
 import org.milyn.util.CollectionsUtil;
+
+import java.io.IOException;
+import java.util.Set;
 
 /**
  * Terminate Visitor.

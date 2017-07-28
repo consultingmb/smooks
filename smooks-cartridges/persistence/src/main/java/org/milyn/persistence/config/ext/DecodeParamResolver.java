@@ -15,8 +15,6 @@
 */
 package org.milyn.persistence.config.ext;
 
-import java.util.UUID;
-
 import org.milyn.SmooksException;
 import org.milyn.cdr.SmooksResourceConfiguration;
 import org.milyn.cdr.extension.ExtensionContext;
@@ -27,6 +25,8 @@ import org.milyn.persistence.Constants;
 import org.milyn.xml.DomUtils;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
+
+import java.util.UUID;
 
 /**
  * @author <a href="mailto:maurice.zeijen@smies.com">maurice.zeijen@smies.com</a>

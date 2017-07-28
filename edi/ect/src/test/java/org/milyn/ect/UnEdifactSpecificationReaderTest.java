@@ -18,15 +18,6 @@ package org.milyn.ect;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.StringReader;
-import java.io.StringWriter;
-import java.util.Set;
-import java.util.zip.ZipInputStream;
-
-import javax.xml.parsers.ParserConfigurationException;
-
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.jdom2.Document;
@@ -49,6 +40,14 @@ import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringReader;
+import java.io.StringWriter;
+import java.util.Set;
+import java.util.zip.ZipInputStream;
 
 /**
  * UnEdifactSpecificationReaderTest.

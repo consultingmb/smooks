@@ -15,14 +15,13 @@
 */
 package org.milyn.scribe.invoker;
 
-import java.util.Map;
-
-import org.apache.commons.lang.NotImplementedException;
 import org.milyn.scribe.Dao;
 import org.milyn.scribe.Flushable;
 import org.milyn.scribe.Locator;
 import org.milyn.scribe.MappingDao;
 import org.milyn.scribe.Queryable;
+
+import java.util.Map;
 
 
 /**

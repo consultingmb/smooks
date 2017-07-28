@@ -15,20 +15,19 @@
 */
 package example;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.List;
-
-import javax.xml.transform.stream.StreamResult;
-import javax.xml.transform.stream.StreamSource;
-
 import org.milyn.Smooks;
 import org.milyn.SmooksException;
 import org.milyn.container.ExecutionContext;
 import org.milyn.routing.file.FileListAccessor;
 import org.xml.sax.SAXException;
+
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.List;
 
 /**
  * This is a simple example that demonstrates how Smooks can be 

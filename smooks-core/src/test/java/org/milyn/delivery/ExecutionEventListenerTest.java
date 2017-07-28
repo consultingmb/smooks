@@ -15,14 +15,15 @@
 */
 package org.milyn.delivery;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 import org.milyn.Smooks;
-import org.milyn.io.NullWriter;
 import org.milyn.container.ExecutionContext;
 import org.milyn.event.BasicExecutionEventListener;
 import org.milyn.event.types.FilterLifecycleEvent;
 import org.milyn.event.types.ResourceTargetingEvent;
+import org.milyn.io.NullWriter;
 import org.xml.sax.SAXException;
 
 import javax.xml.transform.stream.StreamResult;

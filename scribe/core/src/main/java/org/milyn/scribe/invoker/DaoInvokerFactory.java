@@ -24,7 +24,6 @@ import org.milyn.scribe.Locator;
 import org.milyn.scribe.MappingDao;
 import org.milyn.scribe.ObjectStore;
 import org.milyn.scribe.Queryable;
-import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfo;
 import org.milyn.scribe.reflection.AnnotatedDaoRuntimeInfoFactory;
 
 /**

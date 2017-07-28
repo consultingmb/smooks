@@ -16,17 +16,18 @@
 
 package org.milyn.javabean.binding;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.custommonkey.xmlunit.XMLAssert;
 import org.custommonkey.xmlunit.XMLUnit;
+import org.junit.Test;
 import org.milyn.Smooks;
 import org.milyn.io.StreamUtils;
 import org.milyn.javabean.binding.config5.Person;
 import org.milyn.javabean.binding.model.ModelSet;
 import org.milyn.javabean.binding.ordermodel.Order;
 import org.milyn.javabean.binding.xml.XMLBinding;
-import org.milyn.payload.StringSource;
 import org.xml.sax.SAXException;
 
 import java.io.IOException;

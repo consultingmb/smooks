@@ -15,13 +15,6 @@
 */
 package org.milyn.routing.db;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.SmooksException;
@@ -41,7 +34,6 @@ import org.milyn.delivery.dom.DOMElementVisitor;
 import org.milyn.delivery.ordering.Consumer;
 import org.milyn.delivery.ordering.Producer;
 import org.milyn.delivery.sax.SAXElement;
-import org.milyn.delivery.sax.SAXUtil;
 import org.milyn.delivery.sax.SAXVisitAfter;
 import org.milyn.delivery.sax.SAXVisitBefore;
 import org.milyn.expression.ExpressionEvaluator;
@@ -54,7 +46,12 @@ import org.milyn.util.CollectionsUtil;
 import org.milyn.util.FreeMarkerTemplate;
 import org.w3c.dom.Element;
 
-import javax.xml.namespace.QName;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author <a href="mailto:tom.fennelly@jboss.com">tom.fennelly@jboss.com</a>

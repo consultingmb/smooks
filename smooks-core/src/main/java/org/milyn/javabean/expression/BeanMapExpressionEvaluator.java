@@ -15,8 +15,6 @@
 */
 package org.milyn.javabean.expression;
 
-import java.util.Map;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.milyn.cdr.SmooksConfigurationException;
@@ -25,6 +23,8 @@ import org.milyn.expression.ExecutionContextExpressionEvaluator;
 import org.milyn.expression.ExpressionEvaluationException;
 import org.milyn.expression.MVELExpressionEvaluator;
 import org.milyn.javabean.context.BeanContext;
+
+import java.util.Map;
 
 /**
  * Javabean Cartridge bean Map expression evaluator.

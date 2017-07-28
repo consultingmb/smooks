@@ -15,20 +15,20 @@
 */
 package org.milyn.routing.jms.activemq;
 
-import static org.testng.AssertJUnit.*;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
+import static org.testng.AssertJUnit.assertEquals;
 
-import org.milyn.Smooks;
 import org.milyn.FilterSettings;
-import org.milyn.templating.freemarker.FreeMarkerTemplateProcessor;
-import org.milyn.templating.TemplatingConfiguration;
-import org.milyn.templating.BindTo;
+import org.milyn.Smooks;
 import org.milyn.javabean.Bean;
 import org.milyn.payload.StringSource;
-import org.milyn.routing.jms.TestJMSMessageListener;
 import org.milyn.routing.jms.JMSRouter;
+import org.milyn.routing.jms.TestJMSMessageListener;
+import org.milyn.templating.BindTo;
+import org.milyn.templating.TemplatingConfiguration;
+import org.milyn.templating.freemarker.FreeMarkerTemplateProcessor;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
 import javax.jms.JMSException;

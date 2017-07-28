@@ -2,8 +2,6 @@ package org.milyn.ect.ecore;
 
 import static org.milyn.ect.ecore.SmooksMetadata.ANNOTATION_TYPE_KEY;
 
-import java.util.Map;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -27,6 +25,8 @@ import org.milyn.edisax.model.internal.MappingNode;
 import org.milyn.edisax.model.internal.Segment;
 import org.milyn.edisax.model.internal.SegmentGroup;
 import org.milyn.edisax.model.internal.ValueNode;
+
+import java.util.Map;
 
 /**
  * Utility class that convert EDI model to ECore model elements

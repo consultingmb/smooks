@@ -15,12 +15,6 @@
 */
 package org.milyn.edisax.unedifact;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.XMLConstants;
-
 import org.milyn.assertion.AssertArgument;
 import org.milyn.edisax.BufferedSegmentReader;
 import org.milyn.edisax.EDIParser;
@@ -28,9 +22,9 @@ import org.milyn.edisax.interchange.ControlBlockHandler;
 import org.milyn.edisax.interchange.ControlBlockHandlerFactory;
 import org.milyn.edisax.interchange.InterchangeContext;
 import org.milyn.edisax.model.internal.Delimiters;
-import org.milyn.edisax.unedifact.handlers.r41.UNEdifact41ControlBlockHandlerFactory;
 import org.milyn.edisax.registry.LazyMappingsRegistry;
 import org.milyn.edisax.registry.MappingsRegistry;
+import org.milyn.edisax.unedifact.handlers.r41.UNEdifact41ControlBlockHandlerFactory;
 import org.milyn.namespace.NamespaceDeclarationStack;
 import org.milyn.namespace.NamespaceDeclarationStackAware;
 import org.milyn.xml.hierarchy.HierarchyChangeListener;
@@ -45,6 +39,11 @@ import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.AttributesImpl;
+
+import javax.xml.XMLConstants;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * UN/EDIFACT Interchange Envelope parser.
