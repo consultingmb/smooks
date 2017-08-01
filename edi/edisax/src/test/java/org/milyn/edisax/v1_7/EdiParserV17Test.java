@@ -21,4 +21,9 @@ public class EdiParserV17Test extends AbstractEDIParserTestCase {
     public void componentMaxOccurs() throws IOException {
         test("component_maxoccurs");
     }
+
+    @Test
+    public void mon_b_and_t() throws IOException {
+        test("mon_b_and_t");
+    }
 }

@@ -3,10 +3,7 @@ package org.milyn.ejc;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
-<<<<<<< HEAD
 import static org.junit.Assert.fail;
-=======
->>>>>>> 4f1f0aa... Let Intellij optimize imports
 
 import org.junit.Test;
 import org.milyn.edisax.model.internal.Component;
@@ -33,10 +30,16 @@ public class ClassModelCompilerTest {
             "    <params>\r\n" +
             "        <param name=\"stream.filter.type\">SAX</param>\r\n" +
             "    </params>\r\n" +
+<<<<<<< HEAD
+            "    \r\n" +
+            "    <edi:reader mappingModel=\"/com/example/common/edimappingconfig.xml\" validate=\"false\" />\r\n" +
+            "\r\n" +
+=======
             "\r\n" +
             "    <edi:reader mappingModel=\"/com/example/common/edimappingconfig.xml\" validate=\"false\" />\r\n" +
             "\r\n" +
             "\r\n" +
+>>>>>>> issue-127-field-with-cardinality
             "    <jb:bean beanId=\"root\" class=\"com.example.common.Root\" createOnElement=\"root\">\r\n" +
             "        <jb:wiring property=\"odi\" beanIdRef=\"root.ODI\" />\r\n" +
             "    </jb:bean>\r\n" +

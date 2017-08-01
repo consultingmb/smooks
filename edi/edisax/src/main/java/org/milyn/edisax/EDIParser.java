@@ -16,6 +16,7 @@
 
 package org.milyn.edisax;
 
+import java.util.ListIterator;
 import org.milyn.assertion.AssertArgument;
 import org.milyn.edisax.model.EdifactModel;
 import org.milyn.edisax.model.internal.Component;
@@ -315,9 +316,7 @@ public class EDIParser implements XMLReader {
 		try {
 			configStream = resourceLocator.getResource(mappingConfig);
 		} catch (IOException e) {
-			IllegalStateException state = new IllegalStateException("Invalid EDI mapping model config specified for " + EDIParser.class.getName() + ".  Unable to access URI based mapping model [" + resourceLocator.resolveURI(mappingConfig) + "].");
-			state.initCause(e);
-			throw state;
+            throw new IllegalStateException("Invalid EDI mapping model config specified for " + EDIParser.class.getName() + ".  Unable to access URI based mapping model [" + resourceLocator.resolveURI(mappingConfig) + "].", e);
 		}
 		
 		return configStream;
@@ -418,7 +417,7 @@ public class EDIParser implements XMLReader {
 		return this;
 	}
 
-	private void parse(boolean indent) throws SAXException, IOException, EDIParseException {
+	private void parse(boolean indent) throws SAXException, IOException {
         boolean ignoreUnmappedSegment = edifactModel.getEdimap().isIgnoreUnmappedSegments();
 
 		startElement(edifactModel.getEdimap().getSegments(), indent);
@@ -642,7 +641,7 @@ public class EDIParser implements XMLReader {
                         String componentMessageVal = currentFieldComponents[i];
                         mapComponent(componentMessageVal, expectedComponent, fieldIndex, i, segmentCode, expectedField.getXmltag());
                     }
-                    index += expectedField.getMaxOccurs();
+                    index += expectedComponent.getMaxOccurs();
                 }
 		        endElement(expectedField, true);
             }
@@ -732,8 +731,7 @@ public class EDIParser implements XMLReader {
 
         } else if (currentSegmentFields.length > numFieldsExpected) {
         	// we have more fields than we are expecting.
-        	if(segment.isIgnoreUnmappedFields()) {
-            } else {
+        	if(!segment.isIgnoreUnmappedFields()) {
         		throw new EDIParseException(edifactModel.getEdimap(), "Segment [" + segment.getSegcode() + "] expected to contain " + (numFieldsExpected - 1) + " fields.  Actually contains " + (currentSegmentFields.length - 1) + " fields (not including segment code).  Currently at segment number " + segmentReader.getCurrentSegmentNumber() + ".", segment, segmentReader.getCurrentSegmentNumber(), segmentReader.getCurrentSegmentFields());
         	}
         } else {
