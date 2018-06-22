@@ -35,8 +35,6 @@ import org.xml.sax.EntityResolver;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.AttributesImpl;
 
@@ -52,7 +50,7 @@ import java.util.Map;
  */
 public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarationStackAware, HierarchyChangeReader {
 
-    private Map<String, Boolean> features = new HashMap<String, Boolean>();
+    private Map<String, Boolean> features = new HashMap<>();
 	
 	public static final Delimiters defaultUNEdifactDelimiters = new Delimiters().setSegment("'").setField("+").setComponent(":").setEscape("?").setDecimalSeparator(".");
 	
@@ -65,6 +63,7 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
     private InterchangeContext interchangeContext;
     private NamespaceDeclarationStack namespaceDeclarationStack;
 
+    @Override
     public void parse(InputSource unedifactInterchange) throws IOException, SAXException {
 		AssertArgument.isNotNull(unedifactInterchange, "unedifactInterchange");
 
@@ -79,8 +78,8 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
         boolean endDocument = false;
         try {
             ControlBlockHandlerFactory handlerFactory = new UNEdifact41ControlBlockHandlerFactory(hierarchyChangeListener);
-	        BufferedSegmentReader segmentReader = new BufferedSegmentReader(unedifactInterchange, defaultUNEdifactDelimiters);
-	        boolean validate = getFeature(EDIParser.FEATURE_VALIDATE);
+            BufferedSegmentReader segmentReader = createBufferedSegmentReader(unedifactInterchange);
+            boolean validate = getFeature(EDIParser.FEATURE_VALIDATE);
 	        String segCode;
 	        
 	        segmentReader.mark();
@@ -136,6 +135,11 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
         }
 	}
 
+    @SuppressWarnings("WeakerAccess")
+    protected BufferedSegmentReader createBufferedSegmentReader(InputSource unedifactInterchange) {
+        return new BufferedSegmentReader(unedifactInterchange, defaultUNEdifactDelimiters);
+    }
+
     protected InterchangeContext createInterchangeContext(BufferedSegmentReader segmentReader, boolean validate, ControlBlockHandlerFactory controlBlockHandlerFactory, NamespaceDeclarationStack namespaceDeclarationStack) {
         return new InterchangeContext(segmentReader, registry, contentHandler, getFeatures(), controlBlockHandlerFactory, namespaceDeclarationStack, validate);
     }
@@ -158,11 +162,13 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
 		return this;
 	}
 
-	public ContentHandler getContentHandler() {
+	@Override
+    public ContentHandler getContentHandler() {
 		return contentHandler;
 	}
 
-	public void setContentHandler(ContentHandler contentHandler) {
+	@Override
+    public void setContentHandler(ContentHandler contentHandler) {
 		this.contentHandler = contentHandler;
 	}
 
@@ -170,6 +176,7 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
 		setFeature(EDIParser.FEATURE_IGNORE_NEWLINES, ignoreNewLines);
 	}
 
+    @SuppressWarnings("WeakerAccess")
     public void ignoreEmptyNodes(boolean ignoreEmptyNodes) {
         setFeature(EDIParser.FEATURE_IGNORE_EMPTY_NODES, ignoreEmptyNodes);
     }
@@ -182,11 +189,13 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
         return features;
     }
 
+    @Override
     public void setFeature(String name, boolean value) {
     	features.put(name, value);
     }
 
-    public boolean getFeature(String name) throws SAXNotRecognizedException, SAXNotSupportedException {
+    @Override
+    public boolean getFeature(String name) {
     	Boolean feature = features.get(name);
     	if(feature == null) {
     		return false;
@@ -194,10 +203,12 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
     	return feature;
     }
 
+    @Override
     public void setNamespaceDeclarationStack(NamespaceDeclarationStack namespaceDeclarationStack) {
         this.namespaceDeclarationStack = namespaceDeclarationStack;
     }
 
+    @Override
     public void setHierarchyChangeListener(HierarchyChangeListener listener) {
         this.hierarchyChangeListener = listener;
     }
@@ -208,35 +219,48 @@ public class UNEdifactInterchangeParser implements XMLReader, NamespaceDeclarati
      *
      ****************************************************************************/
 
-    public void parse(String systemId) throws IOException, SAXException {
+    @Override
+    public void parse(String systemId) {
     	throw new UnsupportedOperationException("Operation not supports by this reader.");
     }
 
+    @Override
     public DTDHandler getDTDHandler() {
     	return null;
     }
 
+    @Override
     public void setDTDHandler(DTDHandler arg0) {
+        // Not used
     }
 
+    @Override
     public EntityResolver getEntityResolver() {
     	return null;
     }
 
+    @Override
     public void setEntityResolver(EntityResolver arg0) {
+        // Not used
     }
 
+    @Override
     public ErrorHandler getErrorHandler() {
     	return null;
     }
 
+    @Override
     public void setErrorHandler(ErrorHandler arg0) {
+        // Not used
     }
 
-    public Object getProperty(String name) throws SAXNotRecognizedException, SAXNotSupportedException {
+    @Override
+    public Object getProperty(String name) {
     	return null;
     }
 
-    public void setProperty(String name, Object value) throws SAXNotRecognizedException, SAXNotSupportedException {
+    @Override
+    public void setProperty(String name, Object value) {
+        // Not used
     }
 }
