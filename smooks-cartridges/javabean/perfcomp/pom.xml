@@ -5,13 +5,13 @@
     <parent>
        <groupId>org.milyn</groupId>
        <artifactId>testres</artifactId>
-       <version>1.7.1-SNAPSHOT</version>
+       <version>1.7.2</version>
        <relativePath>../../../testres/pom.xml</relativePath>
     </parent>
 
     <groupId>org.milyn</groupId>
     <artifactId>milyn-smooks-javabean-perfcomp</artifactId>
-    
+
     <dependencies>
 
         <dependency>

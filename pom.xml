@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.milyn</groupId>
         <artifactId>smooks-parent</artifactId>
-	    <version>1.7.1-SNAPSHOT</version>
+	    <version>1.7.2</version>
         <relativePath>smooks-parent/pom.xml</relativePath>
     </parent>
 
@@ -20,7 +20,7 @@
 
     <modules>
         <module>smooks-parent</module>
-        <!-- <module>testres</module> -->
+        <module>testres</module>
         <module>commons</module>
         <module>smooks-core</module>
         <!-- <module>scribe</module> -->
