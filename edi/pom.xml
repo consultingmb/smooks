@@ -19,7 +19,7 @@
         <module>ect/maven-ect-plugin</module>
         <module>ejc</module>
         <module>ejc/maven-ejc-plugin</module>
-        <module>edi-test</module>
+        <!-- <module>edi-test</module> -->
         <module>edi-utils</module>
     </modules>
 

@@ -14,22 +14,22 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>flatfile</module>
-        <module>csv</module>
+        <!-- <module>flatfile</module> -->
+        <!-- <module>csv</module> -->
         <module>javabean</module>
         <module>edi</module>
-        <module>json</module>
-        <module>misc</module>
-        <module>scripting</module>
-        <module>templating</module>
-        <module>routing</module>
-        <module>calc</module>
-        <module>persistence</module>
-        <module>rules</module>
-        <module>validation</module>
-        <module>fixed-length</module>
-        <module>yaml</module>
-        <module>camel</module>
+        <!-- <module>json</module> -->
+        <!-- <module>misc</module> -->
+        <!-- <module>scripting</module> -->
+        <!-- <module>templating</module> -->
+        <!-- <module>routing</module> -->
+        <!-- <module>calc</module> -->
+        <!-- <module>persistence</module> -->
+        <!-- <module>rules</module> -->
+        <!-- <module>validation</module> -->
+        <!-- <module>fixed-length</module> -->
+        <!-- <module>yaml</module> -->
+        <!-- <module>camel</module> -->
     </modules>
 
     <dependencies>

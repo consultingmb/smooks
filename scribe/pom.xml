@@ -17,9 +17,9 @@
     <modules>
         <module>scribe-parent</module>
         <module>core</module>
-        <module>adapter/jpa</module>
-        <module>adapter/hibernate</module>
-        <module>adapter/ibatis</module>
+        <!-- <module>adapter/jpa</module> -->
+        <!-- <module>adapter/hibernate</module> -->
+        <!-- <module>adapter/ibatis</module> -->
     </modules>
 
 </project>
