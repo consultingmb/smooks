@@ -29,6 +29,7 @@ import org.milyn.ejc.EJCException;
 import org.milyn.edisax.util.IllegalNameException;
 import org.xml.sax.SAXException;
 
+import java.util.List;
 import java.io.File;
 import java.io.IOException;
 
@@ -49,14 +50,11 @@ public class EJCMojo extends AbstractMojo {
     @Parameter(defaultValue = "target/ejc", required = false)
     private File destDir;
 
-    @Parameter(defaultValue = "src/main/resources/edi-model.xml", required = false)
-    private String ediMappingFile;
-
     @Parameter(required = false)
     private String messages;
-
-    @Parameter(required = false)
-    private String packageName;
+    
+    @Parameter(required = true)
+    private List<EdiMapping> ediMappings;
 
     public void execute() throws MojoExecutionException {
     	getLog().info("Execution EJC Plugin");
@@ -64,46 +62,19 @@ public class EJCMojo extends AbstractMojo {
         EJCExecutor ejc = new EJCExecutor();
 
         try {
-            if(ediMappingFile.startsWith("urn:")) {
-                if(packageName != null) {
-                    throw new MojoExecutionException("Invalid EJC configuration.  'packageName' must not be configured for 'urn' mapping model configurations.");
-                }
-
-                String urn = ediMappingFile.substring(4).trim();
-                String[] urnTokens;
-
-                urn = urn.replace("-", "_");
-                urnTokens = urn.split(":");
-
-                if(urnTokens.length != 3) {
-                    throw new MojoExecutionException("'ediMappingFile' urn value must have a minimum of 3 colon separated tokens (4 tokens if including the leading 'urn' token).");
-                }
-
-                String directoryMapping = urnTokens[1];
-                if(directoryMapping.endsWith("_mapping")) {
-                    directoryMapping = directoryMapping.substring(0, directoryMapping.length() - "_mapping".length());
-                }
-
-                packageName = urnTokens[0] + "." + directoryMapping;
-            } else if(packageName == null) {
-                throw new MojoExecutionException("Invalid EJC configuration.  'packageName' must be configured for non 'urn' mapping model configurations.");
-            } else {
-                File mappingFileObj = new File(project.getBasedir(), ediMappingFile);
-                if(mappingFileObj.exists()) {
-                    ediMappingFile = mappingFileObj.toURI().toString();
-                }
-            }
-
-            ejc.setMessages(messages);
-            ejc.setDestDir(destDir);
-            ejc.setEdiMappingModel(ediMappingFile);
-            ejc.setPackageName(packageName);
-
             if(destDir.exists()) {
                 destDir.delete();
             }
+            
+            ejc.setMessages(messages);
+            ejc.setDestDir(destDir);
+            
+            for(EdiMapping ediMapping : ediMappings) {
+	            ejc.setEdiMappingModel(ediMapping.modelSourceFile);
+	            ejc.setPackageName(ediMapping.packageName);
+	            ejc.execute();
+            }
 
-            ejc.execute();
             project.addCompileSourceRoot(destDir.getPath());
 
             Resource resource = new Resource();
