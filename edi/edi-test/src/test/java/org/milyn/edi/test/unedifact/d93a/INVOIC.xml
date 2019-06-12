@@ -91,7 +91,7 @@
 					<c:e3035>PE</c:e3035>
 					<c:C058>
 						<c:e3124_-_-1>SCHENKER AB</c:e3124_-_-1>
-						<c:e3124_-_-2>412 97 GОTEBORG</c:e3124_-_-2>
+						<c:e3124_-_-2>412 97 GOTEBORG</c:e3124_-_-2>
 					</c:C058>
 				</invoic:NAD>
 				<invoic:Segment_Group_3>
@@ -271,7 +271,7 @@
 							<c:e3042_-_-1>BOX 69</c:e3042_-_-1>
 							<c:e3042_-_-2>NIPAN 59</c:e3042_-_-2>
 						</c:C059>
-						<c:e3164>881 22  SOLLEFTEА</c:e3164>
+						<c:e3164>881 22  SOLLEFTEA</c:e3164>
 						<c:e3251>88122</c:e3251>
 					</invoic:NAD>
 				</invoic:Segment_Group_31>
@@ -284,7 +284,7 @@
 						<c:C059>
 							<c:e3042_-_-1>NIPAN 59</c:e3042_-_-1>
 						</c:C059>
-						<c:e3164>SOLLEFTEА</c:e3164>
+						<c:e3164>SOLLEFTEA</c:e3164>
 						<c:e3251>88152</c:e3251>
 					</invoic:NAD>
 				</invoic:Segment_Group_31>
@@ -332,7 +332,7 @@
 						<c:C214>
 							<c:e7161>586</c:e7161>
 							<c:e3055>87</c:e3055>
-							<c:e7160>VАGSKATT TYSKLAND</c:e7160>
+							<c:e7160>VAGSKATT TYSKLAND</c:e7160>
 						</c:C214>
 					</invoic:ALC>
 					<invoic:Segment_Group_38>
@@ -369,7 +369,7 @@
 						<c:C214>
 							<c:e7161>735</c:e7161>
 							<c:e3055>87</c:e3055>
-							<c:e7160>EXPEDITIONSAVGIFT INFОRSEL</c:e7160>
+							<c:e7160>EXPEDITIONSAVGIFT INFORSEL</c:e7160>
 						</c:C214>
 					</invoic:ALC>
 					<invoic:Segment_Group_38>
