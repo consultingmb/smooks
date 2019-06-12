@@ -8,7 +8,7 @@ In case of questions about the contribution process or for discussion of specifi
 
 Depending on which version (or sometimes module) you want to work on, you should target a specific branch as explained below:
 
-* `master` – active development branch 
+* `master` - active development branch 
 
 
 ## Tags

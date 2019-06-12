@@ -76,7 +76,7 @@ public class UnEdifactMessage {
      * Group3 = description
      * Group4 = isMandatory
      * Group5 = max occurance
-     */                  
+     */
     private static String SEGMENT_REGULAR = "(\\d{4,5})*[-\\+\\* XS]*(\\w{3}) *(.*) +(M|C|m|c) *(\\d+)[ \\|]*";
 
     /**
@@ -101,7 +101,7 @@ public class UnEdifactMessage {
      * Group1 = id
      * Group2 = name
      * Group4 = isMandatory
-     * Group5 = max occurance 
+     * Group5 = max occurance
      */
     private static String SEGMENT_GROUP_START = "(\\d{4,5})*[-\\+\\* XS]*-* *([S|s]egment [G|g]roup \\d*) *-* +(C|M|c|m) *(\\d*)[ \\-\\+\\|]*";
 
@@ -183,7 +183,7 @@ public class UnEdifactMessage {
             if (isSplitIntoImport) {
                 Import ediImport = new Import();
                 ediImport.setNamespace(agency);
-                ediImport.setResource(definitionModel.getDescription().getName() + ".xml");  // TODO: Review with B�rd
+                ediImport.setResource(definitionModel.getDescription().getName() + ".xml");  // TODO: Review with Bard
                 edimap.getImports().add(ediImport);
             }  else {
                 segmentDefinitions = getSegmentDefinitions(definitionModel);
@@ -350,7 +350,7 @@ public class UnEdifactMessage {
             } else if (line.matches(ANNEX)) {
                 return 0;
             }
-            
+
             line = reader.readLine();
         }
         return 0;
@@ -371,7 +371,7 @@ public class UnEdifactMessage {
         SegmentGroup group = new SegmentGroup();
         group.setXmltag(XmlTagEncoder.encode(name.trim()));
         String test = definitions.get(id);
-        
+
         group.setDocumentation(test.trim());
         group.setMinOccurs(mandatory.equals("M") ? 1 : 0);
         group.setMaxOccurs(Integer.valueOf(maxOccurance));

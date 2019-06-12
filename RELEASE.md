@@ -186,7 +186,7 @@ Please note that the `deploy` profile should be used to enable `javadoc`, `gpg`,
 ##### Deploy artifacts from a Linux type OS (including Mac OSX)
 
 Simple run:
-      
+
 ```
  ./deploy.sh -u <repo-username> -p <repo-password> -g <passphrase-of-gpg-key>
 ```
@@ -197,17 +197,17 @@ Simple run:
 
 
 First of all become familiar with release staging process:
-[Improved Releases with Staging](http://books.sonatype.com/nexus-book/reference/staging.html) 
+[Improved Releases with Staging](http://books.sonatype.com/nexus-book/reference/staging.html)
 
 Log in into [Nexus repository](https://oss.sonatype.org) (using Sonatype Jira account) and inspect staging repository which was created (id of the repository should be printed in the output of the `maven clean deploy` build).
-From there, take a look at the “Staging Repository”. The staging repository is where you can inspect what was uploaded and make sure that everything looks peachy.
-If it doesn't, you can drop the repository and fix the issue and deploy again. Once you think everything is in order you need to “**Close**” the repository. Closing will run a number of verification
+From there, take a look at the "Staging Repository". The staging repository is where you can inspect what was uploaded and make sure that everything looks peachy.
+If it doesn't, you can drop the repository and fix the issue and deploy again. Once you think everything is in order you need to "**Close**" the repository. Closing will run a number of verification
 rules, among them verifying the signatures of the artifacts. Again if something fails you must fix and the drop and deploy again.
-If successful, the artifacts are now available from the staging repository. From there, people will be able to test these artifacts.  If all goes well (no bugs etc), you should now be able to release the artifacts using the “**Release**” button.  This will make the artifacts available first on the local nexus which will later sync to maven central.
+If successful, the artifacts are now available from the staging repository. From there, people will be able to test these artifacts.  If all goes well (no bugs etc), you should now be able to release the artifacts using the "**Release**" button.  This will make the artifacts available first on the local nexus which will later sync to maven central.
 
 #### Tag the release
 
-    git tag -s vx.x.x <commit_SHA_of_the_prepare_release> -m "Tagging vx.x.x”
+    git tag -s vx.x.x <commit_SHA_of_the_prepare_release> -m "Tagging vx.x.x"
 
 Optionally verify the tag:
 
@@ -275,5 +275,3 @@ $ gpg --allow-secret-key-import --import secretkey.gpg
 ```
 
 Of course you can check the import by running `gpg --list-keys` on the IaaS host instance.  Now your docker IaaS host instance has your GPG keys installed and you can execute the docker run command to deploy the artifacts to the Codehaus maven repo.
-
-
