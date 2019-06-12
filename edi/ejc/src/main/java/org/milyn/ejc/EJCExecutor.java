@@ -79,8 +79,8 @@ public class EJCExecutor {
 												this.destDir.getAbsolutePath());
 
 			// Get rid of the binding and edi mapping model configs for the commons...
-			this.deleteFile(commonsPackageName, EJC.BINDINGCONFIG_XML);
-			this.deleteFile(commonsPackageName, EJC.EDIMAPPINGCONFIG_XML);
+			// this.deleteFile(commonsPackageName, EJC.BINDINGCONFIG_XML);
+			// this.deleteFile(commonsPackageName, EJC.EDIMAPPINGCONFIG_XML);
 		}
 
 		List<MessageDefinition> messageSetDefinitions = new ArrayList<MessageDefinition>();
